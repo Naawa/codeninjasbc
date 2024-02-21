@@ -72,7 +72,7 @@
         }
 
         p {
-            width: clamp(200px, 100%, 80dvw);
+            width: clamp(200px, 100%, 40dvw);
             &:first-of-type {
                 color: #0067be70;
                 letter-spacing: 0.1em;
@@ -86,7 +86,8 @@
             flex-direction: column;
 
             img {
-                width: 12dvw;
+                height: 2em;
+                width: fit-content;
             }
 
             &:first-of-type {
@@ -110,7 +111,7 @@
 
         span {
             display: flex;
-            width: clamp(200px, 100%, 80dvw);
+            width: clamp(200px, 100%, 40dvw);
             justify-content: space-between;
             align-items: center;
             padding: 1em 0;
