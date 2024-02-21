@@ -4,12 +4,13 @@
 </script>
 
 <svelte:head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-12HD95QXZJ"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'G-J756NXPL9Q');
+    gtag('config', 'G-12HD95QXZJ');
     </script>
 </svelte:head>
 
