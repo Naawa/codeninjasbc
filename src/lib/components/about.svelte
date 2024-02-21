@@ -7,27 +7,27 @@
     <p>We believe that Code Ninjas is unlike anything your child has experienced before. Every day thousands of our Ninjas enter our Dojos to learn to code on our proprietary learning platform – and in the process UNLEASH THEIR INNER NINJA! Your child will join like-minded students and together they will tackle fun and engaging problems - and have a great time!</p>
     <span>
         <a href="https://www.youtube.com/watch?v=cg-lusa7yFM" target="_blank">
-            <div class="client-logo-panel">
+            <div>
               <img src="https://www.codeninjas.com/hubfs/MSNBC.svg" alt="MSNBC">
             </div>
         </a>
         <a href="https://www.parents.com/kids/camp/spring-break-camps-for-kids/" target="_blank">
-            <div class="client-logo-panel">
+            <div>
               <img src="https://www.codeninjas.com/hubfs/Parents-1.svg" alt="Parents-1">
             </div>
         </a>
         <a href="https://abc7ny.com/code-ninjas-syosset-coding-for-children/5287198/" target="_blank">
-            <div class="client-logo-panel">
+            <div>
               <img src="https://www.codeninjas.com/hubfs/abc-1.svg" alt="abc-1">
             </div>
         </a>
         <a href="https://lifehacker.com/how-a-coding-boot-camp-works-1828026066" target="_blank">
-            <div class="client-logo-panel">
+            <div>
               <img src="https://www.codeninjas.com/hubfs/lifehacker-1.svg" alt="lifehacker-1">
             </div>
         </a>
         <a href="https://www.entrepreneur.com/franchises/how-these-franchisees-became-franchisors/328186#3" target="_blank">
-            <div class="client-logo-panel">
+            <div>
               <img src="https://www.codeninjas.com/hubfs/enterpreneur.svg" alt="enterpreneur">
             </div>
         </a>
@@ -67,12 +67,8 @@
         gap: 2em;
         padding: 2em 0;
 
-        img {
-            width: clamp(200px, 50dvw, 50dvw);
-        }
-
         p {
-            width: clamp(200px, 100%, 40dvw);
+            width: clamp(300px, 80dvw, 40%);
             &:first-of-type {
                 color: #0067be70;
                 letter-spacing: 0.1em;
@@ -84,11 +80,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
-            img {
-                height: 2em;
-                width: fit-content;
-            }
 
             &:first-of-type {
                 display: block;
@@ -111,10 +102,18 @@
 
         span {
             display: flex;
-            width: clamp(200px, 100%, 40dvw);
+            width: clamp(300px, 80dvw, 40%);
             justify-content: space-between;
             align-items: center;
             padding: 1em 0;
+
+            img {
+                height: 2dvh;
+            }
         }
+    }
+
+    .lazyloaded {
+        width: clamp(200px, 60dvh, 70dvw);
     }
 </style>
