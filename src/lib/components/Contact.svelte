@@ -24,6 +24,7 @@
         flex-direction: column;
         gap: 2em;
         padding: 2em 0;
+        width: 100%;
 
         p {
             color: #0067be70;

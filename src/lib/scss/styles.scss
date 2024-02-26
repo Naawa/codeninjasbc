@@ -39,6 +39,8 @@ html {
         width: clamp(250px, 100%, 100dvw);
         background: linear-gradient(180deg, rgb(237, 254, 255) 0%, rgba(225,239,255,1) 100%);
         padding: 0 0 4em;
+        justify-content: center;
+        align-items: center;
         
         h1 { font-size: 3.366rem; }
         h2 { font-size: 2.525rem; }

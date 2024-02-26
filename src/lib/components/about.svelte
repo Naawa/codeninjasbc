@@ -66,9 +66,10 @@
         flex-direction: column;
         gap: 2em;
         padding: 2em 0;
+        width: 100%;
 
         p {
-            width: clamp(300px, 80dvw, 40%);
+            width: clamp(300px, 50dvw, 60%);
             &:first-of-type {
                 color: #0067be70;
                 letter-spacing: 0.1em;
