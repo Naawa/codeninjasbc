@@ -32,6 +32,7 @@
 
 html { 
     height: fit-content;
+    overflow-x: hidden;
 
     body {
         display: flex;
@@ -41,6 +42,7 @@ html {
         padding: 0 0 4em;
         justify-content: center;
         align-items: center;
+        overflow-x: hidden;
         
         h1 { font-size: 3.366rem; }
         h2 { font-size: 2.525rem; }
@@ -53,6 +55,11 @@ html {
             font-weight: 900;
             color: black;
             line-height: 1.2;
+        }
+
+        section {
+            min-height: 80dvh;
+            padding: 4em 0;
         }
     }
 }

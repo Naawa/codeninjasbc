@@ -1,5 +1,11 @@
 <script lang="ts">
-    const locations = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Port Coquitlam", "Richmond", "South Surrey", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam", "Westshore (Victoria)"]
+	import { page } from "$app/stores";
+	import SuperDebug, { superForm } from "sveltekit-superforms";
+
+    const dojos = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Port Coquitlam", "Richmond", "South Surrey", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam", "Westshore (Victoria)"]
+
+    export let data: any;
+	const { form, errors, constraints, message, enhance } = superForm(data.form);
 </script>
 
 <section>
@@ -8,27 +14,65 @@
         <h3>EMPOWER</h3>
         <h3>THEIR FUTURE</h3>
     </div>
-    <form>
-        <select>
-            <option>Select Location</option>
-            {#each locations.sort() as location}
-                <option>
-                    {location}
-                </option>
-            {/each}
-        </select>
-        <span>
-            <input type="text" placeholder="Parent First Name">
-            <input type="text" placeholder="Parent Last Name">
-        </span>
-        <input type="tel" placeholder="(000)-000-0000">
-        <span>
-            <input type="text" placeholder="Child First Name">
-            <input type="text" placeholder="Child First Name">
-        </span>
-        <br>
-        <button>SUBMIT</button>
-    </form>
+    {#if $message}
+        <h4>
+            {$message}
+        </h4>
+    {:else}
+        <form method="POST" use:enhance>
+            <select bind:value={$form.dojo} name="dojo">
+                <option>Select A Location</option>
+                {#each dojos as dojo}
+                    <option>{dojo}</option>
+                {/each}
+            </select>
+            <span>
+                <input 
+                type="text" 
+                name="parentFirstName" placeholder="Parent First Name" bind:value={$form.parentFirstName}  {...$constraints.parentFirstName}
+                aria-invalid={$errors.parentFirstName ? 'true' : undefined}>
+
+                <input 
+                type="text" 
+                name="parentLastName" 
+                placeholder="Parent Last Name" 
+                bind:value={$form.parentLastName}  {...$constraints.parentLastName}
+                aria-invalid={$errors.parentLastName ? 'true' : undefined}>
+            </span>
+            {#if $errors.parentFirstName}<span class="invalid">{$errors.name}</span>{/if}
+            {#if $errors.parentLastName}<span class="invalid">{$errors.name}</span>{/if}
+            <input 
+            type="text" 
+            name="contactNumber" 
+            placeholder="(000)-000-0000" bind:value={$form.contactNumber}  {...$constraints.contactNumber}
+            aria-invalid={$errors.contactNumber ? 'true' : undefined} maxlength="10">
+
+            <input 
+            type="email" 
+            name="email" 
+            placeholder="your-email@example.com" bind:value={$form.email}  {...$constraints.email}
+            aria-invalid={$errors.email? 'true' : undefined}>
+
+            <span>
+                <input 
+                type="text"
+                name="childFirstName" 
+                placeholder="Child First Name" bind:value={$form.childFirstName}  {...$constraints.childFirstName}
+                aria-invalid={$errors.childFirstName ? 'true' : undefined}>
+
+                <input 
+                type="text" 
+                name="childLastName" 
+                placeholder="Child Last Name" bind:value={$form.childLastName}  {...$constraints.childLastName}
+                aria-invalid={$errors.childLastName ? 'true' : undefined}>
+
+            </span>
+            {#if $errors.childFirstName}<span class="invalid">{$errors.name}</span>{/if}
+            {#if $errors.childLastName}<span class="invalid">{$errors.name}</span>{/if}
+            <br>
+            <button>SUBMIT</button>
+        </form>
+    {/if} 
 </section>
 
 <style lang="scss">
