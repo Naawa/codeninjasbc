@@ -1,3 +1,7 @@
+<script lang="ts">
+    const locations = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Port Coquitlam", "Richmond", "South Surrey", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam", "Westshore (Victoria)"]
+</script>
+
 <section>
     <p>REQUEST INFO</p>
     <div>
@@ -5,11 +9,23 @@
         <h3>THEIR FUTURE</h3>
     </div>
     <form>
-        <input type="text" placeholder="Parent First Name">
-        <input type="text" placeholder="Parent Last Name">
+        <select>
+            <option>Select Location</option>
+            {#each locations.sort() as location}
+                <option>
+                    {location}
+                </option>
+            {/each}
+        </select>
+        <span>
+            <input type="text" placeholder="Parent First Name">
+            <input type="text" placeholder="Parent Last Name">
+        </span>
         <input type="tel" placeholder="(000)-000-0000">
-        <input type="text" placeholder="Child First Name">
-        <input type="text" placeholder="Child First Name">
+        <span>
+            <input type="text" placeholder="Child First Name">
+            <input type="text" placeholder="Child First Name">
+        </span>
         <br>
         <button>SUBMIT</button>
     </form>
@@ -51,6 +67,12 @@
             background-color: white;
             box-shadow: 0 8px 24px #0067be40;
             border-radius: 0.5em;
+
+            span {
+                width: 100%;
+                display: flex;
+                gap: 1em;
+            }
 
             button {
                 background-color: #4cdac2;
