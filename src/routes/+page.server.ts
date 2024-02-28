@@ -47,6 +47,7 @@ export const actions = {
     if(error) {
         return message(form, "You have already made an inquiry, please wait for us to contact you.")
     }
+    return message(form, "We have received your inquiry. We will contact you shortly.")
 
     const lineLeaderHeaders: Headers = new Headers();
     lineLeaderHeaders.append("Content-Type", "application/json");
