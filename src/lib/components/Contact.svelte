@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { page } from "$app/stores";
+	import { dojos } from "$lib/utils/dojos";
 	import SuperDebug, { superForm } from "sveltekit-superforms";
 
-    const dojos = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Port Coquitlam", "Richmond", "South Surrey", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam", "Westshore (Victoria)"]
 
     export let data: any;
 	const { form, errors, constraints, message, enhance } = superForm(data.form);

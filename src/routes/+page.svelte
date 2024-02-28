@@ -1,13 +1,11 @@
 <script lang="ts">
-    import Contact from "$lib/components/Contact.svelte"
-	import Dojos from "$lib/components/Dojos.svelte";
-	import Video from "$lib/components/Video.svelte";
-	import About from "$lib/components/about.svelte";
+    import Contact from "$lib/components/contact.svelte"
+	import Video from "$lib/components/video.svelte";
+	import Programs from "$lib/components/programs.svelte";
 
 	export let data;
 </script>
 
 <Video></Video>
-<About></About>
-<Dojos></Dojos>
+<Programs></Programs>
 <Contact {data}></Contact>
