@@ -99,6 +99,12 @@
             }
         }
 
+        h4 {
+            padding: 2em;
+            background-color: white;
+            border-radius: 2em;
+        }
+
         form {
             padding: 4em 2em;
             display: flex;
