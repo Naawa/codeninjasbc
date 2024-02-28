@@ -56,7 +56,6 @@
 
     <p>If the Dojo is the soul of Code Ninjas, then IMPACT is the beating heart. It is our proprietary learning platform designed to give our Ninjas the best learning environment possible. It does so much more than just teach your child to code - it helps develop key skills such as problem-solving, critical thinking, and logical reasoning skills.</p>
 </section>
-
 <style lang="scss">
     section {
         display: flex;
@@ -65,7 +64,6 @@
         text-align: center;
         flex-direction: column;
         gap: 2em;
-        padding: 2em 0;
         width: 100%;
 
         p {
