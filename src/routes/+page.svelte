@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Video from "$lib/components/Video.svelte";
-	import Programs from "$lib/components/Programs.svelte"
 	import Contact from "$lib/components/Contact.svelte"
+	import Programs from "$lib/components/Programs.svelte";
 
 	export let data;
 </script>
