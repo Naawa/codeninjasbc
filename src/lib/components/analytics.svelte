@@ -3,7 +3,7 @@
   
     $: {
       if (typeof gtag !== 'undefined') {
-        gtag('config', 'G-12HD95QXZJ', {
+        gtag('config', 'G-RTQJXGSR9H', {
           page_title: document.title,
           page_path: $page.url.href,
         })
@@ -14,7 +14,7 @@
   <svelte:head>
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-12HD95QXZJ">
+      src="https://www.googletagmanager.com/gtag/js?id=G-RTQJXGSR9H">
     </script>
     <script>
       window.dataLayer = window.dataLayer || []
@@ -24,7 +24,7 @@
       }
   
       gtag('js', new Date())
-      gtag('config', 'G-12HD95QXZJ')
+      gtag('config', 'G-RTQJXGSR9H')
     </script>
   </svelte:head>
   
