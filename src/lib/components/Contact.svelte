@@ -113,7 +113,8 @@
             text-align: center;
             flex-direction: column;
             gap: 1em;
-            width: clamp(200px, 100%, fit-content);
+            width: fit-content;
+            max-width: 90dvw;
             background-color: white;
             box-shadow: 0 8px 24px #0067be40;
             border-radius: 0.5em;

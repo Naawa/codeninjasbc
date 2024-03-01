@@ -92,7 +92,7 @@
         iframe {
             aspect-ratio: 16/9;
             width: clamp(450px, 100%, 55dvw);
-            height: 100%;
+            min-height: 300px;
             padding: 4em;
         }
 
@@ -141,9 +141,10 @@
     }
 
     .promo {
-        min-width: 300px;
+        min-width: 100%;
         width: 30dvw;
         padding: 1em;
+        margin: 1em;
     }
     .create {
          //background-image: url('/images/campsbg.webp'); 
@@ -151,7 +152,7 @@
             span {
                 flex-direction: column;
                 background-color: #0c759ef3;
-                padding: 3em;
+                padding: 2em;
                 border-radius: 10em;
                 width: 16em;
                 gap: 1em;
@@ -167,7 +168,7 @@
             span {
                 flex-direction: column;
                 background-color: #0c949ef3;
-                padding: 3em;
+                padding: 2em;
                 border-radius: 10em;
                 width: 16em;
                 gap: 1em;
