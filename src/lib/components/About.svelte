@@ -91,8 +91,8 @@
 
         iframe {
             aspect-ratio: 16/9;
-            width: clamp(450px, 100%, 80dvw);
-            min-height: 40dvh;
+            width: clamp(450px, 100%, 55dvw);
+            height: 100%;
             padding: 4em;
         }
 
@@ -141,7 +141,9 @@
     }
 
     .promo {
-        width: clamp(300px, 25dvw, 25%);
+        min-width: 300px;
+        width: 30dvw;
+        padding: 1em;
     }
     .create {
          //background-image: url('/images/campsbg.webp'); 
@@ -149,9 +151,9 @@
             span {
                 flex-direction: column;
                 background-color: #0c759ef3;
-                padding: 3em 4em;
+                padding: 3em;
                 border-radius: 10em;
-                width: fit-content;
+                width: 16em;
                 gap: 1em;
                 h4, h3 {
                     color: rgb(195, 253, 255);
@@ -165,9 +167,9 @@
             span {
                 flex-direction: column;
                 background-color: #0c949ef3;
-                padding: 3em 4em;
+                padding: 3em;
                 border-radius: 10em;
-                width: fit-content;
+                width: 16em;
                 gap: 1em;
                 h4, h3 {
                     color: rgb(175, 255, 238);
