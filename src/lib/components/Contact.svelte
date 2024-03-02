@@ -6,6 +6,10 @@
 
     export let data: any;
 	const { form, errors, constraints, message, enhance } = superForm(data.form);
+
+    $form.utmSource = $page.url.searchParams.get("utm_source");
+    $form.utmMedium = $page.url.searchParams.get("utm_medium");
+    $form.utmCampaign = $page.url.searchParams.get("utm_campaign");
 </script>
 
 <section>
@@ -70,6 +74,9 @@
             {#if $errors.childFirstName}<span class="invalid">{$errors.name}</span>{/if}
             {#if $errors.childLastName}<span class="invalid">{$errors.name}</span>{/if}
             <br>
+            <input type="text" style="display: none;" name="utmSource" bind:value={$form.utmSource}>
+            <input type="text" style="display: none;" name="utmMedium" bind:value={$form.utmMedium}>
+            <input type="text" style="display: none;" name="utmCampaign" bind:value={$form.utmCampaign}>
             <button>SUBMIT</button>
         </form>
     {/if} 

@@ -12,7 +12,10 @@ const schema = z.object({
     contactNumber: z.string().min(10),
     childFirstName: z.string().min(3),
     childLastName: z.string().min(3),
-    email: z.string().email()
+    email: z.string().email(),
+    utmSource: z.string(),
+    utmMedium: z.string(),
+    utmCampaign: z.string(),
     });
 
 export const load = async () => {
@@ -22,12 +25,14 @@ export const load = async () => {
 };
 
 export const actions = {
-    default: async ({ fetch, request }) => {
+    default: async ({ request }) => {
       const form = await superValidate(request, zod(schema));
   
       if (!form.valid) {
         return fail(400, { form });
       }
+
+      console.log(form.data)
     
     const { data, error } = await supabase
     .from('leads')
@@ -40,6 +45,9 @@ export const actions = {
         email: `${form.data.email}`, 
         childFirstName: `${form.data.childFirstName}`,
         childLastName: `${form.data.childLastName}`, 
+        utmSource: `${form.data.utmSource}`,
+        utmMedium: `${form.data.utmMedium}`,
+        utmCampaign: `${form.data.utmCampaign}`,
     },
     ])
     .select()
@@ -48,39 +56,5 @@ export const actions = {
         return message(form, "You have already made an inquiry, please wait for us to contact you.")
     }
     return message(form, "We have received your inquiry. We will contact you shortly.")
-
-    const lineLeaderHeaders: Headers = new Headers();
-    lineLeaderHeaders.append("Content-Type", "application/json");
-
-    const raw: string = JSON.stringify({
-      "primary_guardian": {
-        "first_name": `${form.data.parentFirstName}`,
-        "last_name": `${form.data.parentLastName}`, 
-        "primary_phone": {
-          "type": 19,
-          "number": `${form.data.contactNumber}`,
-        },
-       "email": `${form.data.email}`, 
-      },
-      "children": {
-        "first_name": `${form.data.childFirstName}`,
-        "last_name": `${form.data.childLastName}`, 
-      }
-    })
-
-    const requestOptions: RequestInit = {
-      method: 'POST',
-      headers: lineLeaderHeaders,
-      body: raw,
-      redirect: 'follow'
-    }
-
-    fetch("{{url}}/api/v3/families?allow_duplicates=false",requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-
-
-      return { form };
     }
 };

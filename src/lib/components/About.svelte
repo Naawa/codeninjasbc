@@ -141,8 +141,8 @@
     }
 
     .promo {
-        min-width: 100%;
-        width: 30dvw;
+        min-width: 30dvw;
+        max-width: 90%;
         padding: 1em;
         margin: 1em;
     }
