@@ -4,7 +4,14 @@
 
 <style lang="scss">
     video {
-        height: 100%;
+        width: 40dvw;
         border-radius: 1em;
+    }
+
+    @media (width < 1200px) {
+        video {
+            height: 100%;
+            width: 100%;
+        }
     }
 </style>
