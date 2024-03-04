@@ -5,7 +5,6 @@
         aspect-ratio: 16/9;
         position: fixed;
         top: 0;
-        width: 100dvw;
         top: 0;
         z-index: -1;
     }
