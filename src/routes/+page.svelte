@@ -1,11 +1,12 @@
 <script lang="ts">
-	import Video from "$lib/components/Video.svelte";
+	import Landing from "$lib/components/Landing.svelte";
 	import Contact from "$lib/components/Contact.svelte"
 	import About from "$lib/components/About.svelte";
 
 	export let data;
 </script>
 
-<Video></Video>
+
+<Landing></Landing>
 <About></About>
 <Contact {data}></Contact>

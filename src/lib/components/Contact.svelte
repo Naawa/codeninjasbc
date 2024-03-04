@@ -12,7 +12,7 @@
     $form.utmCampaign = $page.url.searchParams.get("utm_campaign");
 </script>
 
-<section>
+<section id="contact">
     <p>REQUEST INFO</p>
     <div>
         <h3>EMPOWER</h3>

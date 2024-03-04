@@ -4,6 +4,7 @@
 
 <style lang="scss">
     video {
-        height: 80dvh;
+        height: 100%;
+        border-radius: 1em;
     }
 </style>

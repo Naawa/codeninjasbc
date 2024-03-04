@@ -33,6 +33,7 @@
 html { 
     height: fit-content;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 
     body {
         display: flex;
@@ -53,12 +54,12 @@ html {
 
         h1, h2, h3, h4, h5 {
             font-weight: 900;
-            color: black;
+            color: rgba(0, 0, 0, 0.854);
             line-height: 1.2;
         }
 
         section {
-            padding: 4em 0;
+            padding: 3em 0;
         }
     }
 }

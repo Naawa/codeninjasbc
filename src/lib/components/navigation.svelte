@@ -10,5 +10,11 @@
         justify-content: center;
         align-items: center;
         background-color: white;
+        background-color: transparent;
+
+        img {
+            min-width: 200px;
+            width: 10dvw;
+        }
     }
 </style>
