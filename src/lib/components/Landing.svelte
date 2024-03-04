@@ -41,12 +41,12 @@
                 width: fit-content;
                 padding: 1em;
                 border-radius: 0.5em;
-                background: -webkit-linear-gradient(#0099ff, #37a2ff);
+                background: #279aff;
                 color: white;
                 box-shadow: 0 0 0.1em 0.1em #6eafff8c;
 
                 &:hover {
-                    background-color: #4085bd;
+                    background: #0068bc;
                 }
             }
         }
