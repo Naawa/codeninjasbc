@@ -42,7 +42,7 @@
     <div>
         <span>
             <h3>CREATE</h3>
-            <h4>AGES 8 - 14</h4>
+            <h4>AGES 8 - 15/h4>
         </span>
         <img class="promo" src="/images/createPromo.webp" alt="Create promo.">
         <p>
@@ -54,7 +54,7 @@
     <div>
         <span>
             <h3>CAMPS</h3>
-            <h4>AGES 5 - 7</h4>
+            <h4>AGES 5 - 15</h4>
         </span>
         <img class="promo" src="/images/campsPromo.webp" alt="Create promo.">
         <p>
