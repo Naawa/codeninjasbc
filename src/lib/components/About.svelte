@@ -110,7 +110,7 @@
 
             h3 {
                 &:last-of-type {
-                    background: -webkit-linear-gradient(#0099ff, #37a2ff);
+                    background: -webkit-linear-gradient(#007bff, #3791ff);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
