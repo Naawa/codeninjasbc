@@ -110,7 +110,7 @@
 
             h3 {
                 &:last-of-type {
-                    color: #116db8;
+                    color: #00aaff;
                 }
             }
 

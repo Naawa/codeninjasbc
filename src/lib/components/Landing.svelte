@@ -41,7 +41,7 @@
                 width: fit-content;
                 padding: 1em;
                 border-radius: 0.5em;
-                background-color: #4cafda;
+                background: #00aaff;
                 color: white;
                 box-shadow: 0 0 0.1em 0.1em #6eafff8c;
 
