@@ -101,7 +101,9 @@
         div {
             h3 {
                 &:last-of-type {
-                    color: #00aaff;
+                    background: -webkit-linear-gradient(#007bff, #3791ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
         }

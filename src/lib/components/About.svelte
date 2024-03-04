@@ -110,7 +110,9 @@
 
             h3 {
                 &:last-of-type {
-                    color: #00aaff;
+                    background: -webkit-linear-gradient(#0099ff, #37a2ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
             }
 
@@ -151,13 +153,15 @@
          div {
             span {
                 flex-direction: column;
-                background-color: #0c759ef3;
+                background: -webkit-linear-gradient(#007bff, #3791ff);
+
                 padding: 2em;
                 border-radius: 10em;
                 width: 16em;
                 gap: 1em;
                 h4, h3 {
-                    color: rgb(195, 253, 255);
+                    color: white;
+                    -webkit-text-fill-color: white;
                 }
             }
         }
@@ -167,13 +171,15 @@
         div {
             span {
                 flex-direction: column;
-                background-color: #0c949ef3;
+                background: -webkit-linear-gradient(#00c6a8, #00e5d2);
+
                 padding: 2em;
                 border-radius: 10em;
                 width: 16em;
                 gap: 1em;
                 h4, h3 {
-                    color: rgb(175, 255, 238);
+                    color: white;
+                    -webkit-text-fill-color: white;
                 }
             }
         }
