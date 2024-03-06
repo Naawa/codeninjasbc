@@ -1,3 +1,7 @@
+<script>
+	import Programs from "./Programs.svelte";
+
+</script>
 <section>
     <p>OUR MISSION</p>
     <div class="subheading">
@@ -34,6 +38,14 @@
     </span>
 </section>
 <section>
+    <p>WE OFFER</p>
+    <div class="subheading">
+        <h3>YEAR ROUND</h3>
+        <h3>PROGRAMS</h3>
+    </div>
+</section>
+<Programs></Programs>
+<section>
     <img class=" lazyloaded" data-src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinja-Impact-Title.png" alt="CodeNinja-Impact-Title" src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinja-Impact-Title.png">
     <p>IN PARTNERSHIP WITH</p>
     <img class=" lazyloaded" data-src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinjas%20-%20Marketting%20Website/partnership-img.svg" alt="partnership" src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinjas%20-%20Marketting%20Website/partnership-img.svg">
@@ -51,6 +63,7 @@
         flex-direction: column;
         gap: 2em;
         width: 100%;
+        padding: 4em;
 
         p {
             width: clamp(300px, 50dvw, 60%);
@@ -111,46 +124,5 @@
 
     .lazyloaded {
         width: clamp(200px, 60dvh, 70dvw);
-    }
-
-    .promo {
-        min-width: 30dvw;
-        max-width: 90%;
-        padding: 1em;
-        margin: 1em;
-    }
-    .create {
-         //background-image: url('/images/campsbg.webp'); 
-         div {
-            span {
-                flex-direction: column;
-                background: -webkit-linear-gradient(#00b7ff, #37c6ff);
-                padding: 2em;
-                border-radius: 10em;
-                width: 16em;
-                gap: 1em;
-                h4, h3 {
-                    color: white;
-                    -webkit-text-fill-color: white;
-                }
-            }
-        }
-    }
-    .camps {
-        //background-image: url('/images/campsbg.webp'); 
-        div {
-            span {
-                flex-direction: column;
-                background: -webkit-linear-gradient(#00c6a8, #00e5d2);
-                padding: 2em;
-                border-radius: 10em;
-                width: 16em;
-                gap: 1em;
-                h4, h3 {
-                    color: white;
-                    -webkit-text-fill-color: white;
-                }
-            }
-        }
     }
 </style>
