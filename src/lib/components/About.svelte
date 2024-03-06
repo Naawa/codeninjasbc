@@ -33,35 +33,6 @@
         </a>
     </span>
 </section>
-<section class="create">
-    <p>WE OFFER</p>
-    <div class="subheading">
-        <h3>YEAR ROUND</h3>
-        <h3>PROGRAMS</h3>
-    </div>
-    <div>
-        <span>
-            <h3>CREATE</h3>
-            <h4>AGES 8 - 15</h4>
-        </span>
-        <img class="promo" src="/images/createPromo.webp" alt="Create promo.">
-        <p>
-            Our best-selling program, CREATE, was built to keep our Ninjas engaged, challenged, and learning! Whether building their own video games or debugging code - your child will be begging you to come back!
-        </p>
-    </div>
-</section>
-<section class="camps">
-    <div>
-        <span>
-            <h3>CAMPS</h3>
-            <h4>AGES 5 - 15</h4>
-        </span>
-        <img class="promo" src="/images/campsPromo.webp" alt="Create promo.">
-        <p>
-            Transform your child's love for technology into an exciting learning adventure. Guided by our team of Code Senseis, Code Ninjas Camps empower kids to gain valuable tech skills and make new friends. It's an unforgettably fun learning experience!
-        </p>
-    </div>
-</section>
 <section>
     <img class=" lazyloaded" data-src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinja-Impact-Title.png" alt="CodeNinja-Impact-Title" src="https://39646145.fs1.hubspotusercontent-na1.net/hubfs/39646145/CodeNinja-Impact-Title.png">
     <p>IN PARTNERSHIP WITH</p>

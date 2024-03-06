@@ -2,7 +2,6 @@
 	import { locations } from "$lib/utils/dojoMarkers";
 </script>
 
-<h2>Dojos</h2>
 <section>
     {#each locations as dojo}
         <div style="top: {dojo.mapPosition[1]}%; left: {dojo.mapPosition[0]}%">
