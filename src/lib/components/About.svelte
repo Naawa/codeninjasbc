@@ -171,7 +171,6 @@
             span {
                 flex-direction: column;
                 background: -webkit-linear-gradient(#00c6a8, #00e5d2);
-
                 padding: 2em;
                 border-radius: 10em;
                 width: 16em;

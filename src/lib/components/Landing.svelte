@@ -32,7 +32,6 @@
             gap: 4em;
             height: 100%;
             justify-content: center;
-           // background-color: white;
             height: fit-content;
             padding: 2em;
             border-radius: 1em;
