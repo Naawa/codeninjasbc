@@ -1,347 +1,67 @@
-<ul class="background">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
- </ul>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1920" height="1080" preserveAspectRatio="none" viewBox="0 0 1920 1080">
+    <g mask="url(&quot;#SvgjsMask1302&quot;)" fill="none">
+        <rect width="1920" height="1080" x="0" y="0" fill="url(&quot;#SvgjsRadialGradient1303&quot;)"></rect>
+        <path d="M242.054,541.144C341.428,538.782,411.99,454.912,459.547,367.624C504.603,284.926,525.844,186.945,479.787,104.799C432.851,21.085,337.957,-16.593,242.054,-20.292C137.986,-24.306,23.365,-4.455,-29.713,85.149C-83.501,175.954,-48.149,287.748,5.883,378.408C58.342,466.428,139.616,543.579,242.054,541.144" fill="rgba(145, 255, 253, 0.51)" class="triangle-float3"></path>
+        <path d="M223.312,449.384C310.966,447.517,402.002,427.606,449.339,353.809C500.167,274.571,502.905,170.551,453.619,90.344C406.325,13.378,313.527,-18.681,223.312,-14.025C141.185,-9.786,75.33,43.028,30.802,112.166C-18.86,189.275,-65.499,284.152,-20.028,363.804C25.661,443.838,131.176,451.346,223.312,449.384" fill="rgba(145, 255, 253, 0.51)" class="triangle-float3"></path>
+        <path d="M57.617,173.736C96.529,173.556,125.705,141.838,144.126,107.563C161.422,75.381,165.946,37.258,148.103,5.375C129.86,-27.222,94.907,-44.809,57.617,-47.017C15.428,-49.515,-32.737,-43.348,-53.547,-6.563C-74.175,29.901,-52.275,72.708,-30.288,108.369C-9.748,141.683,18.48,173.917,57.617,173.736" fill="rgba(145, 255, 253, 0.51)" class="triangle-float2"></path>
+        <path d="M1742.107,128.39C1776.928,130.718,1814.083,119.957,1831.909,89.954C1850.034,59.447,1842.341,21.195,1823.756,-9.034C1806.12,-37.719,1775.768,-55.201,1742.107,-56.115C1706.666,-57.077,1668.9,-45.067,1652.396,-13.688C1636.645,16.26,1652.875,50.582,1670.941,79.194C1687.443,105.329,1711.267,126.329,1742.107,128.39" fill="rgba(145, 255, 253, 0.51)" class="triangle-float2"></path>
+        <path d="M1830.142,281.459C1893.25,282.331,1963.174,275.784,1996.578,222.234C2031.395,166.42,2016.42,94.507,1981.562,38.719C1948.885,-13.577,1891.721,-47.404,1830.142,-44.133C1773.311,-41.114,1733.724,4.774,1704.235,53.449C1673.222,104.638,1642.555,165.347,1671.487,217.741C1701.014,271.212,1769.066,280.615,1830.142,281.459" fill="rgba(145, 255, 253, 0.51)" class="triangle-float3"></path>
+        <path d="M1979.129,597.772C2090.083,602.074,2184.991,522.099,2236.696,423.835C2284.911,332.204,2273.308,224.829,2222.977,134.343C2170.997,40.893,2086.06,-40.086,1979.129,-39.227C1873.316,-38.377,1789.804,43.818,1741.976,138.208C1698.831,223.356,1710.203,320.294,1753.977,405.12C1802.525,499.198,1873.342,593.671,1979.129,597.772" fill="rgba(145, 255, 253, 0.51)" class="triangle-float2"></path>
+        <path d="M118.89,1153.116C176.553,1153.552,221.893,1108.925,249.517,1058.307C275.841,1010.072,279.786,953.381,254.526,904.58C226.983,851.369,178.805,806.444,118.89,805.94C58.284,805.431,6.702,848.234,-20.755,902.266C-45.775,951.504,-35.226,1008.101,-8.362,1056.358C19.417,1106.259,61.78,1152.684,118.89,1153.116" fill="rgba(145, 255, 253, 0.51)" class="triangle-float3"></path>
+        <path d="M223.402,1355.507C315.503,1355.468,393.528,1291.895,436.504,1210.436C476.625,1134.39,470.081,1044.263,426.805,969.967C383.838,896.201,308.749,842.713,223.402,844.582C140.791,846.391,76.485,907.166,34.865,978.55C-7.134,1050.585,-27.31,1136.04,9.99,1210.616C51.214,1293.039,131.245,1355.546,223.402,1355.507" fill="rgba(145, 255, 253, 0.51)" class="triangle-float1"></path>
+        <path d="M181.134,1264.496C263.931,1267.371,351.846,1239.321,391.285,1166.464C429.416,1096.023,393.252,1015.153,353.859,945.411C313.548,874.044,263.077,792.511,181.134,794.411C100.799,796.274,58.82,881.817,21.747,953.111C-11.448,1016.948,-37.96,1088.65,-5.176,1152.699C30.194,1221.799,103.555,1261.802,181.134,1264.496" fill="rgba(145, 255, 253, 0.51)" class="triangle-float2"></path>
+        <path d="M1887.392,1289.457C1974.21,1294.291,2054.859,1244.475,2099.291,1169.732C2144.738,1093.282,2155.039,995.414,2106.489,920.896C2061.236,851.438,1970.173,840.065,1887.392,844.494C1813.693,848.437,1742.248,878.372,1705.461,942.354C1668.779,1006.152,1678.602,1083.031,1712.766,1148.212C1750.017,1219.282,1807.275,1284.997,1887.392,1289.457" fill="rgba(145, 255, 253, 0.51)" class="triangle-float1"></path>
+        <path d="M1722.504,963.053C1751.759,964.692,1779.305,949.115,1794.736,924.207C1811.055,897.866,1816.323,864.107,1800.197,837.648C1784.577,812.02,1752.428,803.39,1722.504,805.695C1696.483,807.699,1675.409,825.195,1663.099,848.207C1651.535,869.824,1651.79,895.053,1663.053,916.828C1675.414,940.725,1695.641,961.548,1722.504,963.053" fill="rgba(145, 255, 253, 0.51)" class="triangle-float2"></path>
+        <path d="M1928.158,1366.746C2024.156,1371.535,2106.742,1302.183,2151.886,1217.327C2194.316,1137.572,2188.72,1042.018,2142.071,964.655C2096.969,889.858,2015.49,844.911,1928.158,846.295C1843.162,847.642,1765.882,896.357,1725.677,971.255C1687.492,1042.39,1703.223,1124.917,1740.016,1196.782C1781.297,1277.412,1837.687,1362.233,1928.158,1366.746" fill="rgba(145, 255, 253, 0.51)" class="triangle-float1"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1302">
+            <rect width="1920" height="1080" fill="#ffffff"></rect>
+        </mask>
+        <radialGradient cx="50%" cy="50%" r="1101.45" gradientUnits="userSpaceOnUse" id="SvgjsRadialGradient1303">
+            <stop stop-color="rgba(255, 255, 255, 1)" offset="0.03"></stop>
+            <stop stop-color="rgba(185, 255, 246, 1)" offset="1"></stop>
+        </radialGradient>
+        <style>
+            @keyframes float1 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(-10px, 0)}
+                    100%{transform: translate(0, 0)}
+                }
 
- <style lang="scss">
-  @keyframes cube {
-    from {
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        opacity: 1;
+                .triangle-float1 {
+                    animation: float1 5s infinite;
+                }
+
+                @keyframes float2 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(-5px, -5px)}
+                    100%{transform: translate(0, 0)}
+                }
+
+                .triangle-float2 {
+                    animation: float2 4s infinite;
+                }
+
+                @keyframes float3 {
+                    0%{transform: translate(0, 0)}
+                    50%{transform: translate(0, -10px)}
+                    100%{transform: translate(0, 0)}
+                }
+
+                .triangle-float3 {
+                    animation: float3 6s infinite;
+                }
+        </style>
+    </defs>
+</svg>
+
+<style lang="scss">
+    svg {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        position: fixed;
+        z-index: -3;
     }
-    to {
-        transform: scale(20) rotate(960deg) translate(-50%, -50%);
-        opacity: 0;
-    }
-}
-
-.background {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    background: #dbfdff;
-    overflow: hidden;
-    z-index: -1;
-}
-.background li {
-    position: absolute;
-    top: 80vh;
-    left: 45vw;
-    width: 10px;
-    height: 10px;
-    border: solid 1px #c5e3e5;
-    color: transparent;
-    transform-origin: top left;
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    animation: cube 22s ease-in forwards infinite;
-}
-undefined
-.background li:nth-child(0) {
-    animation-delay: 0s;
-    left: 59vw;
-    top: 78vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(1) {
-    animation-delay: 2s;
-    left: 6vw;
-    top: 98vh;
-}
-
-.background li:nth-child(2) {
-    animation-delay: 4s;
-    left: 43vw;
-    top: 19vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(3) {
-    animation-delay: 6s;
-    left: 89vw;
-    top: 58vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(4) {
-    animation-delay: 8s;
-    left: 21vw;
-    top: 43vh;
-}
-
-.background li:nth-child(5) {
-    animation-delay: 10s;
-    left: 70vw;
-    top: 96vh;
-}
-
-.background li:nth-child(6) {
-    animation-delay: 12s;
-    left: 62vw;
-    top: 91vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(7) {
-    animation-delay: 14s;
-    left: 68vw;
-    top: 63vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(8) {
-    animation-delay: 16s;
-    left: 18vw;
-    top: 89vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(9) {
-    animation-delay: 18s;
-    left: 14vw;
-    top: 70vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(10) {
-    animation-delay: 20s;
-    left: 93vw;
-    top: 8vh;
-}
-
-.background li:nth-child(11) {
-    animation-delay: 22s;
-    left: 90vw;
-    top: 50vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(12) {
-    animation-delay: 24s;
-    left: 48vw;
-    top: 38vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(13) {
-    animation-delay: 26s;
-    left: 79vw;
-    top: 45vh;
-}
-
-.background li:nth-child(14) {
-    animation-delay: 28s;
-    left: 42vw;
-    top: 12vh;
-}
-
-.background li:nth-child(15) {
-    animation-delay: 30s;
-    left: 76vw;
-    top: 87vh;
-}
-
-.background li:nth-child(16) {
-    animation-delay: 32s;
-    left: 12vw;
-    top: 28vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(17) {
-    animation-delay: 34s;
-    left: 51vw;
-    top: 57vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(18) {
-    animation-delay: 36s;
-    left: 25vw;
-    top: 80vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(19) {
-    animation-delay: 38s;
-    left: 4vw;
-    top: 22vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(20) {
-    animation-delay: 40s;
-    left: 31vw;
-    top: 62vh;
-}
-
-.background li:nth-child(21) {
-    animation-delay: 42s;
-    left: 9vw;
-    top: 1vh;
-}
-
-.background li:nth-child(22) {
-    animation-delay: 44s;
-    left: 96vw;
-    top: 47vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(23) {
-    animation-delay: 46s;
-    left: 98vw;
-    top: 84vh;
-}
-
-.background li:nth-child(24) {
-    animation-delay: 48s;
-    left: 81vw;
-    top: 32vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(25) {
-    animation-delay: 50s;
-    left: 72vw;
-    top: 65vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(26) {
-    animation-delay: 52s;
-    left: 64vw;
-    top: 4vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(27) {
-    animation-delay: 54s;
-    left: 34vw;
-    top: 35vh;
-}
-
-.background li:nth-child(28) {
-    animation-delay: 56s;
-    left: 27vw;
-    top: 68vh;
-}
-
-.background li:nth-child(29) {
-    animation-delay: 58s;
-    left: 66vw;
-    top: 54vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(30) {
-    animation-delay: 60s;
-    left: 15vw;
-    top: 16vh;
-}
-
-.background li:nth-child(31) {
-    animation-delay: 62s;
-    left: 54vw;
-    top: 40vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(32) {
-    animation-delay: 64s;
-    left: 39vw;
-    top: 76vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(33) {
-    animation-delay: 66s;
-    left: 1vw;
-    top: 74vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(34) {
-    animation-delay: 68s;
-    left: 36vw;
-    top: 10vh;
-}
-
-.background li:nth-child(35) {
-    animation-delay: 70s;
-    left: 23vw;
-    top: 93vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(36) {
-    animation-delay: 72s;
-    left: 55vw;
-    top: 25vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(37) {
-    animation-delay: 74s;
-    left: 86vw;
-    top: 33vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(38) {
-    animation-delay: 76s;
-    left: 83vw;
-    top: 22vh;
-    border-color: #f0ffff;
-}
-
-.background li:nth-child(39) {
-    animation-delay: 78s;
-    left: 47vw;
-    top: 5vh;
-    border-color: #f0ffff;
-}
-
- </style>
+</style>
