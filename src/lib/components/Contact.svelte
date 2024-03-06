@@ -127,6 +127,7 @@
             background-color: white;
             box-shadow: 0 8px 24px #0067be40;
             border-radius: 0.5em;
+            z-index: 1;
 
             span {
                 width: 100%;

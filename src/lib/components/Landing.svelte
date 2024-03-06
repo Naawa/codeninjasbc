@@ -48,13 +48,13 @@
             button {
                 width: fit-content;
                 padding: 1em;
-                border-radius: 0.5em;
-                background: #00beee;
+                border-radius: 100em;
+                background-color: #37c6ff;
                 color: white;
                 box-shadow: 0 0 0.1em 0.1em #6eafff8c;
 
                 &:hover {
-                    background: #0068bc;
+                    background: #00a0bc;
                 }
             }
         }

@@ -10,7 +10,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: rgb(0, 130, 139);
+        background-color: rgb(0, 134, 139);
 
         video {
             width: 100%;

@@ -110,7 +110,7 @@
 
             h3 {
                 &:last-of-type {
-                    background: -webkit-linear-gradient(#007bff, #3791ff);
+                    background: -webkit-linear-gradient(#00b7ff, #37c6ff);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
@@ -153,8 +153,7 @@
          div {
             span {
                 flex-direction: column;
-                background: -webkit-linear-gradient(#007bff, #3791ff);
-
+                background: -webkit-linear-gradient(#00b7ff, #37c6ff);
                 padding: 2em;
                 border-radius: 10em;
                 width: 16em;

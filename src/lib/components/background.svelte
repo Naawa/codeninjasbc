@@ -1,68 +1,347 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1920" height="1080" preserveAspectRatio="none" viewBox="0 0 1920 1080">
-    <g mask="url(&quot;#SvgjsMask4421&quot;)" fill="none">
-        <rect width="1920" height="1080" x="0" y="0" fill="url(&quot;#SvgjsRadialGradient4422&quot;)"></rect>
-        <path d="M76.832,210.316C120.93,210.534,151.403,170.775,172.106,131.838C191.286,95.765,197.133,54.436,179.242,17.706C158.769,-24.325,123.581,-63.275,76.832,-63.761C29.494,-64.253,-8.807,-27.122,-29.332,15.538C-47.306,52.897,-36.666,94.502,-16.825,130.904C4.17,169.423,32.964,210.099,76.832,210.316" fill="rgba(99, 236, 255, 0.51)" class="triangle-float3"></path>
-        <path d="M219.789,497.95C320.189,504.935,419.933,451.461,466.708,362.348C510.901,278.154,478.417,180.246,429.28,98.839C382.183,20.813,310.902,-48.874,219.789,-46.727C131.349,-44.643,67.057,29.588,26.729,108.326C-9.649,179.352,-9.455,260.185,25.975,331.688C66.48,413.433,128.779,491.619,219.789,497.95" fill="rgba(99, 236, 255, 0.51)" class="triangle-float1"></path>
-        <path d="M124.085,297.406C184.493,297.538,238.445,259.809,266.545,206.334C292.831,156.312,282.607,97.809,254.827,48.601C226.482,-1.609,181.743,-45.99,124.085,-46.016C66.393,-46.042,21.394,-1.816,-6.858,48.485C-34.426,97.569,-43.511,155.891,-17.302,205.714C10.727,258.997,63.88,297.274,124.085,297.406" fill="rgba(99, 236, 255, 0.51)" class="triangle-float2"></path>
-        <path d="M1849.176,355.446C1919.702,352.58,1974.831,299.094,2006.591,236.059C2035.096,179.483,2027.456,115.304,1998.578,58.918C1966.302,-4.104,1919.98,-70.758,1849.176,-71.305C1777.812,-71.856,1730.802,-5.569,1695.723,56.58C1661.438,117.322,1636.061,187.774,1667.92,249.823C1702.154,316.497,1774.289,358.49,1849.176,355.446" fill="rgba(99, 236, 255, 0.51)" class="triangle-float1"></path>
-        <path d="M1935.732,495.48C2023.275,495.869,2084.986,418.957,2126.777,342.032C2166.261,269.354,2183.219,184.288,2144.501,111.199C2103.387,33.587,2023.56,-18.104,1935.732,-18.613C1847.068,-19.127,1763.888,30.222,1722.73,108.755C1684.101,182.462,1707.457,267.456,1747.604,340.347C1789.633,416.654,1848.617,495.093,1935.732,495.48" fill="rgba(99, 236, 255, 0.51)" class="triangle-float1"></path>
-        <path d="M1923.314,495.718C2018.378,498.13,2100.364,431.208,2143.81,346.618C2183.723,268.906,2167.506,179.193,2125.115,102.805C2081.159,23.597,2013.719,-44.969,1923.314,-50.711C1823.163,-57.072,1718.088,-14.948,1671.628,74.003C1627.535,158.422,1672.577,254.116,1721.386,335.898C1768.537,414.902,1831.34,493.384,1923.314,495.718" fill="rgba(99, 236, 255, 0.51)" class="triangle-float2"></path>
-        <path d="M21.245,974.544C52.316,974.841,78.612,954.243,94.371,927.464C110.39,900.243,117.917,865.861,100.836,839.293C84.684,814.17,51.066,812.064,21.245,813.721C-5.058,815.183,-30.336,825.068,-44.371,847.362C-59.388,871.215,-62.419,901.039,-49.496,926.088C-35.45,953.312,-9.388,974.251,21.245,974.544" fill="rgba(99, 236, 255, 0.51)" class="triangle-float2"></path>
-        <path d="M133.349,1168.562C191.077,1166.8,231.915,1120.861,263.266,1072.356C298.75,1017.456,341.152,952.833,309.886,895.426C277.935,836.763,200.09,831.016,133.349,833.823C72.596,836.378,11.484,856.777,-19.217,909.265C-50.181,962.202,-42.172,1027.874,-11.072,1080.731C19.552,1132.779,72.988,1170.405,133.349,1168.562" fill="rgba(99, 236, 255, 0.51)" class="triangle-float3"></path>
-        <path d="M254.754,1400.075C356.176,1398.482,451.855,1349.676,502.826,1261.978C554.046,1173.852,549.364,1066.315,500.835,976.679C449.679,882.191,362.17,806.344,254.754,803.779C143.366,801.119,42.019,867.284,-12.559,964.421C-66.042,1059.61,-64.292,1176.925,-7.19,1269.988C47.456,1359.048,150.278,1401.716,254.754,1400.075" fill="rgba(99, 236, 255, 0.51)" class="triangle-float3"></path>
-        <path d="M1874.928,1274.903C1951.427,1268.916,1987.732,1188.658,2025.785,1122.025C2063.35,1056.246,2116.128,983.127,2079.385,916.885C2042.109,849.682,1951.648,845.598,1874.928,850.049C1807.498,853.961,1745.096,882.124,1707.807,938.441C1665.762,1001.942,1642.881,1081.132,1676.76,1149.34C1714.044,1224.404,1791.369,1281.442,1874.928,1274.903" fill="rgba(99, 236, 255, 0.51)" class="triangle-float3"></path>
-        <path d="M1767.217,1059.196C1809.43,1055.542,1830.833,1012.87,1851.777,976.037C1872.356,939.846,1899.388,898.979,1878.938,862.714C1858.306,826.125,1809.222,826.124,1767.217,826.082C1725.106,826.04,1678.889,827.737,1655.109,862.491C1628.723,901.054,1629.689,952.664,1652.826,993.26C1676.183,1034.242,1720.222,1063.264,1767.217,1059.196" fill="rgba(99, 236, 255, 0.51)" class="triangle-float1"></path>
-        <path d="M1754.039,1017.096C1789.222,1014.651,1816.804,990.987,1835.198,960.896C1854.638,929.094,1867.85,891.275,1851.391,857.833C1833.196,820.863,1795.152,793.237,1754.039,795.989C1716.056,798.532,1696.057,836.606,1676.918,869.513C1657.617,902.699,1632.893,939.693,1650.673,973.718C1669.221,1009.213,1714.086,1019.872,1754.039,1017.096" fill="rgba(99, 236, 255, 0.51)" class="triangle-float1"></path>
-    </g>
-    <defs>
-        <mask id="SvgjsMask4421">
-            <rect width="1920" height="1080" fill="#ffffff"></rect>
-        </mask>
-        <radialGradient cx="50%" cy="50%" r="1101.45" gradientUnits="userSpaceOnUse" id="SvgjsRadialGradient4422">
-            <stop stop-color="rgba(240, 251, 255, 1)" offset="0"></stop>
-            <stop stop-color="rgba(255, 255, 255, 1)" offset="1"></stop>
-        </radialGradient>
-        <style>
-            @keyframes float1 {
-                    0%{transform: translate(0, 0)}
-                    50%{transform: translate(-10px, 0)}
-                    100%{transform: translate(0, 0)}
-                }
+<ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
 
-                .triangle-float1 {
-                    animation: float1 5s infinite;
-                }
-
-                @keyframes float2 {
-                    0%{transform: translate(0, 0)}
-                    50%{transform: translate(-5px, -5px)}
-                    100%{transform: translate(0, 0)}
-                }
-
-                .triangle-float2 {
-                    animation: float2 4s infinite;
-                }
-
-                @keyframes float3 {
-                    0%{transform: translate(0, 0)}
-                    50%{transform: translate(0, -10px)}
-                    100%{transform: translate(0, 0)}
-                }
-
-                .triangle-float3 {
-                    animation: float3 6s infinite;
-                }
-        </style>
-    </defs>
-</svg>
-
-<style lang="scss">
-    svg {
-        aspect-ratio: 16/9;
-        position: fixed;
-        width: 100dvw;
-        height: 100dvh;
-        top: 0;
-        z-index: -1;
+ <style lang="scss">
+  @keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
     }
-</style>
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #dbfdff;
+    overflow: hidden;
+    z-index: -1;
+}
+.background li {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #c5e3e5;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 22s ease-in forwards infinite;
+}
+undefined
+.background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 59vw;
+    top: 78vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 6vw;
+    top: 98vh;
+}
+
+.background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 43vw;
+    top: 19vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 89vw;
+    top: 58vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 21vw;
+    top: 43vh;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 70vw;
+    top: 96vh;
+}
+
+.background li:nth-child(6) {
+    animation-delay: 12s;
+    left: 62vw;
+    top: 91vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(7) {
+    animation-delay: 14s;
+    left: 68vw;
+    top: 63vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(8) {
+    animation-delay: 16s;
+    left: 18vw;
+    top: 89vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(9) {
+    animation-delay: 18s;
+    left: 14vw;
+    top: 70vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(10) {
+    animation-delay: 20s;
+    left: 93vw;
+    top: 8vh;
+}
+
+.background li:nth-child(11) {
+    animation-delay: 22s;
+    left: 90vw;
+    top: 50vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(12) {
+    animation-delay: 24s;
+    left: 48vw;
+    top: 38vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(13) {
+    animation-delay: 26s;
+    left: 79vw;
+    top: 45vh;
+}
+
+.background li:nth-child(14) {
+    animation-delay: 28s;
+    left: 42vw;
+    top: 12vh;
+}
+
+.background li:nth-child(15) {
+    animation-delay: 30s;
+    left: 76vw;
+    top: 87vh;
+}
+
+.background li:nth-child(16) {
+    animation-delay: 32s;
+    left: 12vw;
+    top: 28vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(17) {
+    animation-delay: 34s;
+    left: 51vw;
+    top: 57vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(18) {
+    animation-delay: 36s;
+    left: 25vw;
+    top: 80vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(19) {
+    animation-delay: 38s;
+    left: 4vw;
+    top: 22vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(20) {
+    animation-delay: 40s;
+    left: 31vw;
+    top: 62vh;
+}
+
+.background li:nth-child(21) {
+    animation-delay: 42s;
+    left: 9vw;
+    top: 1vh;
+}
+
+.background li:nth-child(22) {
+    animation-delay: 44s;
+    left: 96vw;
+    top: 47vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(23) {
+    animation-delay: 46s;
+    left: 98vw;
+    top: 84vh;
+}
+
+.background li:nth-child(24) {
+    animation-delay: 48s;
+    left: 81vw;
+    top: 32vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(25) {
+    animation-delay: 50s;
+    left: 72vw;
+    top: 65vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(26) {
+    animation-delay: 52s;
+    left: 64vw;
+    top: 4vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(27) {
+    animation-delay: 54s;
+    left: 34vw;
+    top: 35vh;
+}
+
+.background li:nth-child(28) {
+    animation-delay: 56s;
+    left: 27vw;
+    top: 68vh;
+}
+
+.background li:nth-child(29) {
+    animation-delay: 58s;
+    left: 66vw;
+    top: 54vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(30) {
+    animation-delay: 60s;
+    left: 15vw;
+    top: 16vh;
+}
+
+.background li:nth-child(31) {
+    animation-delay: 62s;
+    left: 54vw;
+    top: 40vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(32) {
+    animation-delay: 64s;
+    left: 39vw;
+    top: 76vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(33) {
+    animation-delay: 66s;
+    left: 1vw;
+    top: 74vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(34) {
+    animation-delay: 68s;
+    left: 36vw;
+    top: 10vh;
+}
+
+.background li:nth-child(35) {
+    animation-delay: 70s;
+    left: 23vw;
+    top: 93vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(36) {
+    animation-delay: 72s;
+    left: 55vw;
+    top: 25vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(37) {
+    animation-delay: 74s;
+    left: 86vw;
+    top: 33vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(38) {
+    animation-delay: 76s;
+    left: 83vw;
+    top: 22vh;
+    border-color: #f0ffff;
+}
+
+.background li:nth-child(39) {
+    animation-delay: 78s;
+    left: 47vw;
+    top: 5vh;
+    border-color: #f0ffff;
+}
+
+ </style>
