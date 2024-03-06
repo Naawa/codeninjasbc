@@ -47,8 +47,7 @@
             button {
                 width: fit-content;
                 padding: 1em;
-                border-radius: 100em;
-                background-color: #37c6ff;
+                background-color: #37d7ff;
                 color: white;
                 box-shadow: 0 0 0.1em 0.1em #6eafff8c;
 

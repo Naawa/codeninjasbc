@@ -63,7 +63,7 @@
         flex-direction: column;
         gap: 2em;
         width: 100%;
-        padding: 4em;
+        padding: 4em 0;
 
         p {
             width: clamp(300px, 50dvw, 60%);
@@ -75,8 +75,8 @@
 
         iframe {
             aspect-ratio: 16/9;
-            width: clamp(450px, 100%, 55dvw);
-            min-height: 300px;
+            width: 100%;
+            max-width: 70vw;
             padding: 4em;
         }
 
