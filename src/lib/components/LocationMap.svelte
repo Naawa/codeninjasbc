@@ -19,7 +19,7 @@
         background-size: 100% 100%;
         aspect-ratio: 16/9;
         width: 100%;
-        max-width: 1800px;
+        max-width: 90dvw;
         background-repeat: no-repeat;
         border: solid 1px;
         position: relative;
