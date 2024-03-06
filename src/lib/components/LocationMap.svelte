@@ -2,6 +2,7 @@
 	import { locations } from "$lib/utils/dojoMarkers";
 </script>
 
+<h2>Dojos</h2>
 <section>
     {#each locations as dojo}
         <div style="top: {dojo.mapPosition[1]}%; left: {dojo.mapPosition[0]}%">
@@ -17,12 +18,13 @@
     section {
         background-image: url('/images/map.png');
         background-size: 100% 100%;
-        aspect-ratio: 16/9;
+        aspect-ratio: 18/9;
         width: 100%;
-        max-width: 90dvw;
+        max-width: 100vw;
         background-repeat: no-repeat;
         border: solid 1px;
         position: relative;
+        margin: 4em;
 
         div {
             position: absolute;
