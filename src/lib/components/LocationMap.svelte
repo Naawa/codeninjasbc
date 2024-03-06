@@ -16,14 +16,16 @@
 <style lang="scss">
     section {
         background-image: url('/images/map.png');
-        background-size: contain;
+        background-size: 100% 100%;
         aspect-ratio: 16/9;
         width: 100%;
         max-width: 1800px;
         background-repeat: no-repeat;
+        border: solid 1px;
+        position: relative;
 
         div {
-            position: relative;
+            position: absolute;
             background-image: url('/images/marker.png');
             background-size: contain;
             background-repeat: no-repeat;
