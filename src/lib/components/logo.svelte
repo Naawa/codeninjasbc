@@ -1,20 +1,22 @@
 <nav>
-    <img src="https://www.codeninjas.com/hubfs/Group%201.svg" alt="Code Ninjas Logo">
+    <img src="/images/logo.png" alt="Code Ninjas Logo">
 </nav>
 
 <style lang="scss">
     nav {
-        padding: 1.618em;
+        padding: 3em;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white;
         background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 3;
 
         img {
             min-width: 200px;
-            width: 10dvw;
+            width: 50dvw;
         }
     }
 </style>

@@ -4,6 +4,7 @@
 </script>
 
 <section>
+    <Video></Video>
     <div>
         <span>
             <h2>Kids Learn to Code</h2>
@@ -11,38 +12,44 @@
         </span>
         <button on:click={() => {if(browser) {document?.getElementById('contact')?.scrollIntoView({ block: 'end', behavior: 'smooth' })}}}>Learn More</button>
     </div>
-    <Video></Video>
 </section>
 
 <style lang="scss">
     section {
-        height: 50dvh;
-        width: 90dvw;
+        height: fit-content;
+        width: 100dvw;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: 6em;
         text-align: center;
+        padding: 0;
 
         div {
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: 4em;
             height: 100%;
             justify-content: center;
+           // background-color: white;
+            height: fit-content;
+            padding: 2em;
+            border-radius: 1em;
             
             span {
                 display: flex;
                 flex-direction: column;
                 align-items: start;
+                justify-content: center;
+                align-items: center;
             }
 
             button {
                 width: fit-content;
                 padding: 1em;
                 border-radius: 0.5em;
-                background: #279aff;
+                background: #00beee;
                 color: white;
                 box-shadow: 0 0 0.1em 0.1em #6eafff8c;
 
@@ -57,7 +64,6 @@
         section {
             flex-direction: column;
             gap: 4em;
-            padding: 1em 0;
             height: fit-content;
 
             div {
