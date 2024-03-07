@@ -109,20 +109,20 @@
     {#key program}
    <span>
     <div>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.name}</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.description}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.name}</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.description}</p>
     </div>
         <img transition:scale src={program.focus} alt="Focus.">
     <div>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>AGES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.ages}</p>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>PREREQUISITES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.prereq}</p>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>TOPICS COVERED</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.topics}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>AGES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.ages}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>PREREQUISITES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.prereq}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>TOPICS COVERED</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.topics}</p>
         {#if program.pl}
-        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>PROGRAMMING LANGUAGES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.pl}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>PROGRAMMING LANGUAGES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.pl}</p>
         {/if}
     </div>
    </span>
@@ -135,7 +135,7 @@
 
 <style lang="scss">
     section {
-        height: clamp(600px, 95vh, 95vh);
+        height: clamp(800px, 95vh, 95vh);
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -201,6 +201,10 @@
 
                     h3, p {
                         color: whitesmoke;
+                        transition: all 0;
+                        text-wrap: balance;
+                        position: relative;
+                        min-height: 1em;
                     }
                     p {
                         margin-bottom: 2em;
@@ -223,10 +227,11 @@
                 &:first-of-type {
                     flex-direction: row;
                     padding: 2em 8em;
+                    gap: 50%;
 
                     div {
                         height: fit-content;
-                        width: 20%;
+                        width: fit-content;
                     }
                 }
             }
