@@ -11,7 +11,7 @@ const schema = z.object({
     parentLastName: z.string().min(3),
     contactNumber: z.string().min(10),
     childFirstName: z.string().min(3),
-    childLastName: z.string().min(3),
+    childLastName: z.string().min(2),
     email: z.string().email(),
     utmSource: z.string(),
     utmMedium: z.string(),
