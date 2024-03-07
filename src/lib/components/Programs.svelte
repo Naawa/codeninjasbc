@@ -129,11 +129,11 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
 
         span {
             display: flex;
@@ -141,7 +141,7 @@
             align-items: center;
             justify-content: space-between;
             height: 10%;
-            padding: 2em;
+            padding: 2em 8em;
 
             button {
                 background-color: rgba(0, 0, 0, 0.5);
@@ -152,7 +152,7 @@
             }
 
             &:last-of-type {
-                padding: 2em;
+                padding: 2em 8em;
             }
 
             &:first-of-type {
@@ -198,7 +198,7 @@
 
                     div {
                         height: 100%;
-                        width: 30%;
+                        width: 25%;
                     }
                 }
             }
