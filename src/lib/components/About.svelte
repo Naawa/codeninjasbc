@@ -75,7 +75,7 @@
 
         iframe {
             aspect-ratio: 16/9;
-            width: 100%;
+            height: 70vh;
             max-width: 70vw;
             padding: 4em;
         }
