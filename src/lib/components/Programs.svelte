@@ -141,7 +141,7 @@
             align-items: center;
             justify-content: space-between;
             height: 10%;
-            padding: 2em 8em;
+            padding: 2em;
 
             button {
                 background-color: rgba(0, 0, 0, 0.5);
@@ -152,7 +152,8 @@
             }
 
             &:last-of-type {
-                padding: 2em 8em;
+                padding: 2em;
+                margin: 2em;
             }
 
             &:first-of-type {
@@ -193,8 +194,12 @@
     @media (width > 1600px) {
         section {
             span {
+                &:last-of-type {
+                    padding: 2em 8em;
+                }
                 &:first-of-type {
                     flex-direction: row;
+                    padding: 2em 8em;
 
                     div {
                         height: fit-content;
