@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { scale, fly } from "svelte/transition";
+	import { scale, fly, slide } from "svelte/transition";
 
     let backgrounds = ["images/createbg.jpg", "/images/juniorbg.jpg", "/images/stars.jpg", "/images/pnobg.png", "/images/roboticsbg.jpg", "/images/bdbg.png"]
 
@@ -9,7 +9,7 @@
         ages: string,
         prereq: string, 
         topics: string,
-        pl: string | undefined,
+        pl: string,
         focus: string,
         bg: string,
     }
@@ -31,7 +31,7 @@
             ages: "5 - 7",
             prereq: "None! We start from no prior computer use.",
             topics: "Basic sequencing, loops, typing, and block coding.",
-            pl: undefined,
+            pl: "",
              focus: "/images/juniorFocus.png",
             bg: backgrounds[1],
         },
@@ -41,7 +41,7 @@
             ages: "5 - 15",
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Stop Motion Animation, Become a Youtuber, Makey Makey, Python, and more!",
-            pl: undefined,
+            pl: "",
             focus: "/images/campsFocus.png",
             bg: backgrounds[2],
         },
@@ -51,7 +51,7 @@
             ages: "5 - 15",
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Kahoot!",
-            pl: undefined,
+            pl: "",
              focus: "/images/bdFocus.png",
             bg: backgrounds[5],
         },
@@ -61,7 +61,7 @@
             ages: "5 - 15",
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, 3D Printing, STEM Activities and more...",
-            pl: undefined,
+            pl: "",
              focus: "/images/pnoFocus.png",
             bg: backgrounds[3],
         },
@@ -71,7 +71,7 @@
             ages: "5 - 15",
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Kahoot!",
-            pl: undefined,
+            pl: "",
              focus: "/images/roboticsFocus.png",
             bg: backgrounds[4],
         },
@@ -106,27 +106,31 @@
 </script>
 
 <section style="background-image: url('{program.bg}');">
-    {#key program}
    <span>
     <div>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.name}</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.description}</p>
+        {#key program}
+            <h3 in:slide|global>{program.name}</h3>
+            <p in:slide|global>{program.description}</p>
+        {/key}
     </div>
-        <img transition:scale src={program.focus} alt="Focus.">
+        {#key program}
+            <img transition:scale src={program.focus} alt="Focus.">
+        {/key}
     <div>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>AGES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.ages}</p>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>PREREQUISITES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.prereq}</p>
-        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>TOPICS COVERED</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.topics}</p>
+        {#key program}
+            <h3 in:slide|global>AGES</h3>
+            <p in:slide|global>{program.ages}</p>
+            <h3 in:slide|global>PREREQUISITES</h3>
+            <p in:slide|global>{program.prereq}</p>
+            <h3 in:slide|global>TOPICS COVERED</h3>
+            <p in:slide|global>{program.topics}</p>
+        {/key}
         {#if program.pl}
-        <h3 in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>PROGRAMMING LANGUAGES</h3>
-        <p in:fly={{ y: 100, duration: 400, delay: 500 }} out:fly={{ y: 100, duration: 400 }}>{program.pl}</p>
+            <h3 in:slide|global>PROGRAMMING LANGUAGES</h3>
+            <p in:slide|global>{program.pl}</p>
         {/if}
     </div>
    </span>
-   {/key}
     <span>
         <button on:click={prev}>❮ PREV</button>
         <button on:click={next}>NEXT ❯</button>
@@ -135,7 +139,7 @@
 
 <style lang="scss">
     section {
-        height: clamp(800px, 95vh, 95vh);
+        height: 50em;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -157,8 +161,8 @@
             z-index: 1;
 
             img {
-                top: 25%;
-                height: 60%;
+                top: 30%;
+                height: 50%;
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -171,6 +175,7 @@
                 min-width: fit-content;
                 color: whitesmoke;
                 border-radius: 0;
+                font-size: smaller;
             }
 
             &:last-of-type {
@@ -205,12 +210,14 @@
                         text-wrap: balance;
                         position: relative;
                         min-height: 1em;
+                        font-size: smaller;
                     }
                     p {
+                        margin-top: 0.5em;
                         margin-bottom: 2em;
 
                         &:last-of-type {
-                            margin: 0;
+                            margin-bottom: 0;
                         }
                     }
                 }
@@ -232,6 +239,7 @@
                     div {
                         height: fit-content;
                         width: fit-content;
+                        min-width: 25%;
                     }
                 }
             }
