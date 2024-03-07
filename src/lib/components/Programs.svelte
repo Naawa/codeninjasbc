@@ -1,5 +1,7 @@
 <script lang="ts">
-    let backgrounds = ["images/createbg.png", "/images/juniorbg.png", "/images/campsbg.png", "/images/pnobg.png", "/images/roboticsbg.png", "/images/bdbg.png"]
+	import { scale } from "svelte/transition";
+
+    let backgrounds = ["images/createbg.jpg", "/images/juniorbg.jpg", "/images/stars.jpg", "/images/pnobg.png", "/images/roboticsbg.jpg", "/images/bdbg.png"]
 
     interface CNProgram {
         name: string,
@@ -8,6 +10,7 @@
         prereq: string, 
         topics: string,
         pl: string | undefined,
+        focus: string,
         bg: string,
     }
 
@@ -19,6 +22,7 @@
             prereq: "Reading Ability in English",
             topics: "Basic to professional game development.",
             pl: "JavaScript, Lua, and C#",
+            focus: "/images/createFocus.png",
             bg: backgrounds[0],
         },
         {
@@ -28,6 +32,7 @@
             prereq: "None! We start from no prior computer use.",
             topics: "Basic sequencing, loops, typing, and block coding.",
             pl: undefined,
+             focus: "/images/juniorFocus.png",
             bg: backgrounds[1],
         },
         {
@@ -37,6 +42,7 @@
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Stop Motion Animation, Become a Youtuber, Makey Makey, Python, and more!",
             pl: undefined,
+            focus: "/images/campsFocus.png",
             bg: backgrounds[2],
         },
         {
@@ -46,6 +52,7 @@
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Kahoot!",
             pl: undefined,
+             focus: "/images/bdFocus.png",
             bg: backgrounds[5],
         },
         {
@@ -55,6 +62,7 @@
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, 3D Printing, STEM Activities and more...",
             pl: undefined,
+             focus: "/images/pnoFocus.png",
             bg: backgrounds[3],
         },
         {
@@ -64,6 +72,7 @@
             prereq: "No prior knowledge on coding or topics required!",
             topics: "Minecraft, Roblox, Kahoot!",
             pl: undefined,
+             focus: "/images/roboticsFocus.png",
             bg: backgrounds[4],
         },
     ]
@@ -102,6 +111,9 @@
         <h3>{program.name}</h3>
         <p>{program.description}</p>
     </div>
+        {#key program}
+            <img transition:scale src={program.focus} alt="Focus.">
+        {/key}
     <div>
         <h3>AGES</h3>
         <p>{program.ages}</p>
@@ -123,17 +135,17 @@
 
 <style lang="scss">
     section {
-        height: clamp(600px, 90vh, 90vh);
+        height: clamp(600px, 95vh, 95vh);
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-size: contain;
+        background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
-        background-color: rgba(0, 0, 0, 0);
+        background-color: rgb(20, 20, 20);
 
         span {
             display: flex;
@@ -142,6 +154,16 @@
             justify-content: space-between;
             height: 10%;
             padding: 2em;
+            z-index: 1;
+
+            img {
+                top: 25%;
+                height: 60%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
 
             button {
                 background-color: rgba(0, 0, 0, 0.7);
@@ -203,7 +225,7 @@
 
                     div {
                         height: fit-content;
-                        width: 25%;
+                        width: 20%;
                     }
                 }
             }

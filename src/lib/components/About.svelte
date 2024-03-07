@@ -75,9 +75,9 @@
 
         iframe {
             aspect-ratio: 16/9;
-            height: 70vh;
-            max-width: 70vw;
-            padding: 4em;
+            height: 100%;
+            width: clamp(200px, 100%, 1200px);
+            padding: 2em;
         }
 
         div {
