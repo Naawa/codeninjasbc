@@ -129,7 +129,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         position: relative;
@@ -144,7 +144,7 @@
             padding: 2em;
 
             button {
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(0, 0, 0, 0.7);
                 width: 10em;
                 min-width: fit-content;
                 color: whitesmoke;
@@ -167,7 +167,7 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: left;
-                    background-color: rgba(0, 0, 0, 0.5);
+                    background-color: rgba(0, 0, 0, 0.7);
                     padding: 2em;
                     z-index: 1;
 
