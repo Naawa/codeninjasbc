@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { scale } from "svelte/transition";
+	import { scale, fly } from "svelte/transition";
 
     let backgrounds = ["images/createbg.jpg", "/images/juniorbg.jpg", "/images/stars.jpg", "/images/pnobg.png", "/images/roboticsbg.jpg", "/images/bdbg.png"]
 
@@ -106,27 +106,27 @@
 </script>
 
 <section style="background-image: url('{program.bg}');">
+    {#key program}
    <span>
     <div>
-        <h3>{program.name}</h3>
-        <p>{program.description}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.name}</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.description}</p>
     </div>
-        {#key program}
-            <img transition:scale src={program.focus} alt="Focus.">
-        {/key}
+        <img transition:scale src={program.focus} alt="Focus.">
     <div>
-        <h3>AGES</h3>
-        <p>{program.ages}</p>
-        <h3>PREREQUISITES</h3>
-        <p>{program.prereq}</p>
-        <h3>TOPICS COVERED</h3>
-        <p>{program.topics}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>AGES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.ages}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>PREREQUISITES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.prereq}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>TOPICS COVERED</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.topics}</p>
         {#if program.pl}
-        <h3>PROGRAMMING LANGUAGES</h3>
-        <p>{program.pl}</p>
+        <h3 in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>PROGRAMMING LANGUAGES</h3>
+        <p in:fly={{ y: 100, duration: 400, delay: 400 }} out:fly={{ y: 100, duration: 400 }}>{program.pl}</p>
         {/if}
     </div>
    </span>
+   {/key}
     <span>
         <button on:click={prev}>❮ PREV</button>
         <button on:click={next}>NEXT ❯</button>
@@ -192,6 +192,7 @@
                     background-color: rgba(0, 0, 0, 0.7);
                     padding: 2em;
                     z-index: 1;
+                    position: relative;
 
                     &:last-of-type {
                         align-items: end;
