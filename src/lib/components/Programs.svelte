@@ -197,7 +197,7 @@
                     flex-direction: row;
 
                     div {
-                        height: 100%;
+                        height: fit-content;
                         width: 25%;
                     }
                 }
