@@ -123,7 +123,7 @@
 
 <style lang="scss">
     section {
-        height: 80vh;
+        height: clamp(600px, 90vh, 90vh);
         display: flex;
         justify-content: space-between;
         flex-direction: column;
