@@ -10,7 +10,7 @@
         <div>
             <h3 class="dark-blue bold-9">FUN</h3>
             <p>
-                After a while, the kids can take a break for a pizza party where they would all sit together, enjoy a nice meal, cut the cake, and take some photos. Afterwards, they can resume their game building actitivies for a while longer and play with eachother in our Minecraft server or Roblox.
+                A while later, the kids can take a break for a pizza party where they would all sit together, enjoy a nice meal, cut the cake, and take some photos. Afterwards, they can resume their game building actitivies for a while longer and play with eachother in our Minecraft server or Roblox.
             </p>
         </div>
         <div>
