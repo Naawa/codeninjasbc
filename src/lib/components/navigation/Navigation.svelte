@@ -29,7 +29,8 @@
             <a href="/camps" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/junior" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/birthdays" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
-            <br><br>
+        </menu>
+        <menu>
             <a href="/locations" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
             <a href="/blog" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">BLOG</h4></a>
             <a href="/about" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
@@ -73,7 +74,7 @@
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 0 12vw;
+        padding: 0 10vw;
         align-items: center;
         width: 100%;
         height: 4em;
@@ -86,7 +87,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2em;
+            gap: 1em;
+            width: fit-content;
         }
 
 
@@ -213,19 +215,26 @@
     }
 
     @media (width < 1200px) {
-
+        nav {
+            menu {
+                display: none;
+            }
+        }
+        button {
+            display: flex;
+        }
         #curve {
-            bottom: -1.5em;
+            bottom: -2em;
         }
     }
 
     @media (width < 1600px) {
         nav {
-            padding: 0 10vw;
             menu {
-                display: none;
+                &:last-of-type {
+                    display: none;
+                }
             }
-
             button {
                 display: flex;
             }
