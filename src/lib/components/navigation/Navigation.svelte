@@ -29,8 +29,14 @@
             <a href="/camps" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/junior" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/birthdays" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
+            <br><br>
+            <a href="/locations" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
+            <a href="/blog" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">BLOG</h4></a>
+            <a href="/about" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
+            <a href="/faq" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">FAQ</h4></a>
         </menu>
         <button on:click={toggleMenu} class="inactive" transition:fly={{ x: -100, duration: 1000 }}>
+            <span></span>
             <span></span>
             <span></span>
         </button>
@@ -86,10 +92,10 @@
 
         button {
             background-color: transparent;
-            display: flex;
+            display: none;
             justify-content: center;
             align-items: center;
-            gap: 0.15em;
+            gap: 0.2em;
             flex-direction: column;
             min-width: 2em;
             padding: 0;
@@ -108,6 +114,9 @@
                     width: 1.5em;
                     rotate: 45deg;
                 }
+                &:nth-of-type(2) {
+                    display: none;
+                }
                 &:last-of-type {
                     width: 1.5em;
                     rotate: -45deg;
@@ -119,6 +128,9 @@
                     width: 1.5em;
 
                     &:first-of-type {
+                        width: 1.5em;
+                    }
+                    &:last-of-type {
                         width: 1.5em;
                     }
                 }
@@ -149,9 +161,12 @@
                 width: 1.25em;
                 rotate: 0deg;
             }
+            &:nth-of-type(2) {
+                display: block;
+            }
             &:last-of-type {
                 rotate: 0deg;
-                width: 2em;
+                width: 1.25em;
             }
         }
 
@@ -159,6 +174,9 @@
             span {
                 width: 1.25em;
                 &:first-of-type {
+                    width: 2em;
+                }
+                &:last-of-type {
                     width: 2em;
                 }
             }
@@ -195,15 +213,29 @@
     }
 
     @media (width < 1200px) {
+
+        #curve {
+            bottom: -1.5em;
+        }
+    }
+
+    @media (width < 1600px) {
         nav {
             padding: 0 10vw;
             menu {
                 display: none;
             }
-        }
 
-        #curve {
-            bottom: -1.5em;
+            button {
+                display: flex;
+            }
+        }
+    }
+
+    @media (width > 1600px) {
+        nav {
+            justify-content: center;
+            gap: 12em;
         }
     }
 </style>

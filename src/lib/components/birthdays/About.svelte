@@ -8,13 +8,13 @@
             </p>
         </div>
         <div>
-            <h3 class="dark-blue bold-9">FOOD</h3>
+            <h3 class="dark-blue bold-9">FUN</h3>
             <p>
                 After a while, the kids can take a break for a pizza party where they would all sit together, enjoy a nice meal, cut the cake, and take some photos. Afterwards, they can resume their game building actitivies for a while longer and play with eachother in our Minecraft server or Roblox.
             </p>
         </div>
         <div>
-            <h3 class="dark-blue bold-9">FUN</h3>
+            <h3 class="dark-blue bold-9">PRIZES</h3>
             <p>
                 Near the end of the party, all the kids will participate for prizes in a trivia game about the birthday child! Kids will compete with each other to see who knows the birthday child the best! The party will then come to an end with fond memories and warm goodbyes.
             </p>
