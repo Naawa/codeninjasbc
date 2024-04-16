@@ -6,11 +6,15 @@
     function toggleMenu() {
         showMenu = !showMenu;
         document.querySelector("button")?.classList.toggle("inactive");
-        if(!showMenu) {
-            document.body.style.overflowY = "scroll";
-        }
-        else {
-            document.body.style.overflowY = "hidden";
+        let nav = document.querySelector("nav");
+
+        if (nav) {
+            if(showMenu) {
+                nav.style.position = "fixed";
+            }
+            else {
+                nav.style.position = "relative";
+            }
         }
     }
 
@@ -192,12 +196,12 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        top: 4em;
+        top: 0em;
         padding: 4em;
-        height: calc(100dvh - 4em);
+        height: 100vh;
         width: 100%;
         background-color: #f6f7f8;
-        z-index: 2;
+        z-index: 5;
 
 
         span {
