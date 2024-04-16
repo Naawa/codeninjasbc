@@ -29,13 +29,13 @@
     {#if animate}
         <a href="/" on:click={() => showMenu = false}><img src="/logos/normal.svg" alt="Nav logo"></a>
         <menu>
-            <a href="/create" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
-            <a href="/camps" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
-            <a href="/junior" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
+            <a href="/#create" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#camps" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
+            <a href="/#junior" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/birthdays" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </menu>
         <menu>
-            <a href="/locations" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
+            <a href="/#locations" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
             <a href="/blog" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">BLOG</h4></a>
             <a href="/about" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
             <a href="/faq" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">FAQ</h4></a>

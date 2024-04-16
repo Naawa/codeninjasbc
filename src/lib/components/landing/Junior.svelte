@@ -1,9 +1,4 @@
-<script>
-
-	import { browser } from "$app/environment";
-
-</script>
-<section>
+<section id="junior">
     <img src="/graphics/junior/jbg.webp" alt="">
     <div>
         <img src="/graphics/junior/jfocus.png" alt="">

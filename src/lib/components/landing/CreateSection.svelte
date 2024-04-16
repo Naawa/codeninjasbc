@@ -1,4 +1,4 @@
-<section>
+<section id="create">
     <img src="/graphics/landing/cbg2.webp" alt="">
     <img src="/graphics/landing/ccf.webp" alt="">
     <div>
