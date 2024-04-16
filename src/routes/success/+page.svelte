@@ -18,7 +18,7 @@
 <section>
     {#if animate}
         <h3 transition:fly={{ y: 100, duration: 800 }}>We have received your inquiry. We will contact you shortly.</h3>
-        <a transition:fly={{ y: 100, duration: 800, delay: 100 }} href="/"><button>Home Page</button></a>
+        <a transition:fly={{ y: 100, duration: 800, delay: 100 }} href="/"><button class="primary-btn">Home Page</button></a>
     {/if}
 </section>
 

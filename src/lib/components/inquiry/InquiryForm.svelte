@@ -85,7 +85,7 @@
             <input type="text" style="display: none;" name="utmCampaign" bind:value={$form.utmCampaign}>
             <button class="primary-btn">SUBMIT</button>
             {#if $delayed}
-                <img src="/assets/spinner.gif" alt="Loading spinner.">
+                <img src="/graphics/spinner.gif" alt="Loading spinner.">
             {/if}
         </form>
     {/if} 
