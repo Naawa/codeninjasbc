@@ -12,7 +12,7 @@
         flex-wrap: wrap;
         gap: 2em;
         padding: 2em 2em;
-        margin: auto;
+        margin: 3em auto;
         position: relative;
 
         img {
