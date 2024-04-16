@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Style Guide</title>
+	<meta name="description" content="Code Ninjas style guide.">
+</svelte:head>
+
 <section>
     <h1 class="dark-blue bold-9">BUTTONS</h1>
     <button class="primary-btn">LEARN MORE</button>

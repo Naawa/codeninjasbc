@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>Blog</title>
+	<meta name="description" content="What's happening at Code Ninjas?">
+</svelte:head>
+
+
 <section>
     <h1>More information will be available soon.</h1>
 </section>

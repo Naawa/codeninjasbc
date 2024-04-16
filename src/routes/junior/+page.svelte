@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Junior</title>
+	<meta name="description" content="Get your junior started with coding!">
+</svelte:head>
+
 <section>
     <h1>More information will be available soon.</h1>
 </section>

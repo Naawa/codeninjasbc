@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Create</title>
+	<meta name="description" content="Learn how to code and belt up by developing video games!">
+</svelte:head>
+
 <section>
     <h1>More information will be available soon.</h1>
 </section>

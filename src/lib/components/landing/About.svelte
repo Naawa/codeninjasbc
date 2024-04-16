@@ -51,7 +51,7 @@
 
         p {
             text-wrap: balance;
-            max-width: 70dvw;
+            max-width: 60em;
             margin: 1em 0 0;
 
             &:first-of-type {

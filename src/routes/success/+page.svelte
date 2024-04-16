@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>Success</title>
+	<meta name="description" content="Form submitted successfully.">
+</svelte:head>
+
+
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { fly } from "svelte/transition";

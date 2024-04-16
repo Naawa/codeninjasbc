@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Camps</title>
+	<meta name="description" content="Summer camps limited availability!">
+</svelte:head>
+
 <section>
     <h1>More information will be available soon.</h1>
 </section>
