@@ -1,7 +1,3 @@
-<script>
-	import { browser } from "$app/environment";
-	import { fly } from "svelte/transition";
-</script>
 <section>
     <img src="/graphics/dividers/curve.png" alt="">
     <img src="/graphics/birthdays/BirthdayParties.png" alt="Birthday parties icon.">
@@ -11,6 +7,7 @@
     </a>
     <img src="/graphics/birthdays/greenballoon.svg" alt="Balloon 1">
     <img src="/graphics/birthdays/pinkballoon.svg" alt="Balloon 2">
+    <img src="/graphics/birthdays/blueballoon.svg" alt="Balloon 3">
 </section>
 
 <style lang="scss">
@@ -23,7 +20,7 @@
         min-height: 45em;
         height: fit-content;
         gap: 2em;
-        padding: 4em 0;
+        padding: 4em 12vw;
         background-image: url("/graphics/birthdays/BdayBg.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -37,6 +34,11 @@
             backdrop-filter: blur(10px);
             color: white;
             margin-top: 2em;
+            z-index: 2;
+        }
+
+        a {
+            z-index: 2;
         }
 
         img {
@@ -51,19 +53,69 @@
                 width: 200vw;
                 min-width: 1920px;
             }
+            &:nth-of-type(2) {
+                z-index: 2;
+            }
             &:nth-of-type(3) {
                 position: absolute;
-                bottom: 10%;
-                left: 75%;
+                bottom: 30%;
+                left: 70%;
                 height: 20em;
                 width: fit-content;
             }
             &:nth-of-type(4) {
                 position: absolute;
-                bottom: 40%;
-                right: 75%;
+                bottom: 50%;
+                right: 60%;
                 height: 20em;
                 width: fit-content;
+            }
+            &:nth-of-type(5) {
+                position: absolute;
+                bottom: -10%;
+                right: 70%;
+                height: 20em;
+                width: fit-content;
+            }
+        }
+    }
+
+    @media (width < 800px) {
+        section {
+            img {
+                &:nth-of-type(1) {
+                    height: 1em;
+                    position: absolute;
+                    bottom: -4em;
+                    background-color: transparent;
+                    height: 8em;
+                    width: 200vw;
+                    min-width: 1920px;
+                }
+                &:nth-of-type(3) {
+                    height: 1em;
+                    position: absolute;
+                    bottom: 5%;
+                    left: 70%;
+                    height: 20em;
+                    width: fit-content;
+                }
+                &:nth-of-type(4) {
+                    height: 1em;
+                    position: absolute;
+                    bottom: 50%;
+                    right: 20%;
+                    height: 20em;
+                    width: fit-content;
+                }
+                &:nth-of-type(5) {
+                    height: 1em;
+                    position: absolute;
+                    bottom: -10%;
+                    right: 70%;
+                    height: 20em;
+                    width: fit-content;
+                }
             }
         }
     }

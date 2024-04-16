@@ -1,6 +1,6 @@
 <section>
     <img src="/graphics/birthdays/BdayBlob.webp" alt="">
-    <img src="/graphics/birthdays/kids1.jpg" alt="Kids">
+    <img src="/graphics/birthdays/kids.jpg" alt="Kids">
 </section>
 
 
@@ -19,6 +19,7 @@
             max-height: 40vh;
             max-width: 90vw;
             border-radius: 1em;
+            background-color: transparent;
 
             &:first-of-type {
                 position: absolute;
