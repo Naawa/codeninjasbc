@@ -7,6 +7,7 @@ input, select, option {
     background-color: rgb(203,215,222,.23);
     font-weight: 600;
     appearance: none;
+    font-size: inherit;
 }
 
 select {
@@ -14,4 +15,11 @@ select {
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 45%;
+    background-size: 1.5em 1.5em;
+}
+
+@media (width < 600px) {
+    input, select {
+        font-size: 10px;
+    }
 }
