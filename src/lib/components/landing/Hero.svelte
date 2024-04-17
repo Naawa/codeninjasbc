@@ -51,7 +51,7 @@
         iframe {
             position: absolute;
             aspect-ratio: 16/9;
-            min-height: 100vh;
+            min-height: 120%;
             min-width: 100vw;
             pointer-events: none;
             opacity: 0.8;
