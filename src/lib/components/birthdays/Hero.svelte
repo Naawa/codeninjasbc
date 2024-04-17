@@ -17,7 +17,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        min-height: 45em;
+        min-height: 36em;
         height: fit-content;
         gap: 2em;
         padding: 4em 12vw;
