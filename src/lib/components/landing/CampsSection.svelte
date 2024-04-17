@@ -118,6 +118,7 @@
 
         button {
             margin: 2em 0 0;
+            width: fit-content;
         }
     }
 
