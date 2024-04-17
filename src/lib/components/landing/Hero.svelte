@@ -62,7 +62,6 @@
             min-width: 350px;
             width: 50vw;
             z-index: 1;
-            margin-bottom: 2em;
         }
 
         p {

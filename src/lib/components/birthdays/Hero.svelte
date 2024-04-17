@@ -33,7 +33,6 @@
             background-color: #00000042;
             backdrop-filter: blur(10px);
             color: white;
-            margin-top: 2em;
             z-index: 2;
         }
 
@@ -43,7 +42,7 @@
 
         img {
             max-width: 100vw;
-            max-height: 40vh;
+            max-height: 35vh;
 
             &:nth-of-type(1) {
                 position: absolute;

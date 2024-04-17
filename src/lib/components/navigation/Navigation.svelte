@@ -6,16 +6,6 @@
     function toggleMenu() {
         showMenu = !showMenu;
         document.querySelector("button")?.classList.toggle("inactive");
-        let nav = document.querySelector("nav");
-
-        if (nav) {
-            if(showMenu) {
-                nav.style.position = "fixed";
-            }
-            else {
-                nav.style.position = "relative";
-            }
-        }
     }
 
     let animate = false;
@@ -84,7 +74,7 @@
         height: 4em;
         z-index: 6;
         background-color: #f6f7f8;
-        position: relative;
+        position: fixed;
         top: 0;
 
         menu {
