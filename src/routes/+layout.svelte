@@ -2,6 +2,7 @@
 	import Footer from "$lib/components/footer/Footer.svelte";
 	import InquiryForm from "$lib/components/inquiry/InquiryForm.svelte";
 	import Navigation from "$lib/components/navigation/Navigation.svelte";
+	import Gtag from "$lib/components/google/Gtag.svelte";
     import "$lib/scss/styles.scss"
     export let data;
 </script>
@@ -13,6 +14,8 @@
 	<link rel="manifest" href="/favicon/site.webmanifest">
 </svelte:head>
 
+
+<Gtag></Gtag>
 <Navigation></Navigation>
 <slot />
 <InquiryForm {data}></InquiryForm>
