@@ -38,15 +38,13 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        min-height: 40em;
-        height: fit-content;
-        gap: 2em;
-        padding: 4em 2em;
+        height: 38em;
+        gap: 3em;
+        padding: 0 2em;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
         background-color: #00131e;
-
 
         iframe {
             position: absolute;
@@ -60,7 +58,7 @@
 
         #logo {
             min-width: 350px;
-            width: 50vw;
+            width: 45vw;
             z-index: 1;
         }
 
@@ -71,7 +69,7 @@
             background-color: #00000042;
             backdrop-filter: blur(10px);
             color: white;
-            margin-bottom: 2em;
+            margin-bottom: 0em;
             max-width: 90vw;
         }
 
@@ -116,6 +114,7 @@
             gap: 1em;
             z-index: 1;
             width: 90vw;
+            margin-bottom: 2em;
             a {
                 text-align: center;
             }

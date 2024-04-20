@@ -17,10 +17,10 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        min-height: 40em;
+        min-height: 38em;
         height: fit-content;
         gap: 2em;
-        padding: 4em 12vw;
+        padding: 0 2em;
         background-image: url("/graphics/birthdays/BdayBg.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -38,6 +38,7 @@
 
         a {
             z-index: 2;
+            margin-bottom: 2em;
         }
 
         img {
