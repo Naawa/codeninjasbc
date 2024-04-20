@@ -40,7 +40,7 @@
         position: relative;
         height: 38em;
         gap: 3em;
-        padding: 0 2em;
+        padding: 2em;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;

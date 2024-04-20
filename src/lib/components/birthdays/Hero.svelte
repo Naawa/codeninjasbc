@@ -20,7 +20,7 @@
         min-height: 38em;
         height: fit-content;
         gap: 2em;
-        padding: 0 2em;
+        padding: 2em;
         background-image: url("/graphics/birthdays/BdayBg.svg");
         background-repeat: no-repeat;
         background-size: cover;
