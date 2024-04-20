@@ -38,7 +38,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 38em;
+        height: 80vh;
         gap: 3em;
         padding: 2em;
         background-repeat: no-repeat;
