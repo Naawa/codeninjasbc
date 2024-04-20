@@ -58,7 +58,8 @@
 
         #logo {
             min-width: 350px;
-            width: 45vw;
+            width: 40vw;
+            max-width: 100vh;
             z-index: 1;
         }
 
