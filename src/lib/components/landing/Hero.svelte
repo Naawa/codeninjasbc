@@ -38,14 +38,14 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        min-height: 36em;
+        min-height: 40em;
         height: fit-content;
         gap: 2em;
         padding: 4em 2em;
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
-        background-color: #024372;
+        background-color: #00131e;
 
 
         iframe {
@@ -54,7 +54,7 @@
             min-height: 120%;
             min-width: 100vw;
             pointer-events: none;
-            opacity: 0.8;
+            opacity: 0.6;
             translate: 0 -5em;
         }
 
