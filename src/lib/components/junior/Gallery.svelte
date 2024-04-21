@@ -3,6 +3,7 @@
     <img src="/graphics/birthdays/kids.jpg" alt="Kids">
 </section>
 
+
 <style lang="scss">
     section {
         display: flex;

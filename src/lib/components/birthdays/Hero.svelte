@@ -19,7 +19,6 @@
         position: relative;
         min-height: 80vh;
         height: fit-content;
-        gap: 2em;
         padding: 2em;
         background-image: url("/graphics/birthdays/BdayBg.svg");
         background-repeat: no-repeat;
@@ -38,7 +37,7 @@
 
         a {
             z-index: 2;
-            margin-bottom: 2em;
+            margin: 2em;
         }
 
         img {

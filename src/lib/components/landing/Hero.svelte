@@ -12,7 +12,7 @@
     <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4" frameborder="0" title="West Coquitlam Center">
     </iframe>
     {#if animate}
-    <img id="logo" transition:fly={{ y: 50, duration: 600}} src="/logos/logo.png" alt="Logo.">
+    <img id="logo" transition:fly={{ y: 50, duration: 600}} src="/logos/normal.svg" alt="Logo.">
     <div>
         <div>
             <h1 class="bold-9" transition:fly={{ y: 50, duration: 600}}>Kids Learn Code</h1>
@@ -39,7 +39,7 @@
         align-items: center;
         position: relative;
         height: 80vh;
-        gap: 3em;
+        gap: 1em;
         padding: 2em;
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,7 +57,7 @@
         }
 
         #logo {
-            min-width: 350px;
+            min-width: 375px;
             width: 40vw;
             max-width: 100vh;
             z-index: 1;
