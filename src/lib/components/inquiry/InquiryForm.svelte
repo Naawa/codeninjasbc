@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
-	import { dojos, locations } from "$lib/utils/dojos";
+	import { dojos } from "$lib/utils/dojos";
 	import { superForm } from "sveltekit-superforms";
 
 
