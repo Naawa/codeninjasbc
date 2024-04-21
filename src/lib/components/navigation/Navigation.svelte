@@ -50,7 +50,7 @@
         </span>
         <span>
             <h5 class="bold-9">ADDITIONAL INFORMATION</h5>
-            <a href="/locations" on:click={toggleMenu}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
+            <a href="/#locations" on:click={toggleMenu}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
             <a href="/blog" on:click={toggleMenu}><h4 class="dark-blue bold-9">BLOG</h4></a>
             <a href="/about" on:click={toggleMenu}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
             <a href="/faq" on:click={toggleMenu}><h4 class="dark-blue bold-9">FAQ</h4></a>
