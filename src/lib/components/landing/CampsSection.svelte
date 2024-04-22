@@ -19,7 +19,7 @@
             <h4 class="bold-9">CODE NINJAS</h4>
             <h1 class="bold-9">CAMPS</h1>
         </span>
-        <p class="hidden">
+        <p>
             Transform your child's love for technology into an exciting learning adventure. Guided by our team of Code Senseis, Code Ninjas Camps empower kids to gain valuable tech skills and make new friends. It's an unforgettably fun learning experience!
         </p>
         <button class="primary-btn" on:click={() => {showMenu = true;}}>LEARN MORE</button>
