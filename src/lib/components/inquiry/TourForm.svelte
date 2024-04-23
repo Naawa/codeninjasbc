@@ -15,6 +15,8 @@
     $form.utmSource = $page.url.searchParams.get("utm_source");
     $form.utmMedium = $page.url.searchParams.get("utm_medium");
     $form.utmCampaign = $page.url.searchParams.get("utm_campaign");
+
+    let timeSelected = false;
 </script>
 
 <section id="inquiry">
@@ -23,12 +25,16 @@
         <h3 class="bold-9 dark-blue">EMPOWER</h3>
         <h3 class="bold-9 dark-text">THEIR FUTURE</h3>
     </div>
+    
     {#if $message}
         <h4>
             {$message}
         </h4>
     {:else}
         <form method="POST" action="/" use:enhance>
+            {#if timeSelected}
+            <button class="secondary-btn" on:click={() => timeSelected = false}>Go Back</button>
+            <br>
             <select bind:value={$form.dojo} name="dojo" {...$constraints.dojo}>
                 <option value="" disabled>Select A Location</option>
                 {#each dojos as dojo}
@@ -85,6 +91,10 @@
             <button class="primary-btn">SUBMIT</button>
             {#if $delayed}
                 <img src="/graphics/spinner.gif" alt="Loading spinner.">
+            {/if}
+            {:else}
+
+            <button class="primary-btn" on:click={() => timeSelected = true}>Next</button>
             {/if}
         </form>
     {/if} 

@@ -1,0 +1,127 @@
+REQ: GET https://services.codeninjas.com/api/v1/facility/vancouver-south-bc-ca
+
+RES: 
+{
+    "facilityId": 753,
+    "guid": "69d1d42b-4fee-40c1-9d8f-e4c2e48a779e",
+    "name": "Vancouver South",
+    "webCode": null,
+    "address1": "6684 Main Street",
+    "address2": null,
+    "city": "Vancouver",
+    "countryCode": "CA",
+    "googleMapBusinessUrl": null,
+    "isAllianceParticipant": false,
+    "isEnrolling": true,
+    "dateOpening": "2023-09-18T07:00:00",
+    "postalCode": "V5X 3H2",
+    "isStudio": false,
+    "dateEnrollingActivated": "2023-05-08T19:42:56.4069349",
+    "state": {
+        "name": "British Columbia",
+        "code": "BC",
+        "stateId": 53,
+        "countryCode": null,
+        "countryName": "Canada",
+        "facilityCitiesByStateCount": 0
+    },
+    "metro": {
+        "metroGuid": "f92a8a8d-eca3-4356-9283-5dba34e8594c",
+        "name": "Vancouver"
+    },
+    "phone": "604-203-2633",
+    "emailAddress": "vancouversouthbcca@codeninjas.com",
+    "manager": null,
+    "managerBio": null,
+    "managerThumbnailUrl": null,
+    "latitude": 49.22415,
+    "longitude": -123.10142,
+    "stripeKey": null,
+    "hasFutureCamps": false,
+    "hasFutureParentsNightOuts": false,
+    "hasFutureCreates": false,
+    "hasFutureJrs": false,
+    "websiteImageUrl": null,
+    "estOpeningPeriod": null,
+    "salesTaxRate": 0.000000,
+    "servicesTaxRate": 0.050000,
+    "facebookAccount": "CodeNinjasVancouverSouth",
+    "twitterAccount": null,
+    "instagramAccount": "Codeninjasvancouver.south",
+    "linkedInAccount": null,
+    "yelpAccount": null,
+    "scheduleTourURL": null,
+    "optOutAfterSchoolProgram": true,
+    "optOutOfPowerupProgram": true,
+    "optOutOfClubsProgram": false,
+    "isCodeCombatEnabled": true,
+    "isMultiSessionScanInEnabled": false,
+    "isDojo2GoEnabled": false,
+    "isBirthdayPartiesEnabled": true,
+    "isJrEnabled": true,
+    "isProEnabled": false,
+    "isManualScanInDisabled": false,
+    "isRemoteGdpEnabled": false,
+    "isAtHomeEnabled": false,
+    "timeZoneId": "Pacific Standard Time",
+    "isDigitalCurriculumEnabled": true,
+    "preSaleEnrollDateOverride": null,
+    "isJrProgramAccessible": false,
+    "enrollmentPlatform": 1,
+    "jrSessionLength": 1,
+    "vatRegNumber": null,
+    "allowImpactCheckIn": true,
+    "ccrmId": "79",
+    "studentHours": [{
+        "type": 1,
+        "text": "Monday-Friday 3:30pm-7:30pm, Saturday 10:00am-2:00pm",
+        "dateStart": null,
+        "dateEnd": null
+    }],
+    "officeHours": [{
+        "type": 2,
+        "text": "Monday-Friday 3:00pm-8:00pm, Saturday 9:30am-2:30pm",
+        "dateStart": null,
+        "dateEnd": null
+    }],
+    "afterSchoolHours": [{
+        "type": 3,
+        "text": "Monday-Friday 3:30pm-7:30pm, Saturday 10am-2pm",
+        "dateStart": null,
+        "dateEnd": null
+    }],
+    "jrHours": [{
+        "type": 4,
+        "text": "Coming Soon",
+        "dateStart": null,
+        "dateEnd": null
+    }],
+    "proHours": [],
+    "facilityHours": [{
+        "type": 1,
+        "text": "Monday-Friday 3:30pm-7:30pm, Saturday 10:00am-2:00pm",
+        "dateStart": null,
+        "dateEnd": null
+    }, {
+        "type": 3,
+        "text": "Monday-Friday 3:30pm-7:30pm, Saturday 10am-2pm",
+        "dateStart": null,
+        "dateEnd": null
+    }, {
+        "type": 4,
+        "text": "Coming Soon",
+        "dateStart": null,
+        "dateEnd": null
+    }, {
+        "type": 2,
+        "text": "Monday-Friday 3:00pm-8:00pm, Saturday 9:30am-2:30pm",
+        "dateStart": null,
+        "dateEnd": null
+    }],
+    "slug": "cn-vancouver-south-bc-ca",
+    "cnSlug": "vancouver-south-bc-ca",
+    "phoneRaw": "6042032633",
+    "form": null,
+    "isDataSharingEnabled": false,
+    "canChargeServicesTax": false
+}

@@ -44,7 +44,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
-        background-color: #00131e;
+        background-color: #042465;
 
         iframe {
             position: absolute;
@@ -52,7 +52,8 @@
             min-height: 120%;
             min-width: 100vw;
             pointer-events: none;
-            opacity: 0.6;
+            filter: brightness(70%);
+            opacity: 0.7;
             translate: 0 -5em;
         }
 

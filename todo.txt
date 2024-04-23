@@ -1,0 +1,42 @@
+Book A Free Session: {
+    1. CTA Available on Every Page
+        - Pop Up Modal
+
+    2. Select Center
+        - Fetch Available Time Slots Using CenterID
+        https://live.childcarecrm.com/form?formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&customerId=f1e0c921c46684f267d2eb52aa13f518&centerId=13
+
+    3. Select Time Slot 
+        - Date
+        - Time
+
+    4. Complete Form 
+        - Parent Information
+            - name
+            - email 
+            - phone
+
+        - Child Information
+            - name
+            - age
+        + Additional Children
+        - Comments
+
+    5. Submit
+        - Record Lead
+        - Forward to CRM
+            - Form Input Keys, Values, & Id's
+
+        Note: Center ID Needs To Specified
+        CenterIDs {
+            ...
+        }
+
+        Program Values {
+            Create: "1",
+            Birthday: "20092",
+            Junior: "33987",
+            Camp: "2"
+        }
+}
+
