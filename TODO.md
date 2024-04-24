@@ -1,4 +1,4 @@
-2 Types of Leads: {
+**2 Types of Leads:** {
     Select a center. Include parent, child, and additional children information in the following leads.
 
     1. Inquiry 
@@ -20,7 +20,7 @@
     https://live.childcarecrm.com/portal/index/forms/tour-booking?formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&customerId=f1e0c921c46684f267d2eb52aa13f518&cid=39
 }
 
-Form UIUX {
+**Form UIUX** {
     Two CTAs "INQUIRE NOW" & "BOOK A FREE SESSION"
     
     A. INQUIRE NOW {
@@ -34,7 +34,7 @@ Form UIUX {
     }
 }
 
-Form Backend {
+**Form Backend** {
     1. Input Validation
         - Client
         - Server
@@ -49,7 +49,7 @@ Form Backend {
         - Error Handling
 }
 
-Create {
+**Create** {
     WHAT ITS LIKE
         - SKILLS
             Typing.
@@ -59,12 +59,12 @@ Create {
             Exploration.
 }
 
-Junior {
+**Junior** {
     WHAT ITS LIKE
         ... New Curriculum
 }
 
-Samsung VR {
+**Samsung VR** {
     WHAT WE DO
         - SCHOOLS
         - GALAXY BUILDERS
