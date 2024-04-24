@@ -24,6 +24,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
+        gap: 2em;
 
         p {
             padding: 1em 2em;
@@ -37,7 +38,6 @@
 
         a {
             z-index: 2;
-            margin: 2em;
         }
 
         img {
@@ -112,6 +112,37 @@
                     position: absolute;
                     bottom: -10%;
                     right: 70%;
+                    height: 20em;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    @media (width > 2000px) {
+        section {
+            img {
+                &:nth-of-type(2) {
+                    z-index: 2;
+                }
+                &:nth-of-type(3) {
+                    position: absolute;
+                    bottom: 40%;
+                    left: 80%;
+                    height: 20em;
+                    width: fit-content;
+                }
+                &:nth-of-type(4) {
+                    position: absolute;
+                    bottom: 50%;
+                    right: 80%;
+                    height: 20em;
+                    width: fit-content;
+                }
+                &:nth-of-type(5) {
+                    position: absolute;
+                    bottom: 4em;
+                    right: 65%;
                     height: 20em;
                     width: fit-content;
                 }
