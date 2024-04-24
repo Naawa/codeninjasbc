@@ -9,7 +9,7 @@
     })
 </script>
 <section>
-    <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4" frameborder="0" title="West Coquitlam Center">
+    <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4&vq=hd1080" frameborder="0" title="West Coquitlam Center">
     </iframe>
     {#if animate}
     <img id="logo" transition:fly={{ y: 50, duration: 600}} src="/logos/normal.svg" alt="Logo.">

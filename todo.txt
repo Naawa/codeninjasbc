@@ -16,7 +16,7 @@ Book A Free Session: {
             - email 
             - phone
 
-        - Child Information
+        - Child Informationclea
             - name
             - age
         + Additional Children
