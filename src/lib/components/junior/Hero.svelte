@@ -1,7 +1,7 @@
 <section>
     <img src="/graphics/dividers/curve.png" alt="">
     <img src="/graphics/junior/Junior.png" alt="Junior icon.">
-    <p>Get your junior to think step by step by engaing them in problem solving and stem activities.</p>
+    <p>Get your junior to think step by step by engaging them in problem solving and stem activities.</p>
     <a href="#inquiry">
         <button class="primary-btn">INQUIRE NOW</button>
     </a>

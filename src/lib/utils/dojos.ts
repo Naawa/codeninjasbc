@@ -1,4 +1,4 @@
-export const dojos = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Port Coquitlam", "Richmond", "South Surrey", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam"]
+export const dojos = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam"]
 
 export interface Dojo {
     name: string,
@@ -42,14 +42,6 @@ export const locations: Dojo[] = [
         campsId: "69d1d42b-4fee-40c1-9d8f-e4c2e48a779e",
     },
     {
-        name: "Richmond",
-        phone: "604.227.3300",
-        address: "6699 River Rd Suite 125, Richmond, BC V7C 0E6",
-        mapPosition: [13, 47],
-        crm: "cn-richmond-bc-ca",
-        campsId: "7f041bb7-1dbf-46b9-a966-d992c13377f1",
-    },
-    {
         name: "Burnaby South",
         phone: "236.997.2633",
         address: "5262 Rumble Street, Burnaby, BC V5J 2B6",
@@ -74,14 +66,6 @@ export const locations: Dojo[] = [
         campsId: "506a20ff-a994-4286-b940-b0a3aba7f5ab",
     },
     {
-        name: "Port Coquitlam",
-        phone: "604.332.8522",
-        address: "131 - 815 Village Drive, Port Coquitlam, BC V3B 0G9",
-        mapPosition: [49.5, 25],
-        crm: "cn-coquitlam-bc-ca",
-        campsId: "b8fc313c-def5-4637-84b4-5021b2959eaf",
-    },
-    {
         name: "Guildford",
         phone: "604.617.2633",
         address: "103-15691 104 Avenue, Surrey, BC V4N 2H4",
@@ -96,14 +80,6 @@ export const locations: Dojo[] = [
         mapPosition: [35.5, 57],
         crm: "cn-delta-bc-ca",
         campsId: "e05c8b27-f2cd-4132-a053-a4b4b4c0595c",
-    },
-    {
-        name: "South Surrey",
-        phone: "604.372.0019",
-        address: "117 - 5577 153A Street, Surrey, BC, V3S 5K7",
-        mapPosition: [43.5, 65],
-        crm: "cn-surrey-bc-ca",
-        campsId: "a916f484-bca9-4f7a-a147-998941584924",
     },
     {
         name: "Langley",

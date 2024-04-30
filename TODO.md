@@ -1,5 +1,8 @@
 **2 Types of Leads:** {
-    Select a center. Include parent, child, and additional children information in the following leads.
+    Select a center. Get center info from 
+    https://services.codeninjas.com/api/v1/facility/[facilityslug]
+    
+    Include parent, child, and additional children information in the following leads.
 
     1. Inquiry 
         - Select Programs

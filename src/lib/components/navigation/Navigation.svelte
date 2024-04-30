@@ -235,7 +235,7 @@
         }
     }
 
-    @media (width > 1800px) {
+    @media (width > 2600px) {
         nav {
             justify-content: center;
             gap: 12em;

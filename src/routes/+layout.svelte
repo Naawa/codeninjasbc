@@ -4,7 +4,19 @@
 	import Navigation from "$lib/components/navigation/Navigation.svelte";
 	import Gtag from "$lib/components/google/Gtag.svelte";
     import "$lib/scss/styles.scss"
+	import { page } from "$app/stores";
+	import { locations } from "$lib/utils/dojos.js";
+
     export let data;
+
+	let tour = false;
+
+	for(let i = 0; i < locations.length; i++) {
+		if(`/${locations[i].crm}` == $page.url.pathname) {
+			tour = true
+			break;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -18,5 +30,8 @@
 <Gtag></Gtag>
 <Navigation></Navigation>
 <slot />
+
+{#if !tour && $page.url.pathname != "/dev"}
 <InquiryForm {data}></InquiryForm>
+{/if}
 <Footer></Footer>
