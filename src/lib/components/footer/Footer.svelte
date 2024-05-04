@@ -1,5 +1,5 @@
 <section>
-    <h4>STORE HOURS</h4>
+    <h4>CENTER HOURS</h4>
     <span>
         <p>Monday - Friday</p>
         <h5>3:30 - 7:30 PM</h5>
@@ -16,9 +16,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 1em;
-        min-height: 40vh;
+        gap: 2em;
         background-color: #04325a;
         padding: 4em;
 

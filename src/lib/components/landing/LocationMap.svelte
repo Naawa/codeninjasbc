@@ -21,10 +21,11 @@
         width: 100%;
         max-width: 80vw;
         background-repeat: no-repeat;
-        border: solid 1px;
+        border: solid 0.5em #5dd1d4;
         position: relative;
         max-height: 85dvh;
-        margin: 2em auto 4em;
+        margin: 8em auto 4em;
+        border-radius: 2em;
 
         div {
             position: absolute;

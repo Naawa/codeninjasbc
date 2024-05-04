@@ -68,7 +68,7 @@
             </span>
             <button class="primary-btn">SUBMIT</button>
 		{:else}
-       	 	<b>{data.center.name}</b>
+       	 	<h2>{data.center.name}</h2>
             <b>Select A Date</b>
 			<div>
 				<DateSelect availableTourDates={data.availableTourDates}></DateSelect>

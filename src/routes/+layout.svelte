@@ -9,11 +9,11 @@
 
     export let data;
 
-	let tour = false;
+	let centerPage = false;
 
 	for(let i = 0; i < locations.length; i++) {
 		if(`/${locations[i].crm}` == $page.url.pathname) {
-			tour = true
+			centerPage = true
 			break;
 		}
 	}
@@ -31,7 +31,7 @@
 <Navigation></Navigation>
 <slot />
 
-{#if !tour && $page.url.pathname != "/dev"}
+{#if !centerPage && $page.url.pathname != "/dev" && $page.url.pathname != "/tour"}
 <InquiryForm {data}></InquiryForm>
 {/if}
 <Footer></Footer>
