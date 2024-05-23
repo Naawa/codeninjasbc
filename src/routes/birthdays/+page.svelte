@@ -30,8 +30,6 @@
 			elements.forEach((el) => observer.observe(el));
 		}
 	})
-
-	export let data
 </script>
 
 <Hero></Hero>
