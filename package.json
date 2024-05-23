@@ -38,5 +38,8 @@
   "dependencies": {
     "@supabase/ssr": "^0.3.0",
     "@vercel/analytics": "^1.2.2"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
   }
 }
