@@ -1,4 +1,10 @@
-<script>
+<svelte:head>
+	<title>Code Ninjas BC</title>
+	<meta name="title" content="Code Ninjas BC">
+	<meta name="description" content="Code Ninjas is a learning platform for kids that makes coding fun and interactive. It offers year-round programs that are engaging and flexible.">
+</svelte:head>
+
+<script async lang="ts">
 	import { browser } from "$app/environment";
 	import About from "$lib/components/landing/About.svelte";
 	import CampsSection from "$lib/components/landing/CampsSection.svelte";
@@ -27,17 +33,11 @@
 			}, {
 				threshold: [1, 0]
 			})
-			let elements = document.querySelectorAll('*:not(section):not(iframe):not(img):not(html):not(body)');
+			let elements = document.querySelectorAll('p, b, h1, h2, h3, h4, h5, button, a');
 			elements.forEach((el) => observer.observe(el));
 		}
 	})
 </script>
-
-<svelte:head>
-	<title>Code Ninjas BC</title>
-	<meta name="title" content="Code Ninjas BC">
-	<meta name="description" content="Code Ninjas is a learning platform for kids that makes coding fun and interactive. It offers year-round programs that are engaging and flexible.">
-</svelte:head>
 
 <Hero></Hero>
 <About></About>

@@ -1,3 +1,4 @@
+
 export const dojos = ["Abbotsford", "Burnaby", "Burnaby South", "Delta", "Guildford", "Langley", "North Vancouver", "Vancouver East", "Vancouver South", "Vancouver West", "West Coquitlam"]
 
 export interface Dojo {
@@ -107,4 +108,12 @@ export interface serviceURI {
 export const serviceURIs: serviceURI = {
     camps: "https://services.codeninjas.com/api/v1/facility/camps/upcoming/",
     crm: ""
+}
+
+export function getLocation(crm: string): Dojo | undefined {
+    for(let i = 0; i < locations.length; i++) {
+        if(locations[i].crm == crm) {
+            return locations[i];
+        }
+    }
 }

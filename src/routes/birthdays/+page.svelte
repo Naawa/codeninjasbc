@@ -26,10 +26,12 @@
 			}, {
 				threshold: [1, 0]
 			})
-			let elements = document.querySelectorAll('*:not(section):not(iframe):not(img):not(html):not(body)');
+			let elements = document.querySelectorAll('p, b, h1, h2, h3, h4, h5, button, #logo, a');
 			elements.forEach((el) => observer.observe(el));
 		}
 	})
+
+	export let data
 </script>
 
 <Hero></Hero>

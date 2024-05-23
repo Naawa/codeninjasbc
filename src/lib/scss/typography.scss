@@ -29,7 +29,7 @@ html {
 
 @media (width > 2000px) {
     html {
-        font-size: clamp(16px, 1.6vw, 1.6vh);
+        font-size: clamp(24px, 1.6vw, 1.6vh);
     }
 }
 
@@ -46,7 +46,7 @@ h5 {font-size: 1.000rem; /* 16px */}
 small {font-size: 0.640rem; /* 10.24px */}
 
 h1, h2, h3, h4, h5, h6, b {
-    line-height: 1.2;
+    line-height: 1;
 }
 
 p {

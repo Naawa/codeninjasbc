@@ -2,16 +2,17 @@
 @import "typography";
 @import "buttons";
 
+
 *, *::before, *::after {
     box-sizing: border-box;
-    transition: all 0.2s;
     outline: none;
     margin: 0;
     padding: 0;
     font-family: "Azo Sans", sans-serif;
-    line-height: 1.618;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     color: #506690;
+    transition: 0.2s;
 }
 
 html {
@@ -23,8 +24,9 @@ html {
         background-color: #f6f7f8;
         scroll-behavior: smooth;
         overflow-x: hidden;
-        margin-top: 4em;
+        margin-top: 6em;
     }
+    
 }
 
 grammarly-desktop-integration {
@@ -39,10 +41,6 @@ grammarly-desktop-integration {
     color: #98a7b4;
     opacity: 0.8;
     font-weight: 700;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 .show {

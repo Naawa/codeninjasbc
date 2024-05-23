@@ -1,4 +1,4 @@
-<script lang="ts">
+<script async lang="ts">
     import { page } from '$app/stores'
   
     $: {
@@ -20,7 +20,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-RTQJXGSR9H">
     </script>
-    <script>
+    <script async>
       window.dataLayer = window.dataLayer || []
   
       function gtag() {

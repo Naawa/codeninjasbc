@@ -37,3 +37,27 @@ fetch("https://live.childcarecrm.com/portal/index/forms/tour-booking?customerId=
   "mode": "cors",
   "credentials": "include"
 });
+
+
+// Birthdays
+
+fetch("https://services.codeninjas.com/api/v1/leads", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/json; charset=UTF-8",
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site"
+  },
+  "referrer": "https://www.codeninjas.com/vancouver-south-bc-ca/birthday-parties",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": "{\"utm_source\":\"\",\"leadpath\":20092,\"FacilitySlug\":\"cn-vancouver-south-bc-ca\",\"ParentFirstName\":\"Naous\",\"ParentLastName\":\"Islam\",\"ChildFirstName\":\"Naous\",\"ChildLastName\":\"Islam\",\"Email\":\"naous.islam@outlook.com\",\"PhoneNumber\":\"6046008339\",\"DesiredPartyDate\":\"2024-05-20T20:59\"}",
+  "method": "POST",
+  "mode": "cors",
+  "credentials": "omit"
+});

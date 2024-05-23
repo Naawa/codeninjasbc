@@ -1,22 +1,9 @@
-<script>
-	import { onMount } from "svelte";
-	import { fly } from "svelte/transition";
-
-    let animate = false;
-
-    onMount(() => {
-        animate = true;
-    })
-</script>
 <section>
-    <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4&vq=hd1080" frameborder="0" title="West Coquitlam Center">
-    </iframe>
-    {#if animate}
-    <img id="logo" transition:fly={{ y: 50, duration: 600}} src="/logos/normal.svg" alt="Logo.">
+    <img id="logo" src="/logos/normal.svg" alt="">
     <div>
         <div>
-            <h1 class="bold-9" transition:fly={{ y: 50, duration: 600}}>Kids Learn Code</h1>
-            <p transition:fly={{ y: 50, duration: 800}} >JavaScript, Lua, C# and More!</p>
+            <h1 class="bold-9">Kids Learn Code</h1>
+            <p>JavaScript, Lua, C# and More!</p>
         </div>
         <span>
             <a href="#inquiry">
@@ -25,10 +12,12 @@
             <a href="#camps">
                 <button class="secondary-btn">SUMMER CAMPS</button>
             </a>
+            <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
         </span>
     </div>
-    {/if}
-    <img src="/graphics/dividers/curve.png" alt="">
+    <img id="bottom-curve" src="/graphics/dividers/curve.png" alt="">
+    <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4&vq=hd1080" frameborder="0" title="West Coquitlam Center">
+    </iframe>
 </section>
 
 <style lang="scss">
@@ -44,7 +33,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         overflow: hidden;
-        background-color: #000000;
+        background-color: rgb(2, 18, 37);
 
         iframe {
             position: absolute;
@@ -58,10 +47,9 @@
         }
 
         #logo {
-            min-width: 375px;
-            width: 40vw;
-            max-width: 100vh;
             z-index: 1;
+            height: 60em;
+            width: 50em;
         }
 
         p {
@@ -78,15 +66,15 @@
         img {
             max-width: 100vw;
             max-height: 40vh;
-
-            &:last-of-type {
-                position: absolute;
-                bottom: -4em;
-                background-color: transparent;
-                height: 8em;
-                width: 200vw;
-                min-width: 1920px;
-            }
+        }
+        #bottom-curve {
+            position: absolute;
+            bottom: -4em;
+            background-color: transparent;
+            height: 8em;
+            width: 200vw;
+            min-width: 1920px;
+            z-index: 2;
         }
 
         div {
@@ -120,6 +108,12 @@
             a {
                 text-align: center;
             }
+        }
+    }
+
+    @media (width > 800px) {
+        #tour {
+            display: none;
         }
     }
 </style>

@@ -1,60 +1,67 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+	import { page } from "$app/stores";
 	import { fly } from "svelte/transition";
 
     let showMenu: boolean = false;
-    function toggleMenu() {
-        showMenu = !showMenu;
-        document.querySelector("button")?.classList.toggle("inactive");
+    function openMenu(open: boolean) {
+        if(open) {
+            showMenu = true;
+            document.querySelector("button")?.classList.remove("inactive");
+            document.querySelector("button")?.classList.add("close");
+        }
+        else {
+            showMenu = false;
+            document.querySelector("button")?.classList.remove("close");
+            document.querySelector("button")?.classList.add("inactive");
+        }
     }
-
-    let animate = false;
-
-    onMount(() => {
-        animate = true;
-    })
 </script>
 
 <nav>
-    {#if animate}
-        <a href="/" on:click={() => showMenu = false}><img src="/logos/cnbc.svg" alt="Nav logo"></a>
+    <a href="/" on:click={() => openMenu(false)}><img src="/logos/cnbc.svg" alt="Nav logo"></a>
         <menu>
-            <a href="/create" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
-            <a href="/#camps" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
-            <a href="/junior" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
-            <a href="/birthdays" on:click={() => showMenu = false}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
+            <a href="/create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
+            <a href="/junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
+            <a href="/birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </menu>
-        <menu>
-            <a href="/#locations" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
-            <a href="/blog" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">BLOG</h4></a>
-            <a href="/about" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
-            <a href="/faq" on:click={() => showMenu = false}><h4 class="dark-blue bold-9">FAQ</h4></a>
-        </menu>
-        <button on:click={toggleMenu} class="inactive" transition:fly={{ x: -100, duration: 1000 }}>
+        {#if $page.url.pathname != "/tour"}
+                <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
+        {/if}
+        <button on:click={() => {
+            if(showMenu) {
+                openMenu(false)
+            }
+            else {
+                openMenu(true)
+            }
+        }} class="inactive" transition:fly={{ x: -100, duration: 1000 }}>
             <span></span>
             <span></span>
             <span></span>
         </button>
-    {/if}
     <img id="curve" src="/graphics/dividers/curve.png" alt="">
 </nav>
 
 {#if showMenu}
-    <div transition:fly={{ y: 200, duration: 400 }}>
+    <div>
         <span>
             <h5 class="bold-9">PROGRAMS</h5>
-            <a href="/create" on:click={toggleMenu}><h4 class="dark-blue bold-9">CODE NINJAS <b class="ninja-blue bold-9">CREATE</b></h4></a>
-            <a href="/#camps" on:click={toggleMenu}><h4 class="dark-blue bold-9">CODE NINJAS <b class="ninja-green bold-9">CAMPS</b></h4></a>
-            <a href="/junior" on:click={toggleMenu}><h4 class="dark-blue bold-9">CODE NINJAS <b class="ninja-purple bold-9">JUNIOR</b></h4></a>
-            <a href="/birthdays" on:click={toggleMenu}><h4 class="dark-blue bold-9">CODE NINJAS <b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
+            <a href="/create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
+            <a href="/junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
+            <a href="/birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </span>
         <span>
             <h5 class="bold-9">ADDITIONAL INFORMATION</h5>
-            <a href="/#locations" on:click={toggleMenu}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
-            <a href="/blog" on:click={toggleMenu}><h4 class="dark-blue bold-9">BLOG</h4></a>
-            <a href="/about" on:click={toggleMenu}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
-            <a href="/faq" on:click={toggleMenu}><h4 class="dark-blue bold-9">FAQ</h4></a>
+            <a href="/#locations" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
+            <a href="/blog" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">BLOG</h4></a>
+            <a href="/about" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
+            <a href="/faq" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">FAQ</h4></a>
         </span>
+        {#if $page.url.pathname != "/tour"}
+                <a on:click={() => openMenu(false)} href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
+        {/if}
     </div>
 {/if}
 
@@ -68,10 +75,10 @@
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 0 10vw;
+        padding: 0 4em;
         align-items: center;
         width: 100%;
-        height: 4em;
+        height: 6em;
         z-index: 6;
         background-color: #f6f7f8;
         position: fixed;
@@ -88,7 +95,7 @@
 
         button {
             background-color: transparent;
-            display: none;
+            display: flex;
             justify-content: center;
             align-items: center;
             gap: 0.2em;
@@ -134,7 +141,8 @@
         }
 
         img {
-            height: 5em;
+            height: 6em;
+            width: auto;
         }
     }
 
@@ -186,7 +194,7 @@
         justify-content: center;
         align-items: center;
         position: fixed;
-        top: 0em;
+        top: 3em;
         padding: 4em;
         height: 100vh;
         width: 100%;
@@ -208,37 +216,27 @@
         }
     }
 
+    @media (width < 800px) {
+       #tour {
+            display: none;
+       }
+    }
+
     @media (width < 1200px) {
         nav {
             menu {
                 display: none;
             }
         }
-        button {
-            display: flex;
-        }
         #curve {
             bottom: -2em;
-        }
-    }
-
-    @media (width < 1600px) {
-        nav {
-            menu {
-                &:last-of-type {
-                    display: none;
-                }
-            }
-            button {
-                display: flex;
-            }
         }
     }
 
     @media (width > 2600px) {
         nav {
             justify-content: center;
-            gap: 12em;
+            gap: 8em;
         }
     }
 </style>

@@ -1,7 +1,9 @@
-export const load = async ({ fetch, params }) => {
+import { json } from "@sveltejs/kit";
+
+export const GET = async ({ fetch, params }) => {
 
     async function getCenterInfo() {
-        let req = fetch(`https://services.codeninjas.com/api/v1/facility/${params.center.slice(3)}`)
+        let req = fetch(`https://services.codeninjas.com/api/v1/facility/${params.center}`)
         let res = await req;
         return res.json()
     }
@@ -13,8 +15,5 @@ export const load = async ({ fetch, params }) => {
         return res.json()
     }
 
-    return {
-        center: centerInfo,
-        availableTourDates: await getAvailableTourDates()
-    }
+    return json({ centerInfo, availableTourDates: await getAvailableTourDates() })
 };

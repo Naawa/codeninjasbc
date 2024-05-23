@@ -79,64 +79,57 @@
 </section>
 
 <style lang="scss">
-	section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		flex-direction: column;
-		gap: 1em;
-		width: 100%;
-		min-height: fit-content;
-		padding: 4em 0;
+    section {
+        display: flex;
+        align-items: center;
+        padding: 2em 10vw;
+        flex-direction: column;
+        min-height: 60vh;
 
-		p {
-			color: #2c638fb6;
-			letter-spacing: 0.1em;
-		}
+        menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            flex-direction: column;
+        }
 
-		div {
-			h3 {
-				&:last-of-type {
-					color: #187abf;
-				}
-			}
-		}
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            width: 100%;
+            overflow: scroll;
+            padding: 2em;
+            border-radius: 1em;
 
-		h4 {
-			padding: 2em;
-			background-color: white;
-			border-radius: 2em;
-		}
+            &:nth-of-type(2) {
+                background-color: white;
+                justify-content: normal;
+                align-items: normal;
+            }
 
-		form {
-			padding: 2em;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			flex-direction: column;
-			gap: 1em;
-			min-width: 300px;
-			width: fit-content;
-			background-color: white;
-			box-shadow: 0 8px 24px #0067be40;
-			border-radius: 0.5em;
-			z-index: 1;
-            min-height: 25em;
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                min-width: fit-content;
 
-			span {
-				width: 100%;
-				display: flex;
-				gap: 1em;
-			}
+                button {
+                    padding: 1em;
+                    background-color: #eff3f5;
+                    width: 10em;
+                    border: none;
+                    display: flex;
+                    justify-content: normal;
+                    align-items: normal;
+                }
+            }
 
-			img {
-				position: absolute;
-				height: 10em;
-				border-radius: 10em;
-				box-shadow: 0 8px 24px #0067be40;
-			}
-		}
-	}
+            span {
+                flex-wrap: wrap;
+            }
+        }
+    }
 </style>

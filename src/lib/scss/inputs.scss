@@ -1,4 +1,4 @@
-input, select, option {
+input, select, option, textarea {
     padding: 1.618em;
     width: 100%;
     border-radius: 0.25em;
@@ -8,6 +8,10 @@ input, select, option {
     font-weight: 600;
     appearance: none;
     font-size: 0.9em;
+
+    &:hover {
+        background-color: #e3eaf0;
+    }
 }
 
 select {

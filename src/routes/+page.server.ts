@@ -13,15 +13,7 @@ const schema = z.object({
     childFirstName: z.string().min(3),
     childLastName: z.string().min(2),
     email: z.string().email(),
-    utmSource: z.string(),
-    utmMedium: z.string(),
-    utmCampaign: z.string(),
 });
-
-export const load = async () => {
-    const form = await superValidate(zod(schema));
-    return { form }
-};
 
 export const actions = {
     default: async ({ request, cookies }) => {
@@ -35,9 +27,9 @@ export const actions = {
             .from('utm_data')
             .insert([
                 {
-                    source: `${form.data.utmSource}`,
-                    medium: `${form.data.utmMedium}`,
-                    campaign: `${form.data.utmCampaign}`,
+                    source: `${cookies.get("utm_source") || ""}`,
+                    medium: `${cookies.get("utm_medium") || ""}`,
+                    campaign: `${cookies.get("utm_campaign") || ""}`,
                     parentFirstName: `${form.data.parentFirstName}`,
                     parentLastName: `${form.data.parentLastName}`,
                     phoneNumber: `${form.data.contactNumber}`,
@@ -89,6 +81,8 @@ export const actions = {
             method: 'POST',
             body: JSON.stringify(lead),
         })
+
+        console.log(leadReq)
 
         if(leadReq.status > 400) {
             return message(form, "An error occured while processing your request, please contact 6046008339 to report this issue.");

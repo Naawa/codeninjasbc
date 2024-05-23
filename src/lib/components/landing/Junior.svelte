@@ -125,7 +125,7 @@
                 }
                 
                 img {
-                    min-width: 275px;
+                    min-width: 250px;
                     width: 19em;
                 }
             }

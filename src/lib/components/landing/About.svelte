@@ -111,7 +111,6 @@
             aspect-ratio: 16/9;
             min-height: 300px;
             max-height: 60vh;
-            min-width: 300px;
             max-width: 90vw;
             width: 50em;
             pointer-events: all;

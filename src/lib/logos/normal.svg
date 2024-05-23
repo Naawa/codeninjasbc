@@ -125,3 +125,9 @@
     </g>
   </g>
 </svg>
+
+<style lang="scss">
+  svg {
+    z-index: 1;
+  }
+</style>

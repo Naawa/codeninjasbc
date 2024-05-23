@@ -1,7 +1,4 @@
-import { supabase } from '$lib/db/supabaseClient';
-import { locations, dojos } from "$lib/utils/dojos"
-import { fail, redirect } from '@sveltejs/kit';
-import { message, superValidate } from 'sveltekit-superforms';
+import { superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import { z } from 'zod';
 
@@ -18,8 +15,27 @@ const schema = z.object({
     utmCampaign: z.string(),
 });
 
-export const load = async ({ cookies }) => {
-    const form = await superValidate(zod(schema));
+export const load = async ({ url, cookies }) => {
+    let utmSource = url.searchParams.get("utm_source")
+    let utmMedium = url.searchParams.get("utm_medium")
+    let utmCampaign = url.searchParams.get("utm_campaign")
 
+    if(utmSource) {
+        cookies.set("utm_source", utmSource, {
+            path: "/"
+        })
+    }
+    if(utmMedium) {
+        cookies.set("utm_medium", utmMedium, {
+            path: "/"
+        })
+    }
+    if(utmCampaign) {
+        cookies.set("utm_campaign", utmCampaign, {
+            path: "/"
+        })
+    }
+    
+    const form = await superValidate(zod(schema));
     return { form }
 };
