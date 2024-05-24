@@ -21,9 +21,9 @@
         width: 100%;
         max-width: 80vw;
         background-repeat: no-repeat;
-        border: solid 0.25em #5dd1d4;
+		box-shadow: 0 8px 24px #0067be40;
         position: relative;
-        max-height: 85dvh;
+        max-height: 80dvh;
         margin: 8em auto 4em;
         border-radius: 1em;
 

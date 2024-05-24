@@ -16,7 +16,7 @@
 <style lang="scss">
     section {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
         gap: 2em;
         padding: 0 10vw;
         height: fit-content;
@@ -25,19 +25,20 @@
         margin: 3em 0;
 
         div {
-            min-width: 20em;
+            min-width: 6em;
             padding: 2em;
-            border: solid 0.25em #5dd1d4;
+            box-shadow: 0 4px 12px #0067be40;
             border-radius: 1em;
-            min-height: 12em;
+            min-height: 5em;
             display: flex;
             flex-direction: column;
             gap: 0.5em;
         }
 
         p {
-            height: 4em;
+            height: 5em;
             line-height: 1.4;
+            text-wrap: balance;
         }
     }
 
