@@ -46,7 +46,7 @@
 {#if showMenu}
     <div>
         <span>
-            <h5 class="bold-9">PROGRAMS</h5>
+            <h5 class="bold-9">OUR PROGRAMS</h5>
             <a href="/create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
@@ -107,34 +107,34 @@
             border: none;
 
             span {
-                width: 2.5em;
-                border: solid 0.15em #0e2937;
+                width: 3em;
+                border: solid 0.2em #0e2937;
                 border-radius: 10em;
                 background-color: #0e2937;
 
                 position: absolute;
                 &:first-of-type {
-                    width: 1.75em;
+                    width: 2em;
                     rotate: 45deg;
                 }
                 &:nth-of-type(2) {
                     display: none;
                 }
                 &:last-of-type {
-                    width: 1.75em;
+                    width: 2em;
                     rotate: -45deg;
                 }
             }
 
             &:hover {
                 span {
-                    width: 1.75em;
+                    width: 2em;
 
                     &:first-of-type {
-                        width: 1.75em;
+                        width: 2em;
                     }
                     &:last-of-type {
-                        width: 1.75em;
+                        width: 2em;
                     }
                 }
             }

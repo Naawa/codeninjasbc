@@ -28,7 +28,7 @@
         align-items: center;
         position: relative;
         height: 80vh;
-        gap: 4em;
+        gap: 1em;
         padding: 2em;
         background-repeat: no-repeat;
         background-size: cover;
@@ -108,12 +108,6 @@
     }
 
     @media (width > 800px) {
-        #tour {
-            display: none;
-        }
-    }
-
-    @media (width < 800px) {
         #tour {
             display: none;
         }
