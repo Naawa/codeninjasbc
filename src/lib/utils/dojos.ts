@@ -14,7 +14,7 @@ export const locations: Dojo[] = [
     {
         name: "Abbotsford",
         phone: "604.861.2633",
-        address: "110 - 2276 Clearbrook Road Abbotsford BC V2T 2X5",
+        address: "101 - 2276 Clearbrook Road Abbotsford BC V2T 2X5",
         mapPosition: [89, 82],
         crm: "cn-abbotsford-bc-ca",
         campsId: "911f1fdb-a9e1-49dc-bf99-450f346b7a63",

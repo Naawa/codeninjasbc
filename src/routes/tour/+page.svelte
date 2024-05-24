@@ -4,7 +4,6 @@
 </svelte:head>
 
 <script lang="ts">
-	import { page } from "$app/stores";
 	import AvailableTourDateSelector from "$lib/components/forms/tour/AvailableTourDateSelector.svelte";
 	import { getLocation, locations, type Dojo } from "$lib/utils/dojos.js";
 	import { superForm } from "sveltekit-superforms";
@@ -16,10 +15,6 @@
 		delayMs: 500,
 		timeoutMs: 8000
 	});
-
-	$form.utmSource = $page.url.searchParams.get('utm_source') || "";
-	$form.utmMedium = $page.url.searchParams.get('utm_medium') || "";
-	$form.utmCampaign = $page.url.searchParams.get('utm_campaign') || "";
 
     let availableTourDates: any;
     let dojo: Dojo | undefined;
@@ -38,19 +33,12 @@
 
 <section>
     <Heading></Heading>
-    {#if !$form.selectedCenter}
-        <select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
-            <option value="" disabled>Select A Location</option>
-            {#each locations as location}
-                {#if location.name != "Burnaby South"}
-                    <option value="{location.crm}">{location.name}</option>
-                {/if}
-            {/each}
-        </select>
-        <p>Choose a center to schedule a free demo session where you can bring your child to build a game with one of our Code Senseis and experience what it's like to be at Code Ninjas!</p>
-    {/if}
-    {#if $form.selectedCenter}
-        {#if new Date($form.selectedTourDate).toLocaleDateString() == "Invalid Date"}
+    {#if $message}
+        <h4>
+            {$message}
+        </h4>
+        {:else}
+        {#if !$form.selectedCenter}
             <select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
                 <option value="" disabled>Select A Location</option>
                 {#each locations as location}
@@ -59,49 +47,56 @@
                     {/if}
                 {/each}
             </select>
+            <p>Choose a center to schedule a free demo session where you can bring your child to build a game with one of our Code Senseis and experience what it's like to be at Code Ninjas!</p>
         {/if}
-        {#if new Date($form.selectedTourDate).toLocaleDateString() == "Invalid Date"}
-            {#await availableTourDates = loadAvailableTourDates($form.selectedCenter)}
-                <h4>Loading available tour dates...</h4>
-            {:then tourDatePeriod} 
-            <AvailableTourDateSelector 
-                {tourDatePeriod}
-                bind:selectedTourDate={$form.selectedTourDate}>
-            </AvailableTourDateSelector>
-            {/await}
-        {:else}
-            <div>
-                <h3 class="dark-blue">{dojo?.name}</h3>
-                <b class="dark-blue">{dojo?.address}</b>
-                <b class="dark-blue">{dojo?.phone}</b>
-            </div>
-            <span>
-                <div>
-                    <button class="round-left" on:click={() => {$form.selectedTourDate = ""}}>
-                        <img src="/icons/arrow.svg" alt="Left">
-                    </button>
-                    <b>Go Back</b> 
-                </div>   
-                <div>
-                    <h4 class="dark-text">Scheduled for {new Date($form.selectedTourDate).toLocaleDateString(undefined, {
-                        weekday: "long",
-                        day: "2-digit",
-                        month: "long"
-                    })}
-                    </h4>
-                    <h4 class="ninja-blue">
-                        {new Date($form.selectedTourDate).toLocaleTimeString(undefined, {
-                            hour: "2-digit",
-                            minute: "2-digit"
-                        })}
-                    </h4>
-                </div>
-            </span>
-            {#if $message}
-                <h4>
-                    {$message}
-                </h4>
+        {#if $form.selectedCenter}
+            {#if new Date($form.selectedTourDate).toLocaleDateString() == "Invalid Date"}
+                <select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
+                    <option value="" disabled>Select A Location</option>
+                    {#each locations as location}
+                        {#if location.name != "Burnaby South"}
+                            <option value="{location.crm}">{location.name}</option>
+                        {/if}
+                    {/each}
+                </select>
+            {/if}
+            {#if new Date($form.selectedTourDate).toLocaleDateString() == "Invalid Date"}
+                {#await availableTourDates = loadAvailableTourDates($form.selectedCenter)}
+                    <h4>Loading available tour dates...</h4>
+                {:then tourDatePeriod} 
+                <AvailableTourDateSelector 
+                    {tourDatePeriod}
+                    bind:selectedTourDate={$form.selectedTourDate}>
+                </AvailableTourDateSelector>
+                {/await}
             {:else}
+                <div>
+                    <h3 class="dark-blue">{dojo?.name}</h3>
+                    <b class="dark-blue">{dojo?.address}</b>
+                    <b class="dark-blue">{dojo?.phone}</b>
+                </div>
+                <span>
+                    <div>
+                        <button class="round-left" on:click={() => {$form.selectedTourDate = ""}}>
+                            <img src="/icons/arrow.svg" alt="Left">
+                        </button>
+                        <b>Go Back</b> 
+                    </div>   
+                    <div>
+                        <h4 class="dark-text">Scheduled for {new Date($form.selectedTourDate).toLocaleDateString(undefined, {
+                            weekday: "long",
+                            day: "2-digit",
+                            month: "long"
+                        })}
+                        </h4>
+                        <h4 class="ninja-blue">
+                            {new Date($form.selectedTourDate).toLocaleTimeString(undefined, {
+                                hour: "2-digit",
+                                minute: "2-digit"
+                            })}
+                        </h4>
+                    </div>
+                </span>
                 <form method="POST" action="/tour" use:enhance>
                     <h5 class="dark-text bold-9">Child Information:</h5>
                     <span>
@@ -215,9 +210,6 @@
                     />
                     <input type="text" style="display: none;" name="selectedCenter" bind:value={$form.selectedCenter} />
                     <input type="text" style="display: none;" name="selectedTourDate" bind:value={$form.selectedTourDate} />
-                    <input type="text" style="display: none;" name="utmSource" bind:value={$form.utmSource} />
-                    <input type="text" style="display: none;" name="utmMedium" bind:value={$form.utmMedium} />
-                    <input type="text" style="display: none;" name="utmCampaign" bind:value={$form.utmCampaign} />
                     <button class="primary-btn">SUBMIT</button>
                     {#if $delayed}
                         <img src="/graphics/spinner.gif" alt="Loading spinner." />

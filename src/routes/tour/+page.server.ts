@@ -18,6 +18,10 @@ export const actions = {
             return fail(400, { form });
         }
 
+        if(form.data.childBirthMonth.charAt(0) == '0') {
+            form.data.childBirthMonth = form.data.childBirthMonth.charAt(1);
+        }
+
         const { data, error } = await supabase
             .from('leads')
             .insert([
@@ -78,6 +82,6 @@ export const actions = {
         }
 
         cookies.set('tour', "scheduled", { path: "/" });
-        throw redirect(302, '/scheduled');
+        throw redirect(302, '/success');
     }
 };
