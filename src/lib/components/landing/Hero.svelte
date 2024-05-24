@@ -28,7 +28,7 @@
         align-items: center;
         position: relative;
         height: 80vh;
-        gap: 1em;
+        gap: 4em;
         padding: 2em;
         background-repeat: no-repeat;
         background-size: cover;
@@ -48,18 +48,15 @@
 
         #logo {
             z-index: 1;
-            height: 60em;
+            height: fit-content;
             width: 50em;
+            min-width: 250px;
         }
 
         p {
-            padding: 1em 2em;
             text-align: center;
             border-radius: 1em;
-            background-color: #00000042;
-            backdrop-filter: blur(10px);
             color: white;
-            margin-bottom: 0em;
             max-width: 90vw;
         }
 
@@ -88,7 +85,6 @@
                 display: flex;
                 flex-direction: column;
                 z-index: 1;
-                margin-bottom: 0;
 
                 h1, p {
                     color: white;
@@ -112,6 +108,12 @@
     }
 
     @media (width > 800px) {
+        #tour {
+            display: none;
+        }
+    }
+
+    @media (width < 800px) {
         #tour {
             display: none;
         }

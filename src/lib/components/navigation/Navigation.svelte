@@ -75,7 +75,7 @@
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 0 4em;
+        padding: 0 3em;
         align-items: center;
         width: 100%;
         height: 6em;
@@ -107,34 +107,34 @@
             border: none;
 
             span {
-                width: 2em;
+                width: 2.5em;
                 border: solid 0.15em #0e2937;
                 border-radius: 10em;
                 background-color: #0e2937;
 
                 position: absolute;
                 &:first-of-type {
-                    width: 1.5em;
+                    width: 1.75em;
                     rotate: 45deg;
                 }
                 &:nth-of-type(2) {
                     display: none;
                 }
                 &:last-of-type {
-                    width: 1.5em;
+                    width: 1.75em;
                     rotate: -45deg;
                 }
             }
 
             &:hover {
                 span {
-                    width: 1.5em;
+                    width: 1.75em;
 
                     &:first-of-type {
-                        width: 1.5em;
+                        width: 1.75em;
                     }
                     &:last-of-type {
-                        width: 1.5em;
+                        width: 1.75em;
                     }
                 }
             }

@@ -77,7 +77,7 @@
             img {
                 position: absolute;
                 min-height: auto;
-                min-width: 275px;
+                min-width: 175px;
                 height: auto;
                 width: 24em;
                 max-width: 80vw;
