@@ -45,7 +45,6 @@ export const actions = {
 
         if (error) {
             console.log(error);
-            return { form }
         }
         
         const req = await fetch(`/api/${form.data.selectedCenter}`)
