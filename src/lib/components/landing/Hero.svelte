@@ -9,16 +9,13 @@
             <a href="#inquiry">
                 <button class="primary-btn">INQUIRE NOW</button>
             </a>
-            <a href="#camps">
-                <button class="secondary-btn">SUMMER CAMPS</button>
-            </a>
             <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
         </span>
     </div>
     <img id="bottom-curve" src="/graphics/dividers/curve.png" alt="">
     <iframe src="https://www.youtube.com/embed/uzZstlbtTD4?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&enablejsapi=1&playlist=uzZstlbtTD4&vq=hd1080" frameborder="0" title="West Coquitlam Center">
     </iframe>
-</section>
+</section>  
 
 <style lang="scss">
     section {

@@ -22,26 +22,6 @@
         <p>
             Transform your child's love for technology into an exciting learning adventure. Guided by our team of Code Senseis, Code Ninjas Camps empower kids to gain valuable tech skills and make new friends. It's an unforgettably fun learning experience!
         </p>
-        <button class="primary-btn" on:click={() => {showMenu = true;}}>LEARN MORE</button>
-        {#if showMenu}
-            <div id="menu" transition:fly={{ y: 40 }}>
-                <button class="primary-btn" on:click={() => {showMenu = false;}} id="close">
-                    <span></span>
-                    <span></span>
-                </button>
-                <b>Select A Center</b>
-                <br>
-                <select bind:value={selectedDojo}>
-                    <option value="" disabled>Select A Location</option>
-                    {#each dojos as dojo}
-                        <option>{dojo}</option>
-                    {/each}
-                </select>
-                <a href="https://codeninjas.com/{dojoInfo?.crm.slice(3)}/camps" target="_blank">
-                    <button class="primary-btn">VIEW CAMPS</button>
-                </a>
-            </div>
-        {/if}
     </div>
 </section>
 

@@ -32,8 +32,6 @@
             </div>
         </a>
     </span>
-    <b>Don't just take our word for it, hear from some of our parents now!</b>
-   <iframe src="https://www.youtube.com/embed/L3bgHOuykQs" title="Coding for Kids: What is Code Ninjas?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 
 <style lang="scss">

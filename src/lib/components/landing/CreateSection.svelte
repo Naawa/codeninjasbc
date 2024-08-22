@@ -13,9 +13,6 @@
         <p>
             Our best-selling program, CREATE, was built to keep our Ninjas engaged, challenged, and learning! Whether building their own video games or debugging code - your child will be begging you to come back!
         </p>
-        <a href="/create" target="_blank">
-            <button class="primary-btn">LEARN MORE</button>
-        </a>
     </div>
 </section>
 

@@ -7,7 +7,7 @@
         <div>
             <h5 class="bold-9 dark-text">{location.name}</h5>
             <p>{location.address}</p>
-            <b class="ninja-blue">{location.phone}</b>
+            <a class="bold-9 ninja-blue" href="tel:+1{location.phone}">{location.phone}</a>
         </div>
     {/each}
 </section>

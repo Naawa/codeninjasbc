@@ -20,10 +20,10 @@
 <nav>
     <a href="/" on:click={() => openMenu(false)}><img src="/logos/cnbc.svg" alt="Nav logo"></a>
         <menu>
-            <a href="/create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
-            <a href="/junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
-            <a href="/birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
+            <a href="/#junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
+            <a href="/#birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </menu>
         {#if $page.url.pathname != "/tour"}
                 <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
@@ -47,18 +47,12 @@
     <div>
         <span>
             <h5 class="bold-9">OUR PROGRAMS</h5>
-            <a href="/create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
-            <a href="/junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
-            <a href="/birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
+            <a href="/#junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
+            <a href="/#birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </span>
-        <span>
-            <h5 class="bold-9">ADDITIONAL INFORMATION</h5>
-            <a href="/#locations" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">LOCATIONS</h4></a>
-            <a href="/blog" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">BLOG</h4></a>
-            <a href="/about" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">ABOUT US</h4></a>
-            <a href="/faq" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9">FAQ</h4></a>
-        </span>
+
         {#if $page.url.pathname != "/tour"}
                 <a on:click={() => openMenu(false)} href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
         {/if}
@@ -216,13 +210,16 @@
         }
     }
 
-    @media (width < 800px) {
+    #tour {
+        min-width: fit-content;
+    }
+    @media (width < 1000px) {
        #tour {
             display: none;
        }
     }
 
-    @media (width < 1200px) {
+    @media (width < 1000px) {
         nav {
             menu {
                 display: none;
@@ -233,9 +230,19 @@
         }
     }
 
-    @media (width > 2600px) {
+    @media (width > 1000px) {
         nav {
             justify-content: center;
+            gap: 4em;
+
+            button {
+                display: none;
+            }
+        }
+    }
+
+    @media (width > 1600px) {
+        nav {
             gap: 8em;
         }
     }

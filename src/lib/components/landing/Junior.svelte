@@ -12,9 +12,6 @@
         <p>
             Is your young Ninja already crazy about technology? Our JR program is designed to help support and nurture a foundation of learning through engaging activities, creativity, and problem-solving – no reading required!
         </p>
-        <a href="/junior" target="_blank">
-            <button class="primary-btn">LEARN MORE</button>
-        </a>
     </div>
 </section>
 
