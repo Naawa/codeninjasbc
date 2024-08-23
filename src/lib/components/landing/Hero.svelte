@@ -9,7 +9,7 @@
             <a href="#inquiry">
                 <button class="primary-btn">INQUIRE NOW</button>
             </a>
-            <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
+            <a id="tour" href="/tour" class="secondary-btn">BOOK A FREE SESSION</a>
         </span>
     </div>
     <img id="bottom-curve" src="/graphics/dividers/curve.png" alt="">

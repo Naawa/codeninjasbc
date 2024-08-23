@@ -28,7 +28,7 @@
             min-width: 6em;
             padding: 2em;
             box-shadow: 0 4px 12px #0067be40;
-            border-radius: 1em;
+            border-radius: 0.5em;
             min-height: 5em;
             display: flex;
             flex-direction: column;
@@ -39,13 +39,6 @@
             height: 5em;
             line-height: 1.4;
             text-wrap: balance;
-        }
-    }
-
-    @media (width < 800px) {
-        section {
-            max-height: 400px;
-            overflow-y: scroll;
         }
     }
 </style>

@@ -11,7 +11,7 @@
             <h1 class="bold-9">CREATE</h1>
         </span>
         <p>
-            Our best-selling program, CREATE, was built to keep our Ninjas engaged, challenged, and learning! Whether building their own video games or debugging code - your child will be begging you to come back!
+            “CREATE” is Code Ninjas’ core coding for kids program for children ages 8 - 14 to study coding through learning activities, including building video games. The self-paced coding academy uses a belt system, like martial arts, with each level providing learning activities for kids that introduce new coding challenges and projects to keep learning engaging and progressively complex.
         </p>
     </div>
 </section>
@@ -86,10 +86,6 @@
                 opacity: 1;
                 rotate: 5deg;
             }
-        }
-
-        button {
-            margin: 2em 0 0;
         }
     }
 

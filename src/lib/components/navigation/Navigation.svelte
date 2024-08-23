@@ -20,13 +20,13 @@
 <nav>
     <a href="/" on:click={() => openMenu(false)}><img src="/logos/cnbc.svg" alt="Nav logo"></a>
         <menu>
-            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">CREATE</b></h4></a>
+            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/#junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/#birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
         </menu>
         {#if $page.url.pathname != "/tour"}
-                <a id="tour" href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
+                <a id="tour" href="/tour" class="secondary-btn">BOOK A FREE SESSION</a>
         {/if}
         <button on:click={() => {
             if(showMenu) {
@@ -54,7 +54,7 @@
         </span>
 
         {#if $page.url.pathname != "/tour"}
-                <a on:click={() => openMenu(false)} href="/tour" class="primary-btn">BOOK A FREE SESSION</a>
+                <a on:click={() => openMenu(false)} href="/tour" class="secondary-btn">BOOK A FREE SESSION</a>
         {/if}
     </div>
 {/if}
