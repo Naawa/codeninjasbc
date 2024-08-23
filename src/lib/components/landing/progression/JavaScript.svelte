@@ -11,7 +11,9 @@
 	<div>
 		<h3>Coding With JavaScript</h3>
 		<p>
-			The intermediate belts comprise additional extracurricular activities for students and programming classes where your child will start writing in code with JavaScript! They will engage with and develop advanced problem-solving skills through engaging learning activities.
+			The intermediate belts comprise additional extracurricular activities for students and
+			programming classes where your child will start writing in code with JavaScript! They will
+			engage with and develop advanced problem-solving skills through engaging learning activities.
 		</p>
 	</div>
 </section>
@@ -37,14 +39,14 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-                width: fit-content;
-                align-self: flex-end;
+				width: fit-content;
+				align-self: flex-end;
 
 				span {
 					width: fit-content;
 					display: flex;
 					flex-direction: row;
-                    justify-content: nor;
+					justify-content: nor;
 				}
 
 				img {
@@ -75,9 +77,15 @@
 			width: fit-content;
 			padding: 1em;
 			span {
-				justify-content: center;
-				img {
-					translate: 0;
+				div {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					align-self: center;
+					
+					img {
+						translate: 0;
+					}
 				}
 			}
 			div {

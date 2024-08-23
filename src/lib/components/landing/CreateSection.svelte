@@ -141,7 +141,6 @@
 					margin: 0;
 
 					&:first-of-type {
-						background-color: #1376bd;
 						z-index: 1;
 						width: fit-content;
 					}

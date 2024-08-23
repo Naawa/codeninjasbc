@@ -1,7 +1,7 @@
 <section>
 	<span>
 		<div>
-            <span>
+			<span>
 				<img src="/icons/purple-belt.svg" alt="belt" />
 				<img src="/icons/brown-belt.svg" alt="belt" />
 			</span>
@@ -14,7 +14,9 @@
 	<div>
 		<h3>Profiecieny In Unity</h3>
 		<p>
-			On the road to Black Belt, your child will develop their original video game using Unity, a platform that professional video games are developed on, including roblox game coding and minecraft coding! That’s right. We’re using roblox for education!
+			On the road to Black Belt, your child will develop their original video game using Unity, a
+			platform that professional video games are developed on, including roblox game coding and
+			minecraft coding! That’s right. We’re using roblox for education!
 		</p>
 	</div>
 </section>
@@ -40,14 +42,14 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-                width: fit-content;
-                align-self: flex-end;
+				width: fit-content;
+				align-self: flex-end;
 
 				span {
 					width: fit-content;
 					display: flex;
 					flex-direction: row;
-                    justify-content: nor;
+					justify-content: center;
 				}
 
 				img {
@@ -78,9 +80,15 @@
 			width: fit-content;
 			padding: 1em;
 			span {
-				justify-content: center;
-				img {
-					translate: 0;
+				div {
+					align-self: center;	
+					span {
+						justify-content: center;
+						align-items: center;
+						img {
+							translate: 0;
+						}
+					}
 				}
 			}
 			div {
