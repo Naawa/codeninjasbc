@@ -20,7 +20,7 @@
 <nav>
     <a href="/" on:click={() => openMenu(false)}><img src="/logos/cnbc.svg" alt="Nav logo"></a>
         <menu>
-            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
+            <a href="/#courses" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/#junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/#birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
@@ -47,7 +47,7 @@
     <div>
         <span>
             <h5 class="bold-9">OUR PROGRAMS</h5>
-            <a href="/#create" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
+            <a href="/#courses" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-blue bold-9">COURSES</b></h4></a>
             <a href="/#camps" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-green bold-9">CAMPS</b></h4></a>
             <a href="/#junior" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-purple bold-9">JUNIOR</b></h4></a>
             <a href="/#birthdays" on:click={() => openMenu(false)}><h4 class="dark-blue bold-9"><b class="ninja-red bold-9">BIRTHDAYS</b></h4></a>
@@ -69,7 +69,7 @@
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 0  8vw;
+        padding: 0 8vw;
         align-items: center;
         width: 100%;
         height: 6em;

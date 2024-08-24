@@ -1,12 +1,11 @@
 <script>
 	import BlockBased from './progression/BlockBased.svelte';
 	import JavaScript from './progression/JavaScript.svelte';
+	import ProgressionHeader from './progression/ProgressionHeader.svelte';
 	import Unity from './progression/Unity.svelte';
 </script>
 
-<div id="create" class="anchor"></div>
-
-<section>	
+<section id="courses">	
 	<span>
 		<img src="/graphics/landing/cbg2.webp" alt="" />
 		<img src="/graphics/landing/ccf.webp" alt="" />
@@ -17,7 +16,7 @@
 			<p>AGES 8 TO 14</p>
 			<span>
 				<h4>CODE NINJAS</h4>
-				<h1 class="bold-9">CREATE</h1>
+				<h1 class="bold-9">COURSES</h1>
 			</span>
 			<p>
 				“CREATE” is Code Ninjas’ core coding for kids program for children ages 8 - 14 to study
@@ -28,15 +27,13 @@
 			</p>
 		</div>
 	</span>
+	<ProgressionHeader></ProgressionHeader>
 	<BlockBased></BlockBased>
     <JavaScript></JavaScript>
     <Unity></Unity>
 </section>
 
 <style lang="scss">
-	.anchor {
-		padding: 2.5em;
-	}
 	section {
 		display: flex;
         flex-direction: column;

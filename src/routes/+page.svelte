@@ -6,6 +6,8 @@
 
 <script async lang="ts">
 	import { browser } from "$app/environment";
+	import BirthdayAbout from "$lib/components/birthdays/BirthdayAbout.svelte";
+	import BirthdayHero from "$lib/components/birthdays/BirthdayHero.svelte";
 	import About from "$lib/components/landing/About.svelte";
 	import CampsSection from "$lib/components/landing/CampsSection.svelte";
 	import CreateSection from "$lib/components/landing/CreateSection.svelte";
@@ -44,7 +46,8 @@
 <CreateSection></CreateSection>
 <CampsSection></CampsSection>
 <Junior></Junior>
-<Impact></Impact>
+<BirthdayHero></BirthdayHero>
+<BirthdayAbout></BirthdayAbout>
 <LocationsHeading></LocationsHeading>
 <Locations></Locations>
 <LocationMap></LocationMap>
