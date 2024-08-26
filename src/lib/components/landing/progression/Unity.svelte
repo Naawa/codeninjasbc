@@ -12,7 +12,7 @@
 		</div>
 	</span>
 	<div>
-		<h3>Profiecieny In Unity</h3>
+		<h3>Proficiency In Unity</h3>
 		<p>
 			On the road to Black Belt, your child will develop their original video game using Unity, a
 			platform that professional video games are developed on, including roblox game coding and
