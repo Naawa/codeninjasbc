@@ -1,3 +1,7 @@
+<script>
+	import LearnMore from "../landing/LearnMore.svelte";
+
+</script>
 <section>
     <h2 class="dark-blue bold-9">WHAT ITS LIKE</h2>
     <span>
@@ -21,6 +25,7 @@
         </div>
     </span>
 </section>
+<LearnMore></LearnMore>
 
 
 <style lang="scss">

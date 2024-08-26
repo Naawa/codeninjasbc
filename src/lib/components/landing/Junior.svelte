@@ -1,3 +1,8 @@
+<script>
+
+	import LearnMore from "./LearnMore.svelte";
+
+</script>
 <section id="junior">
     <img src="/graphics/junior/jbg.webp" alt="">
     <div>
@@ -12,6 +17,8 @@
         <p>
             Is your young Ninja already crazy about technology? Our JR program is designed to help support and nurture a foundation of learning through engaging activities, creativity, and problem-solving – no reading required!
         </p>
+        <br>
+        <LearnMore></LearnMore>
     </div>
 </section>
 
@@ -42,6 +49,7 @@
             justify-content: center;
             flex: 0%;
             position: relative;
+            align-items: start;
 
             p {
                 min-width: 350px;

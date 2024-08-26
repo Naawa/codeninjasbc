@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { dojos, locations, serviceURIs, type Dojo } from "$lib/utils/dojos";
 	import { fly } from "svelte/transition";
+	import LearnMore from "./LearnMore.svelte";
 
     let showMenu: boolean = false;
     let selectedDojo: string;
@@ -22,6 +23,8 @@
         <p>
             Transform your child's love for technology into an exciting learning adventure. Guided by our team of Code Senseis, Code Ninjas Camps empower kids to gain valuable tech skills and make new friends. It's an unforgettably fun learning experience!
         </p>
+        <br>
+        <LearnMore></LearnMore>
     </div>
 </section>
 
@@ -50,6 +53,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: start;
             flex: 0%;
             position: relative;
 

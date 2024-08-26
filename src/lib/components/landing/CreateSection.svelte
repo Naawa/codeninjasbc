@@ -1,5 +1,6 @@
 <script>
-	import BlockBased from './progression/BlockBased.svelte';
+	import LearnMore from './LearnMore.svelte';
+import BlockBased from './progression/BlockBased.svelte';
 	import JavaScript from './progression/JavaScript.svelte';
 	import ProgressionHeader from './progression/ProgressionHeader.svelte';
 	import Unity from './progression/Unity.svelte';
@@ -31,6 +32,8 @@
 	<BlockBased></BlockBased>
     <JavaScript></JavaScript>
     <Unity></Unity>
+	<br>
+	<LearnMore></LearnMore>
 </section>
 
 <style lang="scss">
