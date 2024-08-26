@@ -153,6 +153,19 @@ import BlockBased from './progression/BlockBased.svelte';
 				align-items: center;
                 gap: 2em;
                 padding: 0;
+
+				div {
+					justify-content: center;
+					align-items: center;
+					
+					span {
+						h4 {
+							margin-top: 0.5em;
+							width: 100%;
+							text-align: center;
+						}
+					}
+				}
 			}
 
 			img {
