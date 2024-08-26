@@ -27,7 +27,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 4em;
-        padding: 4em 4em 2em;
+        padding: 4em;
         background: rgb(107, 41, 124);
         background: linear-gradient(138deg, rgba(124, 41, 145, 0.863) 0%, rgba(46, 7, 124, 0.966) 100%);
         width: 100%;
