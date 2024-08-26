@@ -19,13 +19,14 @@
         background-size: 100% 100%;
         aspect-ratio: 16/9;
         width: 100%;
-        max-width: 80vw;
+        max-width: 70vw;
         background-repeat: no-repeat;
 		box-shadow: 0 8px 24px #0067be40;
         position: relative;
-        max-height: 80dvh;
+        max-height: 70dvh;
         margin: 8em auto 4em;
-        border-radius: 1em;
+        border-radius: 0.5em;
+        border: solid 0.5em rgba(119, 255, 248, 0.503);
 
         div {
             position: absolute;

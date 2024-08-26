@@ -50,4 +50,3 @@
 <BirthdayAbout></BirthdayAbout>
 <LocationsHeading></LocationsHeading>
 <Locations></Locations>
-<LocationMap></LocationMap>
