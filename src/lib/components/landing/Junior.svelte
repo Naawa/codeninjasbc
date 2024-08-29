@@ -101,7 +101,7 @@
     @media (width < 1200px) {
         section {
             flex-direction: column;
-            padding: 4em 1em 1em;
+            padding: 4em 1em;
             gap: 1em;
 
             div {

@@ -1,5 +1,5 @@
 <section>
-    <h1>Cirriculum & Progression</h1>
+    <h1>Curriculum & Progression</h1>
 </section>
 
 <style lang="scss">

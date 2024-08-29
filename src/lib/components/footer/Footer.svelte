@@ -6,7 +6,7 @@
     </span>
     <span>
         <p>Saturday</p>
-        <h5>10:00 - 2:00 PM</h5>
+        <h5>10:00 AM - 2:00 PM</h5>
     </span>
 </section>
 
