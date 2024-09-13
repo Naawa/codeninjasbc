@@ -10,7 +10,7 @@ export interface Dojo {
     campsId: string;
 }
 
-export const locations: Dojo[] = [
+export const  locations: Dojo[] = [
     {
         name: "Abbotsford",
         phone: "(604)-861-2633",
