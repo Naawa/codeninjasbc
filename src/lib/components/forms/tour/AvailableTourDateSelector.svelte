@@ -61,7 +61,7 @@
         </div>
         <span>
             {#each availableTourDates as tourDate,  i}
-                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date" && tourDate.slots.length > 0}
+                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date"}
                         <div>
                             <h5>{new Date(tourDate.date).toLocaleDateString(undefined, {
                                 weekday: "long",
