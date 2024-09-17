@@ -40,7 +40,9 @@
 			<select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
 				<option value="" disabled>Select A Location</option>
 				{#each locations as location}
-					<option value={location.crm}>{location.name}</option>
+					{#if location.name != "Burnaby South"}
+						<option value={location.crm}>{location.name}</option>
+					{/if}
 				{/each}
 			</select>
 			<p>
