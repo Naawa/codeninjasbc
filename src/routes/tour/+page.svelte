@@ -61,16 +61,6 @@
 					{/each}
 				</select>
 			{/if}
-			{#if new Date($form.selectedTourDate).toLocaleDateString() == 'Invalid Date'}
-				{#await (availableTourDates = loadAvailableTourDates($form.selectedCenter))}
-					<h4>Loading available tour dates...</h4>
-				{:then tourDatePeriod}
-					<AvailableTourDateSelector
-						{tourDatePeriod}
-						bind:selectedTourDate={$form.selectedTourDate}
-					></AvailableTourDateSelector>
-				{/await}
-			{:else}
 				<div>
 					<h3 class="dark-blue">{dojo?.name}</h3>
 					<b class="dark-blue">{dojo?.address}</b>
@@ -233,7 +223,6 @@
 				</form>
 			{/if}
 		{/if}
-	{/if}
 </section>
 
 <style lang="scss">
