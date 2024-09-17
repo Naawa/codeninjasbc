@@ -47,7 +47,9 @@
 		return availableTourDates;
 	}
 	function getDateString(date: string): string {
-		return date.split(",", 1)[0]
+		let str = date.split(",", 1)[0]
+
+		return str.replaceAll("/", "-")
 	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
