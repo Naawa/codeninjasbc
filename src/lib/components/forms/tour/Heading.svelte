@@ -16,7 +16,7 @@
         gap: 1em;
         width: 100%;
         min-height: fit-content;
-        padding: 2em 0 0;
+        padding: 4em 0 0;
 
         p {
             text-wrap: balance;
