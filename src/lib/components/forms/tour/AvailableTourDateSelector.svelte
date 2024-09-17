@@ -65,6 +65,7 @@
 		</div>
 		<span>
 			{#each availableTourDates as tourDate, i}
+				{#if new Date(tourDate.date).toLocaleDateString() != 'Invalid Date'}
 					<div>
 						<h5>
 							{new Date(tourDate.date).toLocaleDateString(undefined, {
@@ -94,6 +95,7 @@
 							{/if}
 						{/each}
 					</div>
+				{/if}
 			{/each}
 		</span>
 	{/if}
