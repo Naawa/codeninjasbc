@@ -51,7 +51,7 @@
 			</p>
 		{/if}
 		{#if $form.selectedCenter}
-			{#if new Date($form.selectedTourDate).toLocaleDateString() == "Invalid Date"}
+			{#if new Date($form.selectedTourDate).toLocaleDateString() == 'Invalid Date'}
 				<select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
 					<option value="" disabled>Select A Location</option>
 					{#each locations as location}
