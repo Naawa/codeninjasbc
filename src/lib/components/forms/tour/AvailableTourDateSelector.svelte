@@ -49,7 +49,7 @@
 	function getDateString(date: string): string {
 		let str = date.split(",", 1)[0]
 
-		return str.replaceAll("/", "-")
+		return str
 	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
@@ -76,11 +76,6 @@
 					<div>
 						<h5>
 							{getDateString(tourDate.date)}
-							{new Date(getDateString(tourDate.date)).toLocaleDateString(undefined, {
-								weekday: 'long',
-								day: '2-digit',
-								month: 'long'
-							})}
 						</h5>
 						{#each availableTourDates[i].slots as slot, i}
 							{#if slot.isAvailable}
@@ -90,14 +85,16 @@
 									}}
 									>{new Date(slot.startTime).toLocaleTimeString(undefined, {
 										hour: '2-digit',
-										minute: '2-digit'
+										minute: '2-digit',
+										hour12: true
 									})}
 								</button>
 							{:else}
 								<button class="unavailable"
 									>N/A {new Date(slot.startTime).toLocaleTimeString(undefined, {
 										hour: '2-digit',
-										minute: '2-digit'
+										minute: '2-digit',
+										hour12: true
 									})}
 								</button>
 							{/if}
