@@ -73,6 +73,7 @@
 				{#if tourDate.slots.length > 0}
 					<div>
 						<h5>
+							{getDateString(tourDate.date)}
 							{new Date(getDateString(tourDate.date)).toLocaleDateString(undefined, {
 								weekday: 'long',
 								day: '2-digit',
