@@ -47,6 +47,9 @@
 </script>
 
 <h4>Select a Timeslot</h4>
+{#each availableTourDates as tourDate, i}
+    <h3>i</h3>
+{/each}
 <section>
     {#if new Date(selectedTourDate).toLocaleDateString() == "Invalid Date"}
         <div>
