@@ -1,162 +1,164 @@
 <script lang="ts">
-    export let tourDatePeriod: any;
-    export let selectedTourDate: string;
+	export let tourDatePeriod: any;
+	export let selectedTourDate: string;
 
-    let start = new Date(tourDatePeriod.start);
-    let end = new Date(tourDatePeriod.end);
-    let timeslots = tourDatePeriod.timeslots;    
+	let start = new Date(tourDatePeriod.start);
+	let end = new Date(tourDatePeriod.end);
+	let timeslots = tourDatePeriod.timeslots;
 
-    interface TimeSlot {
-        startTime: string,
-        isAvailable: boolean
-    }
+	interface TimeSlot {
+		startTime: string;
+		isAvailable: boolean;
+	}
 
-    interface AvailableTourDates {
-        date: string,
-        slots: TimeSlot[]
-    }
-    
-    function getDayTourDates(month: number, date: number): TimeSlot[] {
-        let slots: TimeSlot[] = [];
+	interface AvailableTourDates {
+		date: string;
+		slots: TimeSlot[];
+	}
 
-        for(let i = 0; i < timeslots.length; i++) {
-            let tourDateDate = new Date(timeslots[i].start);
-            if(month == tourDateDate.getMonth()) {
-                if(date == tourDateDate.getDate()) {
-                    slots.push({ startTime: timeslots[i].start, isAvailable: timeslots[i].isAvailable });
-                }
-            }
-            
-        }
+	function getDayTourDates(month: number, date: number): TimeSlot[] {
+		let slots: TimeSlot[] = [];
 
-        return slots;
-    }
+		for (let i = 0; i < timeslots.length; i++) {
+			let tourDateDate = new Date(timeslots[i].start);
+			if (month == tourDateDate.getMonth()) {
+				if (date == tourDateDate.getDate()) {
+					slots.push({ startTime: timeslots[i].start, isAvailable: timeslots[i].isAvailable });
+				}
+			}
+		}
 
-    function getAvailableTourDates(): AvailableTourDates[] {
-        let availableTourDates: AvailableTourDates[] = [];
-        let date = new Date(start);
-        while (date.getDate() != end.getDate()) {
-            availableTourDates.push({ date: date.toLocaleString(), slots: getDayTourDates(date.getMonth(), date.getDate())});
-            date.setDate(date.getDate() + 1)
-        }
+		return slots;
+	}
 
-        return availableTourDates;
-    }
+	function getAvailableTourDates(): AvailableTourDates[] {
+		let availableTourDates: AvailableTourDates[] = [];
+		let date = new Date(start);
+		while (date.getDate() != end.getDate()) {
+			availableTourDates.push({
+				date: date.toLocaleString(),
+				slots: getDayTourDates(date.getMonth(), date.getDate())
+			});
+			date.setDate(date.getDate() + 1);
+		}
 
-    let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
+		return availableTourDates;
+	}
+
+	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
+	console.log(availableTourDates)
 </script>
 
 <h4>Select a Timeslot</h4>
 <section>
-    {#if new Date(selectedTourDate).toLocaleDateString() == "Invalid Date"}
-        <div>
-            <h4>{start.toLocaleDateString(undefined, {
-                month: "long",
-                day: "2-digit"
-            })} - {end.toLocaleDateString(undefined, {
-                month: "long",
-                day: "2-digit"
-            })}</h4>
-        </div>
-        <span>
-            {#each availableTourDates as tourDate,  i}
-                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date"}
-                        <div>
-                            <h5>{new Date(tourDate.date).toLocaleDateString(undefined, {
-                                weekday: "long",
-                                day: "2-digit",
-                                month: "long"
-                            })}</h5>
-                            {#each availableTourDates[i].slots as slot, i }
-                                {#if slot.isAvailable}
-                                <button on:click={() => {
-                                    selectedTourDate = new Date(slot.startTime).toLocaleString();
-                                }}>{new Date(slot.startTime).toLocaleTimeString(undefined, {
-                                    hour: "2-digit",
-                                    minute: "2-digit"
-                                })}
-                                </button>
-                                {:else}
-                                <button class="unavailable">N/A {new Date(slot.startTime).toLocaleTimeString(undefined, {
-                                    hour: "2-digit",
-                                    minute: "2-digit"
-                                })}
-                                </button>
-                                {/if}
-                        {/each}
-                    </div>
-                {/if}
-            {/each}
-        </span>
-    {/if}
+	{#if new Date(selectedTourDate).toLocaleDateString() == 'Invalid Date'}
+		<div>
+			<h4>
+				{start.toLocaleDateString(undefined, {
+					month: 'long',
+					day: '2-digit'
+				})} - {end.toLocaleDateString(undefined, {
+					month: 'long',
+					day: '2-digit'
+				})}
+			</h4>
+		</div>
+		<span>
+			{#each availableTourDates as tourDate, i}
+					<div>
+						<h5>
+							{new Date(tourDate.date).toLocaleDateString(undefined, {
+								weekday: 'long',
+								day: '2-digit',
+								month: 'long'
+							})}
+						</h5>
+						{#each availableTourDates[i].slots as slot, i}
+							{#if slot.isAvailable}
+								<button
+									on:click={() => {
+										selectedTourDate = new Date(slot.startTime).toLocaleString();
+									}}
+									>{new Date(slot.startTime).toLocaleTimeString(undefined, {
+										hour: '2-digit',
+										minute: '2-digit'
+									})}
+								</button>
+							{:else}
+								<button class="unavailable"
+									>N/A {new Date(slot.startTime).toLocaleTimeString(undefined, {
+										hour: '2-digit',
+										minute: '2-digit'
+									})}
+								</button>
+							{/if}
+						{/each}
+					</div>
+			{/each}
+		</span>
+	{/if}
 </section>
 
 <style lang="scss">
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 2em;
-        padding: 2em;
-        min-width: 225px;
-        max-width: 90vw;
-        background-color: #a7bbc33c;
-        border-radius: 1em;
-        
-        span {
-            display: flex;
-            gap: 2em;
-            width: 100%;
-            overflow: scroll;
-            padding: 0 2em 2em;
-            border-radius: 1em;
-            overflow-y: hidden;
+	section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 2em;
+		padding: 2em;
+		min-width: 225px;
+		max-width: 90vw;
+		background-color: #a7bbc33c;
+		border-radius: 1em;
 
-            div {
-                display: flex;
-                flex-direction: column;
-                justify-content: normal;
-                align-items: center;
-                gap: 1em;
-                min-width: fit-content;
-                padding: 0;
+		span {
+			display: flex;
+			gap: 2em;
+			width: 100%;
+			overflow: scroll;
+			padding: 0 2em 2em;
+			border-radius: 1em;
+			overflow-y: hidden;
 
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: normal;
+				align-items: center;
+				gap: 1em;
+				min-width: fit-content;
+				padding: 0;
 
-                button {
-                    padding: 1em;
-                    background-color: #eff3f5;
-                    width: 10em;
-                    border: none;
-                    display: flex;
-                    justify-content: normal;
-                    align-items: center;
-                    border-radius: 0.25em;
+				button {
+					padding: 1em;
+					background-color: #eff3f5;
+					width: 10em;
+					border: none;
+					display: flex;
+					justify-content: normal;
+					align-items: center;
+					border-radius: 0.25em;
 
-                    &:hover {
-                        background-color: #e3eaf0;
-                    }
-                }
+					&:hover {
+						background-color: #e3eaf0;
+					}
+				}
 
-                .unavailable {
-                    background-color: #e5eaed;
-                    color: #9eabb5;
+				.unavailable {
+					background-color: #e5eaed;
+					color: #9eabb5;
 
-                    &:hover {
-                        background-color: #e5eaed;
-                        color: #9eabb5;
+					&:hover {
+						background-color: #e5eaed;
+						color: #9eabb5;
+					}
+				}
+			}
 
-                    }
-                }
-            }
-
-            span {
-                flex-wrap: wrap;
-            }
-        }
-    }
+			span {
+				flex-wrap: wrap;
+			}
+		}
+	}
 </style>
-
-
-
-
