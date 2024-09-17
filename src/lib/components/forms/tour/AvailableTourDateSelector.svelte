@@ -44,7 +44,6 @@
     }
 
     let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
-    console.log(availableTourDates)
 </script>
 
 <h4>Select a Timeslot</h4>
@@ -61,7 +60,7 @@
         </div>
         <span>
             {#each availableTourDates as tourDate,  i}
-                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date"}
+                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date" && tourDate.slots.length > 0}
                         <div>
                             <h5>{new Date(tourDate.date).toLocaleDateString(undefined, {
                                 weekday: "long",
