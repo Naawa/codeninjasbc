@@ -47,9 +47,6 @@
 </script>
 
 <h4>Select a Timeslot</h4>
-{#each availableTourDates as tourDate, i}
-    <h3>i</h3>
-{/each}
 <section>
     {#if new Date(selectedTourDate).toLocaleDateString() == "Invalid Date"}
         <div>
@@ -63,7 +60,7 @@
         </div>
         <span>
             {#each availableTourDates as tourDate,  i}
-                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date" && tourDate.slots.length > 0}
+                {#if new Date(tourDate.date).toLocaleDateString() != "Invalid Date" && availableTourDates[i].slots.length > 0}
                         <div>
                             <h5>{new Date(tourDate.date).toLocaleDateString(undefined, {
                                 weekday: "long",
