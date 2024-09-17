@@ -99,6 +99,7 @@
         flex-direction: column;
         gap: 2em;
         padding: 2em;
+        min-width: 225px;
         max-width: 90vw;
         background-color: #a7bbc33c;
         border-radius: 1em;
