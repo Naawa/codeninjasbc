@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { date } from "zod";
+
 	export let tourDatePeriod: any;
 	export let selectedTourDate: string;
 
@@ -44,6 +46,9 @@
 
 		return availableTourDates;
 	}
+	function getDateString(date: string): string {
+		return date.split(",", 1)[0]
+	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
 	console.log(availableTourDates)
@@ -68,12 +73,11 @@
 				{#if tourDate.slots.length > 0}
 					<div>
 						<h5>
-							{new Date(tourDate.date)}
-							<!-- {new Date(tourDate.date).toLocaleDateString(undefined, {
+							{new Date(getDateString(tourDate.date)).toLocaleDateString(undefined, {
 								weekday: 'long',
 								day: '2-digit',
 								month: 'long'
-							})} -->
+							})}
 						</h5>
 						{#each availableTourDates[i].slots as slot, i}
 							{#if slot.isAvailable}
