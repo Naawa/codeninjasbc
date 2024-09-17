@@ -99,7 +99,8 @@
 						<h4 class="ninja-blue">
 							{new Date($form.selectedTourDate).toLocaleTimeString(undefined, {
 								hour: '2-digit',
-								minute: '2-digit'
+								minute: '2-digit',
+								hour12: true
 							})}
 						</h4>
 					</div>
