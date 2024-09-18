@@ -22,6 +22,8 @@
 	$: {
 		dojo = getLocation($form.selectedCenter);
 	}
+
+	$: console.log($form.selectedTourDate)
 </script>
 
 <svelte:head>
@@ -61,7 +63,7 @@
 					{/each}
 				</select>
 			{/if}
-			{#if new Date($form.selectedTourDate).toLocaleDateString() == 'Invalid Date'}
+			{#if !$form.selectedTourDate}
 				{#await (availableTourDates = loadAvailableTourDates($form.selectedCenter))}
 					<h4>Loading available tour dates...</h4>
 				{:then tourDatePeriod}
