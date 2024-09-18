@@ -92,7 +92,7 @@
 					</div>
 					<div>
 						<h4 class="dark-text">
-							Scheduled for {new Date($form.selectedTourDate).toLocaleDateString(undefined, {
+							Scheduled for {new Date($form.selectedTourDate.split(",", 1)[0]).toLocaleDateString(undefined, {
 								weekday: 'long',
 								day: '2-digit',
 								month: 'long'
