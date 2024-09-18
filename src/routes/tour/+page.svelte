@@ -91,10 +91,10 @@
 					</div>
 					<div>
 						<h4 class="dark-text">
-							Scheduled for {$form.selectedTourDate.split(",", 1)[0]}
+							Scheduled for {new Date($form.selectedTourDate).toLocaleString().split(",", 1)[0]}
 						</h4>
 						<h4 class="ninja-blue">
-							{$form.selectedTourDate.split(",")[1]}
+							{new Date($form.selectedTourDate).toLocaleString().split(",")[1]}
 						</h4>
 					</div>
 				</span>
