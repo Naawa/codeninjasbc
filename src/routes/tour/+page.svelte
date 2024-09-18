@@ -31,6 +31,7 @@
 
 <section>
 	<Heading></Heading>
+	<h3>{$form.selectedTourDate}</h3>
 	{#if $message}
 		<h4>
 			{$message}
