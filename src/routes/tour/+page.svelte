@@ -31,7 +31,7 @@
 
 <section>
 	<Heading></Heading>
-	<h3>{$form.selectedTourDate}</h3>
+	<h3>{new Date($form.selectedTourDate).toLocaleString("en-US")}</h3>
 	{#if $message}
 		<h4>
 			{$message}
