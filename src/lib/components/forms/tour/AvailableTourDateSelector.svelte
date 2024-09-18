@@ -81,7 +81,7 @@
 							{#if slot.isAvailable}
 								<button
 									on:click={() => {
-										selectedTourDate = new Date(slot.startTime).toString();
+										selectedTourDate = new Date(slot.startTime).toLocaleString();
 									}}
 									>{new Date(slot.startTime).toLocaleTimeString(undefined, {
 										hour: '2-digit',

@@ -21,6 +21,9 @@ export const actions = {
         if(form.data.childBirthMonth.charAt(0) == '0') {
             form.data.childBirthMonth = form.data.childBirthMonth.charAt(1);
         }
+        if(form.data.childBirthDay.charAt(0) == '0') {
+            form.data.childBirthDay = form.data.childBirthDay.charAt(1);
+        }
 
         const { data, error } = await supabase
             .from('leads')
@@ -60,7 +63,7 @@ export const actions = {
             method: "POST"
           });
 2
-        console.log(leadReq);
+        console.log(leadReq.status);
         console.log(form.data);
 
         if(leadReq.status >= 400) {
