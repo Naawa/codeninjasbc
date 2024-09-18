@@ -24,7 +24,7 @@ export const actions = {
         if(form.data.childBirthDay.charAt(0) == '0') {
             form.data.childBirthDay = form.data.childBirthDay.charAt(1);
         }
-        let tourTime = new Date(form.data.selectedTourDate).toLocaleString("en-US")
+        let tourTime = form.data.selectedTourDate
 
         const { data, error } = await supabase
             .from('leads')
