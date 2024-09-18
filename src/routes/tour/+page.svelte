@@ -92,18 +92,10 @@
 					</div>
 					<div>
 						<h4 class="dark-text">
-							Scheduled for {new Date($form.selectedTourDate.split(",", 1)[0]).toLocaleDateString(undefined, {
-								weekday: 'long',
-								day: '2-digit',
-								month: 'long'
-							})}
+							Scheduled for {$form.selectedTourDate.split(",", 1)[0]}
 						</h4>
 						<h4 class="ninja-blue">
-							{new Date($form.selectedTourDate).toLocaleTimeString(undefined, {
-								hour: '2-digit',
-								minute: '2-digit',
-								hour12: true
-							})}
+							{$form.selectedTourDate.split(",")[1]}
 						</h4>
 					</div>
 				</span>
