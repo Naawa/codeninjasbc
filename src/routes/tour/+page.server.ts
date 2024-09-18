@@ -53,7 +53,7 @@ export const actions = {
         const req = await fetch(`/api/${form.data.selectedCenter}`)
         const res = await req.json()
         let centerInfo = await res.centerInfo
-        let tourTime = new Date(form.data.selectedTourDate).toLocaleDateString(); 
+        let tourTime = new Date(form.data.selectedTourDate).toLocaleTimeString()
 
         const leadReq = await fetch(`https://live.childcarecrm.com/portal/index/forms/tour-booking?customerId=f1e0c921c46684f267d2eb52aa13f518&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&cid=${centerInfo.ccrmId}`, {
             "headers": {
