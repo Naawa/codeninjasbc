@@ -22,8 +22,6 @@
 	$: {
 		dojo = getLocation($form.selectedCenter);
 	}
-
-	$: console.log($form.selectedTourDate)
 </script>
 
 <svelte:head>

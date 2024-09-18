@@ -63,8 +63,8 @@ export const actions = {
             method: "POST"
           });
 2
-        console.log(leadReq.status);
-        console.log(form.data);
+        // console.log(leadReq.status);
+        // console.log(form.data);
 
         if(leadReq.status >= 400) {
             const { data, error } = await supabase
