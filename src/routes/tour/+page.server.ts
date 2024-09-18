@@ -24,14 +24,13 @@ export const actions = {
         if(form.data.childBirthDay.charAt(0) == '0') {
             form.data.childBirthDay = form.data.childBirthDay.charAt(1);
         }
-        let tourTime = new Date(form.data.selectedTourDate).toLocaleString()
 
         const { data, error } = await supabase
             .from('leads')
             .insert([
                 {
                     location: form.data.selectedCenter,
-                    tour_date: tourTime,
+                    tour_date: form.data.selectedTourDate,
                     child_first_name: form.data.childFirstName,
                     child_last_name: form.data.childLastName,
                     child_birth_date: `${form.data.childBirthDay}-${form.data.childBirthMonth}-${form.data.childBirthYear}`,
