@@ -24,13 +24,14 @@ export const actions = {
         if(form.data.childBirthDay.charAt(0) == '0') {
             form.data.childBirthDay = form.data.childBirthDay.charAt(1);
         }
+        let tourTime = new Date(form.data.selectedTourDate).toLocaleTimeString()
 
         const { data, error } = await supabase
             .from('leads')
             .insert([
                 {
                     location: form.data.selectedCenter,
-                    tour_date: form.data.selectedTourDate,
+                    tour_date: tourTime,
                     child_first_name: form.data.childFirstName,
                     child_last_name: form.data.childLastName,
                     child_birth_date: `${form.data.childBirthDay}-${form.data.childBirthMonth}-${form.data.childBirthYear}`,
@@ -53,7 +54,6 @@ export const actions = {
         const req = await fetch(`/api/${form.data.selectedCenter}`)
         const res = await req.json()
         let centerInfo = await res.centerInfo
-        let tourTime = new Date(form.data.selectedTourDate).toLocaleTimeString()
 
         const leadReq = await fetch(`https://live.childcarecrm.com/portal/index/forms/tour-booking?customerId=f1e0c921c46684f267d2eb52aa13f518&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&cid=${centerInfo.ccrmId}`, {
             "headers": {
