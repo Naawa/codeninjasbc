@@ -74,7 +74,7 @@ export const actions = {
             }).eq("parent_phone", form.data.parentPhone);
 
 
-            return message(form, "An error occured while processing your request, please try again later.");
+            return message(form, `An error occured while processing your request, please try again later. ${leadReq.statusText}`);
         }
 
         else {
