@@ -3,14 +3,14 @@ input, select, option, textarea {
     width: 100%;
     border-radius: 0.25em;
     border: none;
-    color: #374358;
+    color: #05406a;
     background-color: rgb(203,215,222,.23);
     font-weight: 600;
     appearance: none;
-    font-size: 0.9em;
+    font-size: 1em;
 
     &:hover {
-        background-color: #e3eaf0;
+        background-color: rgba(248, 251, 253, 0.868);
     }
 }
 
@@ -20,6 +20,10 @@ select {
     background-position-x: 95%;
     background-position-y: 45%;
     background-size: 1.5em 1.5em;
+}
+
+.dark-theme {
+    background-color: #f6f7f8;
 }
 
 @media (width < 600px) {

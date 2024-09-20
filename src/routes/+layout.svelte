@@ -15,7 +15,7 @@
     export let data;
 </script>
 
-<Gtag></Gtag>
+
 <Navigation></Navigation>
 <slot />
 {#if $page.url.pathname == "/" || $page.url.pathname == "/create" || $page.url.pathname == "/junior" || $page.url.pathname == "/birthdays" || $page.url.pathname == "/blog" || $page.url.pathname == "/faq" || $page.url.pathname == "/locations"}

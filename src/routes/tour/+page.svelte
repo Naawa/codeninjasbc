@@ -37,7 +37,7 @@
 		</h4>
 	{:else}
 		{#if !$form.selectedCenter}
-			<select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
+			<select class="dark-theme" bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
 				<option value="" disabled>Select A Location</option>
 				{#each locations as location}
 					{#if location.name != "Burnaby South"}
@@ -52,7 +52,7 @@
 		{/if}
 		{#if $form.selectedCenter}
 			{#if new Date($form.selectedTourDate).toLocaleDateString() == 'Invalid Date'}
-				<select bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
+				<select class="dark-theme" bind:value={$form.selectedCenter} name="dojo" {...$constraints.selectedCenter}>
 					<option value="" disabled>Select A Location</option>
 					{#each locations as location}
 						{#if location.name != 'Burnaby South'}
@@ -237,8 +237,10 @@
 		padding: 2em 0;
 		gap: 2em;
 		min-height: calc(100vh - 4em);
+		background-color: #0a4067;
 
-		p {
+		p {	
+			color: rgba(245, 245, 245, 0.621);
 			width: clamp(275px, 35em, 40vw);
 			text-align: center;
 		}

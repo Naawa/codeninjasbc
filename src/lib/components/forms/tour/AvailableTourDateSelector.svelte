@@ -53,7 +53,6 @@
 	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
-	console.log(availableTourDates)
 </script>
 
 <h4>Select a Timeslot</h4>
@@ -107,6 +106,9 @@
 </section>
 
 <style lang="scss">
+	h4 {
+		color: #f6f7f8;
+	}
 	section {
 		display: flex;
 		align-items: center;
@@ -116,8 +118,12 @@
 		padding: 2em;
 		min-width: 225px;
 		max-width: 90vw;
-		background-color: #a7bbc33c;
-		border-radius: 1em;
+		background-color: #f6f7f8;
+		border-radius: 0.5em;
+
+		h4 {
+			color: #05406a;
+		}
 
 		span {
 			display: flex;
@@ -136,19 +142,25 @@
 				gap: 1em;
 				min-width: fit-content;
 				padding: 0;
+				background-color: white;
+				box-shadow: 0 0.1em 1em rgba(90, 106, 122, 0.193);
+				padding: 1em;
+				border-radius: 0.5em;
 
 				button {
 					padding: 1em;
-					background-color: #eff3f5;
+					background-color: rgba(232, 236, 239, 0.712);
 					width: 10em;
 					border: none;
 					display: flex;
 					justify-content: normal;
 					align-items: center;
 					border-radius: 0.25em;
+					font-size: large;
 
 					&:hover {
 						background-color: #e3eaf0;
+						font-weight: 900;
 					}
 				}
 

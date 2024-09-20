@@ -1,8 +1,8 @@
 <section id="locations">
     <p>BOOK A FREE SESSION</p>
     <div class="subheading">
-        <h3 class="bold-9 dark-blue">START YOUR</h3>
-        <h3 class="bold-9">TRAINING ARC</h3>
+        <h3 class="bold-9">CODE NINJAS</h3>
+        <h3 class="bold-9">TOUR</h3>
     </div>
 </section>
 
@@ -23,7 +23,7 @@
             max-width: 80dvw;
 
             &:first-of-type {
-                color: #2c638fb6;
+               color: #70c9e7;
                 letter-spacing: 0.1em;
             }   
         }
@@ -41,8 +41,9 @@
             }
 
             h3 {
+                color: #f6f7f8;
                 &:last-of-type {
-                    color: #187abf;
+                    color: #8eecff;
                 }
             }
         }
