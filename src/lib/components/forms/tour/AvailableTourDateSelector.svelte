@@ -36,7 +36,7 @@
 	function getAvailableTourDates(): AvailableTourDates[] {
 		let availableTourDates: AvailableTourDates[] = [];
 		let date = new Date(start);
-		while (date.getDate() != end.getDate()) {
+		while (date.getDate() != end.getDate() + 1) {
 			availableTourDates.push({
 				date: date.toLocaleString(),
 				slots: getDayTourDates(date.getMonth(), date.getDate())
@@ -53,11 +53,12 @@
 	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
+	$: console.log(availableTourDates)
 </script>
 
 <h4>Select a Timeslot</h4>
 <section>
-	{#if new Date(selectedTourDate).toLocaleDateString() == 'Invalid Date'}
+	{#if !selectedTourDate}
 		<div>
 			<h4>
 				{start.toLocaleDateString(undefined, {
@@ -131,14 +132,11 @@
 			width: 100%;
 			overflow: scroll;
 			padding: 0 2em 2em;
-			border-radius: 1em;
 			overflow-y: hidden;
 
 			div {
 				display: flex;
 				flex-direction: column;
-				justify-content: normal;
-				align-items: center;
 				gap: 1em;
 				min-width: fit-content;
 				padding: 0;
@@ -146,21 +144,23 @@
 				box-shadow: 0 0.1em 1em rgba(90, 106, 122, 0.193);
 				padding: 1em;
 				border-radius: 0.5em;
+				width: 100%;
+				align-items: center;
 
 				button {
 					padding: 1em;
-					background-color: rgba(232, 236, 239, 0.712);
+					background-color: rgba(216, 222, 225, 0.324);
 					width: 10em;
 					border: none;
 					display: flex;
 					justify-content: normal;
 					align-items: center;
 					border-radius: 0.25em;
-					font-size: large;
+					font-size: 0.75em;
+					font-weight: 900;
 
 					&:hover {
 						background-color: #e3eaf0;
-						font-weight: 900;
 					}
 				}
 

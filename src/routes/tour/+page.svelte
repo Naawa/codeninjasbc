@@ -234,6 +234,7 @@
 		gap: 2em;
 		min-height: calc(100vh - 4em);
 		background-color: #0a4067;
+		background: linear-gradient(138deg, rgb(20, 136, 199) 0%, rgb(0, 52, 94) 100%);
 
 		p {	
 			color: rgba(245, 245, 245, 0.621);
