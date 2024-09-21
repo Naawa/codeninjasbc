@@ -36,7 +36,7 @@
 	function getAvailableTourDates(): AvailableTourDates[] {
 		let availableTourDates: AvailableTourDates[] = [];
 		let date = new Date(start);
-		while (date.getDate() != end.getDate() + 1) {
+		while (date.getDate() != end.getDate()) {
 			availableTourDates.push({
 				date: date.toLocaleString(),
 				slots: getDayTourDates(date.getMonth(), date.getDate())
@@ -44,6 +44,12 @@
 			date.setDate(date.getDate() + 1);
 		}
 
+		if(getDayTourDates(end.getMonth(), end.getDate() + 1)) {
+			availableTourDates.push({
+				date: end.toLocaleString(),
+				slots: getDayTourDates(end.getMonth(), end.getDate() + 1)
+			})
+		}
 		return availableTourDates;
 	}
 	function getDateString(date: string): string {
@@ -53,7 +59,6 @@
 	}
 
 	let availableTourDates: AvailableTourDates[] = getAvailableTourDates();
-	$: console.log(availableTourDates)
 </script>
 
 <h4>Select a Timeslot</h4>
@@ -74,7 +79,7 @@
 			{#each availableTourDates as tourDate, i}
 				{#if tourDate.slots.length > 0}
 					<div>
-						<h5>
+						<h5 class="ninja-blue">
 							{getDateString(tourDate.date)}
 						</h5>
 						{#each availableTourDates[i].slots as slot, i}

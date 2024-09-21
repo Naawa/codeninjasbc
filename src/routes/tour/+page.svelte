@@ -59,7 +59,7 @@
 			{/if}
 			{#if !$form.selectedTourDate}
 				{#await (availableTourDates = loadAvailableTourDates($form.selectedCenter))}
-					<h4>Loading available tour dates...</h4>
+					<h4 class="col-white">Loading available tour dates...</h4>
 				{:then tourDatePeriod}
 					<AvailableTourDateSelector
 						{tourDatePeriod}
@@ -68,9 +68,9 @@
 				{/await}
 			{:else}
 				<div>
-					<h3 class="dark-blue">{dojo?.name}</h3>
-					<b class="dark-blue">{dojo?.address}</b>
-					<b class="dark-blue">{dojo?.phone}</b>
+					<h3 class="col-white">{dojo?.name}</h3>
+					<b class="col-white">{dojo?.address}</b>
+					<b class="col-white">{dojo?.phone}</b>
 				</div>
 				<span>
 					<div>
@@ -85,15 +85,15 @@
 						<b>Go Back</b>
 					</div>
 					<div>
-						<h4 class="dark-text">
+						<h4 class="dark-text bold-9">
 							Scheduled for {new Date($form.selectedTourDate).toLocaleString().split(",", 1)[0]}
 						</h4>
-						<h4 class="ninja-blue">
+						<h4 class="ninja-blue bold-9">
 							{new Date($form.selectedTourDate).toLocaleString().split(",")[1]}
 						</h4>
 					</div>
 				</span>
-				<form method="POST" action="/tour" use:enhance>
+				<form class="bg-white" method="POST" action="/tour" use:enhance>
 					<h5 class="dark-text bold-9">Child Information:</h5>
 					<span>
 						<input
@@ -248,6 +248,9 @@
 			margin: auto;
 			width: clamp(275px, 35em, 40vw);
 			margin: 0 auto;
+			padding: 2em;
+			background-color: #f6f7f8;
+			border-radius: 0.5em;
 
 			div {
 				display: flex;
@@ -305,11 +308,14 @@
 			justify-content: center;
 			width: clamp(275px, 35em, 40vw);
 			gap: 1em;
+			padding: 2em;
+			border-radius: 0.5em;
 
 			span {
 				display: flex;
 				width: 100%;
 				gap: 1em;
+				padding: 0em;
 			}
 
 			button {
@@ -321,5 +327,11 @@
 				height: 10em;
 			}
 		}
+	}
+	.col-white {
+		color: #f6f7f8;
+	}
+	.bg-white {
+		background-color: #f6f7f8;
 	}
 </style>
