@@ -53,7 +53,7 @@
 			<input
 				type="text"
 				name="contactNumber"
-				placeholder="0000000000"
+				placeholder="Phone Number"
 				bind:value={$form.contactNumber}
 				{...$constraints.contactNumber}
 				aria-invalid={$errors.contactNumber ? 'true' : undefined}
