@@ -74,7 +74,7 @@ export const actions = {
             PhoneNumber: form.data.contactNumber,
         }
 
-        const leadReq = await fetch("https://services.codeninjas.com/api/v1/leads", {
+        const leadReq = await fetch("https://services.codeninjas.com/api/v1/leads?utm_source=booth&utm_medium=cnbc_form&utm_campaign=canada_day_2025&utm_id=canada_day_2025", {
             headers: {
                 "content-type": "application/json; charset=UTF-8",
             },
