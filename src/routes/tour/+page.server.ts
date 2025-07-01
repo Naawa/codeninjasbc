@@ -55,7 +55,7 @@ export const actions = {
         const res = await req.json()
         let centerInfo = await res.centerInfo
 
-        const leadReq = await fetch(`https://live.childcarecrm.com/portal/index/forms/tour-booking?customerId=f1e0c921c46684f267d2eb52aa13f518&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&cid=${centerInfo.ccrmId}?utm_source=booth&utm_medium=cnbc_form&utm_campaign=canada_day_2025&utm_id=canada_day_2025`, {
+        const leadReq = await fetch(`https://live.childcarecrm.com/portal/index/forms/tour-booking?customerId=f1e0c921c46684f267d2eb52aa13f518&formId=b42a0ab3-0e2f-443b-ba55-bed7e2c55200&cid=${centerInfo.ccrmId}`, {
             "headers": {
               "accept": "*/*",
               "content-type": "multipart/form-data; boundary=----WebKitFormBoundarydmFkf657BtDEwxnx",
