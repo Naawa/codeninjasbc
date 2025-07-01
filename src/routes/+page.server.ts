@@ -24,7 +24,7 @@ export const actions = {
         }
 
         const { data, error } = await supabase
-            .from('utm_data')
+            .from('inquries')
             .insert([
                 {
                     source: `${cookies.get("utm_source") || ""}`,
