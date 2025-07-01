@@ -27,7 +27,7 @@ export const actions = {
         let tourTime = new Date(form.data.selectedTourDate).toLocaleString("en-US")
 
         const { data, error } = await supabase
-            .from('leads')
+            .from('tours')
             .insert([
                 {
                     location: form.data.selectedCenter,
